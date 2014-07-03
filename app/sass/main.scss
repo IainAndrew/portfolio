@@ -1,5 +1,20 @@
-@import 'bourbon';
-@import 'neat';
+@import "bourbon";
+@import "neat";
+
+// Base stuff
+@import "base/normalize";
+@import "base/typography";
+
+// Utilities
+@import "utils/variables";
+@import "utils/mixins";
+@import "utils/helpers";
+
+// Partials
+@import "partials/grid";
+@import "partials/footer";
+@import "partials/nav";
+
 
 .browsehappy {
     margin: 0.2em 0;
