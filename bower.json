@@ -1,0 +1,11 @@
+{
+  "name": "portfolio",
+  "private": true,
+  "dependencies": {
+    "modernizr": "~2.8.2",
+    "jquery": "~1.11.0",
+    "bourbon": "~4.0.2",
+    "neat": "~1.6.0"
+  },
+  "devDependencies": {}
+}
