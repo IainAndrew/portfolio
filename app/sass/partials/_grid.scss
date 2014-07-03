@@ -1,0 +1,40 @@
+$mobile: new-breakpoint(min-width 0px);
+$tablet: new-breakpoint(min-width 480px);
+$desktop: new-breakpoint(min-width 768px);
+
+.wrapper {
+    @include row();
+    .primary { 
+		@include media($mobile) {
+			@include span-columns(12);
+		}
+		@include media($tablet) {
+			@include span-columns(6);
+		}
+		@include media($desktop) {
+			@include span-columns(4);
+		}
+    }
+    .secondary { 
+        @include media($mobile) {
+			@include span-columns(12);
+		}
+		@include media($tablet) {
+			@include span-columns(6);
+		}
+		@include media($desktop) {
+			@include span-columns(4);
+		}
+    }
+    .tertiary { 
+        @include media($mobile) {
+			@include span-columns(12);
+		}
+		@include media($tablet) {
+			@include span-columns(6);
+		}
+		@include media($desktop) {
+			@include span-columns(4);
+		}
+    }
+}
