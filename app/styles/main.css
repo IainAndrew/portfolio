@@ -212,84 +212,93 @@ table {
   src: url("../../styles/fonts/librebaskerville-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../../styles/fonts/librebaskerville-italic-webfont.woff") format("woff"), url("../../styles/fonts/librebaskerville-italic-webfont.ttf") format("truetype"), url("../../styles/fonts/librebaskerville-italic-webfont.svg#libre_baskervilleitalic") format("svg");
   font-weight: normal;
   font-style: normal; }
+/*
 .wrapper {
+    @include row();
+    .primary { 
+		@include media($mobile) {
+			@include span-columns(12);
+		}
+		@include media($tablet) {
+			@include span-columns(6);
+		}
+		@include media($desktop) {
+			@include span-columns(4);
+		}
+    }
+    .secondary { 
+        @include media($mobile) {
+			@include span-columns(12);
+		}
+		@include media($tablet) {
+			@include span-columns(6);
+		}
+		@include media($desktop) {
+			@include span-columns(4);
+		}
+    }
+    .tertiary { 
+        @include media($mobile) {
+			@include span-columns(12);
+		}
+		@include media($tablet) {
+			@include span-columns(6);
+		}
+		@include media($desktop) {
+			@include span-columns(4);
+		}
+    }
+}
+*/
+header {
   display: block; }
-  .wrapper:after {
+  header:after {
     content: "";
     display: table;
     clear: both; }
-  @media screen and (min-width: 0px) {
-    .wrapper .primary {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 100%; }
-      .wrapper .primary:last-child {
-        margin-right: 0; } }
-  @media screen and (min-width: 480px) {
-    .wrapper .primary {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 48.82117%; }
-      .wrapper .primary:last-child {
-        margin-right: 0; } }
-  @media screen and (min-width: 768px) {
-    .wrapper .primary {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 31.76157%; }
-      .wrapper .primary:last-child {
-        margin-right: 0; } }
-  @media screen and (min-width: 0px) {
-    .wrapper .secondary {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 100%; }
-      .wrapper .secondary:last-child {
-        margin-right: 0; } }
-  @media screen and (min-width: 480px) {
-    .wrapper .secondary {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 48.82117%; }
-      .wrapper .secondary:last-child {
-        margin-right: 0; } }
-  @media screen and (min-width: 768px) {
-    .wrapper .secondary {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 31.76157%; }
-      .wrapper .secondary:last-child {
-        margin-right: 0; } }
-  @media screen and (min-width: 0px) {
-    .wrapper .tertiary {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 100%; }
-      .wrapper .tertiary:last-child {
-        margin-right: 0; } }
-  @media screen and (min-width: 480px) {
-    .wrapper .tertiary {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 48.82117%; }
-      .wrapper .tertiary:last-child {
-        margin-right: 0; } }
-  @media screen and (min-width: 768px) {
-    .wrapper .tertiary {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 31.76157%; }
-      .wrapper .tertiary:last-child {
-        margin-right: 0; } }
+
+main {
+  display: block; }
+  main:after {
+    content: "";
+    display: table;
+    clear: both; }
+  main section.intro {
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto; }
+    main section.intro:after {
+      content: "";
+      display: table;
+      clear: both; }
+
+header {
+  background: #78C1B6;
+  height: 100vh;
+  width: 100%; }
+
+section.intro .intro-outer {
+  border: 1px solid #f7505a;
+  width: 50%;
+  height: 17rem;
+  padding: 1.5rem;
+  margin: 3rem auto; }
+  section.intro .intro-outer .intro-inner {
+    border: 1px dashed #f7505a;
+    width: 100%;
+    height: 100%;
+    text-align: center; }
+    section.intro .intro-outer .intro-inner h1 {
+      font-weight: normal;
+      color: #f7505a; }
+      section.intro .intro-outer .intro-inner h1:first-child {
+        font-family: "proxima_nova_rgbold";
+        text-transform: uppercase;
+        letter-spacing: 0.5em;
+        font-size: 1.7em; }
+      section.intro .intro-outer .intro-inner h1:nth-child(2) {
+        font-family: "libre_baskervilleitalic";
+        font-size: 1.2em; }
 
 .browsehappy {
   margin: 0.2em 0;
@@ -301,6 +310,7 @@ p {
   font-family: Verdana, Geneva, sans-serif;
   -webkit-transition: all 0.2s ease;
   -moz-transition: all 0.2s ease;
-  transition: all 0.2s ease; }
+  transition: all 0.2s ease;
+  margin: 0; }
   p:hover {
     color: orange; }

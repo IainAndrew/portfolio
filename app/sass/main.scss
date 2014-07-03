@@ -12,8 +12,15 @@
 
 // Partials
 @import "partials/grid";
-@import "partials/footer";
 @import "partials/nav";
+@import "partials/header";
+@import "partials/footer";
+
+// Pages
+@import "pages/index";
+
+// Components
+@import "components/intro-box";
 
 
 .browsehappy {
@@ -26,6 +33,7 @@
 p {
     font-family:$verdana;
     @include transition(all 0.2s ease);
+    margin:0;
     &:hover {
         color:orange;
     }

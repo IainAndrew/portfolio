@@ -2,6 +2,7 @@ $mobile: new-breakpoint(min-width 0px);
 $tablet: new-breakpoint(min-width 480px);
 $desktop: new-breakpoint(min-width 768px);
 
+/*
 .wrapper {
     @include row();
     .primary { 
@@ -37,4 +38,14 @@ $desktop: new-breakpoint(min-width 768px);
 			@include span-columns(4);
 		}
     }
+}
+*/
+header {
+	@include row();
+}
+main {
+	@include row();
+	section.intro {
+		@include outer-container;
+	}
 }
