@@ -20,5 +20,18 @@ header {
 		top:30%;
 		left:50%;
 		@include transform(translateX(-50%));
+		@include animation(float 3s ease infinite);
 	}
+}
+
+@include keyframes(float) {
+  0% {
+    top: 30%;
+  }
+  50% {
+    top:32%;
+  }
+  100% {
+	top:30%;
+  }
 }
