@@ -291,12 +291,23 @@ header {
   position: relative; }
   header h1.header-title {
     margin: 0;
+    margin-left: -5rem;
     position: relative;
-    top: 50%;
+    top: 20%;
     text-transform: uppercase;
     font-family: "proxima_nova_rgbold";
     color: #fff;
-    font-size: 4em; }
+    font-size: 4em;
+    z-index: 1; }
+  header img.island {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%); }
 
 section.intro .intro-outer {
   border: 1px solid #f7505a;

@@ -6,11 +6,19 @@ header {
 	position:relative;
 	h1.header-title {
 		margin:0;
+		margin-left:-5rem;
 		position:relative;
-		top:50%;
+		top:20%;
 		text-transform:uppercase;
 		font-family:$heading-font;
 		color:#fff;
 		font-size:4em;
+		z-index:1;
+	}
+	img.island {
+		position:absolute;
+		top:30%;
+		left:50%;
+		@include transform(translateX(-50%));
 	}
 }

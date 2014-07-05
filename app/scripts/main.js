@@ -16,7 +16,7 @@ $(function() {
                 easing  : 'ease-in'
             }
         });
-        $title.animate({top:'40%'}, 300);
+        $title.animate({top:'10%'}, 300);
 
     };
 
@@ -30,7 +30,7 @@ $(function() {
                 easing  : 'ease-out'
             }
         });
-        $title.animate({top:'50%'}, 600);
+        $title.animate({top:'20%'}, 600);
 
     };
 
