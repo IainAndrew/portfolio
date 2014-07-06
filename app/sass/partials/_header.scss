@@ -60,16 +60,19 @@ header {
 		max-width:357px;
 		top:2rem;
 		left:2rem;
+		@include animation(cloud1 10s ease infinite);
 	}
 	.cloud-2 {
 		max-width:279px;
 		top:10rem;
 		right:3rem;
+		@include animation(cloud2 10s ease infinite);
 	}
 	.cloud-3 {
 		max-width:257px;
 		bottom:8rem;
 		left:1rem;
+		@include animation(cloud3 10s ease infinite);
 	}
 }
 
@@ -85,3 +88,38 @@ header {
   }
 }
 
+@include keyframes(cloud1) {
+  0% {
+    left:2rem;
+  }
+  50% {
+    left:2.5rem;
+  }
+  100% {
+	left:2rem;
+  }
+}
+
+@include keyframes(cloud2) {
+  0% {
+    right:3rem;
+  }
+  50% {
+    right:3.7rem;
+  }
+  100% {
+	right:3rem;
+  }
+}
+
+@include keyframes(cloud3) {
+  0% {
+    left:1rem;
+  }
+  50% {
+    left:5rem;
+  }
+  100% {
+	left:1rem;
+  }
+}
