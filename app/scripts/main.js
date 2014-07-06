@@ -18,6 +18,7 @@ $(function() {
             }
         });
         $title.animate({top:'5%'}, 300);
+        $shadow.animate({width:'12rem'}, 300);
 
     };
 
@@ -32,6 +33,7 @@ $(function() {
             }
         });
         $title.animate({top:'20%'}, 600);
+        $shadow.animate({width:'15rem'}, 600);
 
     };
 
