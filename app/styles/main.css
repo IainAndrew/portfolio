@@ -290,7 +290,7 @@ main {
       clear: both; }
 
 header {
-  background: #78C1B6;
+  background-color: #78C1B6;
   height: 100vh;
   width: 100%;
   text-align: center;
@@ -371,6 +371,16 @@ header {
     -webkit-animation: cloud3 10s ease infinite;
     -moz-animation: cloud3 10s ease infinite;
     animation: cloud3 10s ease infinite; }
+  header .train-bg {
+    opacity: 0;
+    background: url(../../images/train.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0; }
 
 @-webkit-keyframes float {
   0% {

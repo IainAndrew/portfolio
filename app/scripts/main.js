@@ -47,3 +47,11 @@ $(function() {
     }, 2000);
 
 });
+
+setTimeout(function() {
+    
+    var $trainBG = $('header .train-bg');
+
+    $trainBG.animate({opacity:1}, 1000);
+
+}, 6000);

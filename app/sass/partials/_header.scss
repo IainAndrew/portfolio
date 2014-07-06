@@ -1,5 +1,5 @@
 header {
-	background:#78C1B6;
+	background-color:#78C1B6;
 	height:100vh;
 	width:100%;
 	text-align:center;
@@ -43,7 +43,6 @@ header {
 		position:absolute;
 		top:20%;
 		left:50%;
-		//width:50%;
 		width:15rem;
 		height:1rem;
 		background:black;
@@ -73,6 +72,18 @@ header {
 		bottom:8rem;
 		left:1rem;
 		@include animation(cloud3 10s ease infinite);
+	}
+
+	.train-bg {
+		opacity:0;
+		background:url(../../images/train.jpg);
+		background-size:cover;
+		background-position:center;
+		height:100vh;
+		width:100%;
+		position:absolute;
+		top:0;
+		left:0;
 	}
 }
 
