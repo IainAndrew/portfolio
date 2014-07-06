@@ -346,6 +346,22 @@ header {
     -ms-transform: translateX(-50%);
     -o-transform: translateX(-50%);
     transform: translateX(-50%); }
+  header .island-cloud {
+    width: 25%;
+    max-width: inherit;
+    position: absolute; }
+  header .cloud-1 {
+    max-width: 357px;
+    top: 2rem;
+    left: 2rem; }
+  header .cloud-2 {
+    max-width: 279px;
+    top: 10rem;
+    right: 3rem; }
+  header .cloud-3 {
+    max-width: 257px;
+    bottom: 8rem;
+    left: 1rem; }
 
 @-webkit-keyframes float {
   0% {

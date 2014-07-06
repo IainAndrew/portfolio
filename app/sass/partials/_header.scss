@@ -51,6 +51,26 @@ header {
 		opacity:0.2;
 		@include transform(translateX(-50%));
 	}
+	.island-cloud {
+		width:25%;
+		max-width:inherit;
+		position:absolute;
+	}
+	.cloud-1 {
+		max-width:357px;
+		top:2rem;
+		left:2rem;
+	}
+	.cloud-2 {
+		max-width:279px;
+		top:10rem;
+		right:3rem;
+	}
+	.cloud-3 {
+		max-width:257px;
+		bottom:8rem;
+		left:1rem;
+	}
 }
 
 @include keyframes(float) {
