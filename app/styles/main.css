@@ -212,6 +212,12 @@ table {
   src: url("../../styles/fonts/librebaskerville-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../../styles/fonts/librebaskerville-italic-webfont.woff") format("woff"), url("../../styles/fonts/librebaskerville-italic-webfont.ttf") format("truetype"), url("../../styles/fonts/librebaskerville-italic-webfont.svg#libre_baskervilleitalic") format("svg");
   font-weight: normal;
   font-style: normal; }
+@font-face {
+  font-family: 'bubblegumregular';
+  src: url("../../styles/fonts/bubblegum-webfont.eot");
+  src: url("../../styles/fonts/bubblegum-webfont.eot?#iefix") format("embedded-opentype"), url("../../styles/fonts/bubblegum-webfont.woff") format("woff"), url("../../styles/fonts/bubblegum-webfont.ttf") format("truetype"), url("../../styles/fonts/bubblegum-webfont.svg#bubblegumregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 .v-align:after, section.intro .intro-outer .intro-inner:after {
   display: inline-block;
   height: 100%;
@@ -295,11 +301,13 @@ header {
     position: relative;
     top: 20%;
     text-transform: uppercase;
-    font-family: "proxima_nova_rgbold";
+    font-family: "bubblegumregular";
+    font-weight: normal;
     color: #fff;
-    font-size: 4em;
-    z-index: 1; }
-  header img.island {
+    font-size: 5em;
+    z-index: 1;
+    text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.6); }
+  header .island-wrap {
     position: absolute;
     top: 30%;
     left: 50%;
@@ -311,13 +319,22 @@ header {
     -webkit-animation: float 3s ease infinite;
     -moz-animation: float 3s ease infinite;
     animation: float 3s ease infinite; }
+  header img.island-shadow {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%); }
 
 @-webkit-keyframes float {
   0% {
     top: 30%; }
 
   50% {
-    top: 32%; }
+    top: 31%; }
 
   100% {
     top: 30%; } }
@@ -326,7 +343,7 @@ header {
     top: 30%; }
 
   50% {
-    top: 32%; }
+    top: 31%; }
 
   100% {
     top: 30%; } }
@@ -335,7 +352,7 @@ header {
     top: 30%; }
 
   50% {
-    top: 32%; }
+    top: 31%; }
 
   100% {
     top: 30%; } }

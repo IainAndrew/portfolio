@@ -1,6 +1,7 @@
 $(function() {
 
-    var $title = $('#header-title');
+    var $title = $('#header-title'),
+        $shadow = $('.island-shadow');
 
     $title.arctext({
         radius: -1
