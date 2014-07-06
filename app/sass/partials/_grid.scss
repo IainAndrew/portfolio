@@ -1,6 +1,7 @@
 $mobile: new-breakpoint(min-width 0px);
 $tablet: new-breakpoint(min-width 480px);
 $desktop: new-breakpoint(min-width 768px);
+$widescreen: new-breakpoint(min-width 1281px);
 
 /*
 .wrapper {

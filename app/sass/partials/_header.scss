@@ -4,31 +4,46 @@ header {
 	width:100%;
 	text-align:center;
 	position:relative;
+	overflow:hidden;
 	h1.header-title {
 		margin:0;
-		margin-left:-5rem;
 		position:relative;
 		top:20%;
 		text-transform:uppercase;
 		font-family:$header-bubble-font;
 		font-weight:normal;
 		color:#fff;
-		font-size:5em;
+		font-size:2.8em;
 		z-index:1;
 		text-shadow:
 	    0px 4px 5px rgba(0, 0, 0, 0.6);
+	    @include media($tablet) {
+			font-size:4.6em;
+		}
+		@include media($desktop) {
+			font-size:6em;
+		}
+		@include media($widescreen) {
+			font-size:7.5em;
+		}
 	}
 	.island-wrap {
 		position:absolute;
-		top:30%;
+		top:37%;
 		left:50%;
+		width:100%;
 		@include transform(translateX(-50%));
 		@include animation(float 3s ease infinite);
+	}
+	img.island {
+		width:100%;
+		max-width:566px;
 	}
 	.island-shadow {
 		position:absolute;
 		top:20%;
 		left:50%;
+		//width:50%;
 		width:15rem;
 		height:1rem;
 		background:black;
@@ -40,12 +55,13 @@ header {
 
 @include keyframes(float) {
   0% {
-    top: 30%;
+    top: 37%;
   }
   50% {
-    top:31%;
+    top:38%;
   }
   100% {
-	top:30%;
+	top:37%;
   }
 }
+
