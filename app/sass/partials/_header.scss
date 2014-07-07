@@ -17,6 +17,7 @@ header {
 		z-index:1;
 		text-shadow:
 	    0px 4px 5px rgba(0, 0, 0, 0.6);
+	    @include transition(color 1s);
 	    @include media($tablet) {
 			font-size:4.6em;
 		}

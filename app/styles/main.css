@@ -218,6 +218,12 @@ table {
   src: url("../../styles/fonts/bubblegum-webfont.eot?#iefix") format("embedded-opentype"), url("../../styles/fonts/bubblegum-webfont.woff") format("woff"), url("../../styles/fonts/bubblegum-webfont.ttf") format("truetype"), url("../../styles/fonts/bubblegum-webfont.svg#bubblegumregular") format("svg");
   font-weight: normal;
   font-style: normal; }
+@font-face {
+  font-family: 'zigzag-notroundeduploadedfile';
+  src: url("zigzag-notrounded-webfont.eot");
+  src: url("zigzag-notrounded-webfont.eot?#iefix") format("embedded-opentype"), url("zigzag-notrounded-webfont.woff") format("woff"), url("zigzag-notrounded-webfont.ttf") format("truetype"), url("zigzag-notrounded-webfont.svg#zigzag-notroundeduploadedfile") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 .v-align:after, section.intro .intro-outer .intro-inner:after {
   display: inline-block;
   height: 100%;
@@ -306,7 +312,10 @@ header {
     color: #fff;
     font-size: 2.8em;
     z-index: 1;
-    text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.6); }
+    text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.6);
+    -webkit-transition: color 1s;
+    -moz-transition: color 1s;
+    transition: color 1s; }
     @media screen and (min-width: 480px) {
       header h1.header-title {
         font-size: 4.6em; } }
