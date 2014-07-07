@@ -15,7 +15,7 @@ var titleArcUp = function() {
             easing  : 'ease-in'
         }
     });
-    $title.animate({top:'5%'}, 300);
+    $title.animate({marginTop:'-10%'}, 300);
     $shadow.animate({width:'12rem'}, 300);
 
 };
@@ -30,7 +30,7 @@ var titleArcDown = function() {
             easing  : 'ease-out'
         }
     });
-    $title.animate({top:'20%'}, 600);
+    $title.animate({marginTop:0}, 600);
     $shadow.animate({width:'15rem'}, 600);
 
 };
@@ -67,10 +67,11 @@ setTimeout(function() {
         $(this).hide();
     });
 
-    $title.css({
-        'font-family': 'Helvetica',
-        color: '#00D7A6'
+    $title.addClass('header-abstract').css({
+        top:0
     });
+
+    //$('.char4').html('&#x25fc;');
 
     clearInterval(titleArc);
 

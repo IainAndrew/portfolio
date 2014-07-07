@@ -30,6 +30,10 @@
     padding: 0.2em 0;
 }
 
+html, body {
+    @include box-sizing(border-box);
+}
+
 p {
     font-family:$verdana;
     @include transition(all 0.2s ease);
