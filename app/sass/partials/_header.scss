@@ -89,48 +89,48 @@ header {
 
 @include keyframes(float) {
   0% {
-    top: 37%;
+    margin-top:0;
   }
   50% {
-    top:38%;
+    margin-top:0.5%;
   }
   100% {
-	top:37%;
+	margin-top:0;
   }
 }
 
 @include keyframes(cloud1) {
   0% {
-    left:2rem;
+    margin-left:0;
   }
   50% {
-    left:2.5rem;
+    margin-left:1rem;
   }
   100% {
-	left:2rem;
+	margin-left:0;
   }
 }
 
 @include keyframes(cloud2) {
   0% {
-    right:3rem;
+    margin-right:0;
   }
   50% {
-    right:3.7rem;
+    margin-right:0.8rem;
   }
   100% {
-	right:3rem;
+	margin-right:0;
   }
 }
 
 @include keyframes(cloud3) {
   0% {
-    left:1rem;
+    margin-left:0;
   }
   50% {
-    left:5rem;
+    margin-left:2rem;
   }
   100% {
-	left:1rem;
+	margin-left:0;
   }
 }

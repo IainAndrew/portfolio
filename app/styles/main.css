@@ -384,112 +384,112 @@ header {
 
 @-webkit-keyframes float {
   0% {
-    top: 37%; }
+    margin-top: 0; }
 
   50% {
-    top: 38%; }
+    margin-top: 0.5%; }
 
   100% {
-    top: 37%; } }
+    margin-top: 0; } }
 @-moz-keyframes float {
   0% {
-    top: 37%; }
+    margin-top: 0; }
 
   50% {
-    top: 38%; }
+    margin-top: 0.5%; }
 
   100% {
-    top: 37%; } }
+    margin-top: 0; } }
 @keyframes float {
   0% {
-    top: 37%; }
+    margin-top: 0; }
 
   50% {
-    top: 38%; }
+    margin-top: 0.5%; }
 
   100% {
-    top: 37%; } }
+    margin-top: 0; } }
 @-webkit-keyframes cloud1 {
   0% {
-    left: 2rem; }
+    margin-left: 0; }
 
   50% {
-    left: 2.5rem; }
+    margin-left: 1rem; }
 
   100% {
-    left: 2rem; } }
+    margin-left: 0; } }
 @-moz-keyframes cloud1 {
   0% {
-    left: 2rem; }
+    margin-left: 0; }
 
   50% {
-    left: 2.5rem; }
+    margin-left: 1rem; }
 
   100% {
-    left: 2rem; } }
+    margin-left: 0; } }
 @keyframes cloud1 {
   0% {
-    left: 2rem; }
+    margin-left: 0; }
 
   50% {
-    left: 2.5rem; }
+    margin-left: 1rem; }
 
   100% {
-    left: 2rem; } }
+    margin-left: 0; } }
 @-webkit-keyframes cloud2 {
   0% {
-    right: 3rem; }
+    margin-right: 0; }
 
   50% {
-    right: 3.7rem; }
+    margin-right: 0.8rem; }
 
   100% {
-    right: 3rem; } }
+    margin-right: 0; } }
 @-moz-keyframes cloud2 {
   0% {
-    right: 3rem; }
+    margin-right: 0; }
 
   50% {
-    right: 3.7rem; }
+    margin-right: 0.8rem; }
 
   100% {
-    right: 3rem; } }
+    margin-right: 0; } }
 @keyframes cloud2 {
   0% {
-    right: 3rem; }
+    margin-right: 0; }
 
   50% {
-    right: 3.7rem; }
+    margin-right: 0.8rem; }
 
   100% {
-    right: 3rem; } }
+    margin-right: 0; } }
 @-webkit-keyframes cloud3 {
   0% {
-    left: 1rem; }
+    margin-left: 0; }
 
   50% {
-    left: 5rem; }
+    margin-left: 2rem; }
 
   100% {
-    left: 1rem; } }
+    margin-left: 0; } }
 @-moz-keyframes cloud3 {
   0% {
-    left: 1rem; }
+    margin-left: 0; }
 
   50% {
-    left: 5rem; }
+    margin-left: 2rem; }
 
   100% {
-    left: 1rem; } }
+    margin-left: 0; } }
 @keyframes cloud3 {
   0% {
-    left: 1rem; }
+    margin-left: 0; }
 
   50% {
-    left: 5rem; }
+    margin-left: 2rem; }
 
   100% {
-    left: 1rem; } }
+    margin-left: 0; } }
 section.intro .intro-outer {
   border: 1px solid #f7505a;
   width: 50%;
