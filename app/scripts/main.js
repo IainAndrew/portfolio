@@ -69,16 +69,33 @@ setTimeout(function() {
 
     $title.addClass('header-abstract');
 
-    $title.find('.char1').animate({top:'-15%', left:'8%'}, 1500);
-    $title.find('.char2').animate({top:'-15%', left:'18%'}, 1500);
-    $title.find('.char3').animate({top:'0', left:'15%'}, 1500);
-    $title.find('.char4').animate({top:'0', left:'20%'}, 1500);
-    $title.find('.char6').animate({top:'23%', left:'-10%'}, 1500);
-    $title.find('.char7').animate({top:'23%', left:'-11%'}, 1500);
-    $title.find('.char8').animate({top:'23%', left:'8%'}, 1500);
-    $title.find('.char9').animate({top:'50%', left:'-20%'}, 1500);
-    $title.find('.char10').animate({top:'50%', left:'-10%'}, 1500);
-    $title.find('.char11').animate({top:'50%', left:'-5%'}, 1500);
+    if (window.innerWidth <= 480) {
+
+        $title.find('.char1').animate({top:'-15%', left:'8%'}, 1500);
+        $title.find('.char2').animate({top:'-15%', left:'18%'}, 1500);
+        $title.find('.char3').animate({top:'0', left:'15%'}, 1500);
+        $title.find('.char4').animate({top:'0', left:'20%'}, 1500);
+        $title.find('.char6').animate({top:'23%', left:'-10%'}, 1500);
+        $title.find('.char7').animate({top:'23%', left:'-11%'}, 1500);
+        $title.find('.char8').animate({top:'23%', left:'8%'}, 1500);
+        $title.find('.char9').animate({top:'50%', left:'-20%'}, 1500);
+        $title.find('.char10').animate({top:'50%', left:'-10%'}, 1500);
+        $title.find('.char11').animate({top:'50%', left:'-5%'}, 1500);
+
+    } else if (window.innerWidth > 480) {
+
+        $title.find('.char1').animate({top:'-15%', left:'0'}, 1500);
+        $title.find('.char2').animate({top:'-15%', left:'12%'}, 1500);
+        $title.find('.char3').animate({top:'0', left:'15%'}, 1500);
+        $title.find('.char4').animate({top:'0', left:'20%'}, 1500);
+        $title.find('.char6').animate({top:'23%', left:'-5%'}, 1500);
+        $title.find('.char7').animate({top:'23%', left:'-5%'}, 1500);
+        $title.find('.char8').animate({top:'23%', left:'14%'}, 1500);
+        $title.find('.char9').animate({top:'50%', left:'-15%'}, 1500);
+        $title.find('.char10').animate({top:'50%', left:'-5%'}, 1500);
+        $title.find('.char11').animate({top:'50%', left:'0%'}, 1500);
+
+    }
 
     $('.square').each(function(i) {
         $(this).delay(2000).delay(i * 100).fadeIn();
