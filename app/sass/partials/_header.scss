@@ -96,6 +96,37 @@ header {
 		top:0;
 		left:0;
 	}
+	.zigzag {
+		/*
+		background:url(../../images/zigzag.png);
+		background-size:cover;
+		background-position:center;
+		*/
+		height:100vh;
+		width:0;
+		position:absolute;
+		top:0;
+		left:0;
+		z-index:2;
+		overflow:hidden;
+		img {
+			position:relative;
+			top:-120%;
+			@include media($tablet) {
+				top:-100%;
+			}
+			@include media($desktop) {
+				top:-70%;
+			}
+			@include media($widescreen) {
+				top:0;
+			}
+		}
+		&.zigzag-appear {
+			@include animation(zigzag 3s linear);
+			@include animation-fill-mode(forwards);
+		}
+	}
 	.square {
 		position:absolute;
 		background:#000;
@@ -275,4 +306,13 @@ header {
   100% {
 	@include transform(scale(1) rotate(45deg));
   }
+}
+
+@include keyframes(zigzag) {
+	from {
+		width:0;
+	}
+	to {
+		width:100%;
+	}
 }

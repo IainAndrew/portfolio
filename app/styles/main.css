@@ -398,6 +398,38 @@ header {
     position: absolute;
     top: 0;
     left: 0; }
+  header .zigzag {
+    /*
+    background:url(../../images/zigzag.png);
+    background-size:cover;
+    background-position:center;
+    */
+    height: 100vh;
+    width: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    overflow: hidden; }
+    header .zigzag img {
+      position: relative;
+      top: -120%; }
+      @media screen and (min-width: 480px) {
+        header .zigzag img {
+          top: -100%; } }
+      @media screen and (min-width: 768px) {
+        header .zigzag img {
+          top: -70%; } }
+      @media screen and (min-width: 1281px) {
+        header .zigzag img {
+          top: 0; } }
+    header .zigzag.zigzag-appear {
+      -webkit-animation: zigzag 3s linear;
+      -moz-animation: zigzag 3s linear;
+      animation: zigzag 3s linear;
+      -webkit-animation-fill-mode: forwards;
+      -moz-animation-fill-mode: forwards;
+      animation-fill-mode: forwards; }
   header .square {
     position: absolute;
     background: #000;
@@ -673,6 +705,24 @@ header {
     -ms-transform: scale(1) rotate(45deg);
     -o-transform: scale(1) rotate(45deg);
     transform: scale(1) rotate(45deg); } }
+@-webkit-keyframes zigzag {
+  from {
+    width: 0; }
+
+  to {
+    width: 100%; } }
+@-moz-keyframes zigzag {
+  from {
+    width: 0; }
+
+  to {
+    width: 100%; } }
+@keyframes zigzag {
+  from {
+    width: 0; }
+
+  to {
+    width: 100%; } }
 section.intro .intro-outer {
   border: 1px solid #f7505a;
   width: 50%;

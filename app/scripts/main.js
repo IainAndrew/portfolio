@@ -81,8 +81,10 @@ setTimeout(function() {
     $title.find('.char11').animate({top:'50%', left:'-5%'}, 1500);
 
     $('.square').each(function(i) {
-        $(this).delay(i * 100).fadeIn();
+        $(this).delay(2000).delay(i * 100).fadeIn();
     });
+
+    $('.zigzag').addClass('zigzag-appear');
 
     //$('.char4').html('&#x25fc;');
 
