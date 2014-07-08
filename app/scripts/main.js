@@ -47,13 +47,13 @@ var titleArc = setInterval(function() {
 
 setTimeout(function() {
     
-    var $trainBG = $('header .train-bg'),
+    var $abstractBG = $('header .abstract-bg'),
         $island = $('header .island-wrap'),
         $cloud1 = $('header .cloud-1'),
         $cloud2 = $('header .cloud-2'),
         $cloud3 = $('header .cloud-3');
 
-    $trainBG.animate({opacity:1}, 1000);
+    $abstractBG.animate({opacity:1}, 1000);
     $island.animate({top:'100%'}, 1000, function() {
         $(this).hide();
     });
@@ -67,9 +67,18 @@ setTimeout(function() {
         $(this).hide();
     });
 
-    $title.addClass('header-abstract').css({
-        top:0
-    });
+    $title.addClass('header-abstract');
+
+    $title.find('.char1').animate({top:'-15%', left:'8%'}, 1500);
+    $title.find('.char2').animate({top:'-15%', left:'18%'}, 1500);
+    $title.find('.char3').animate({top:'0', left:'15%'}, 1500);
+    $title.find('.char4').animate({top:'0', left:'20%'}, 1500);
+    $title.find('.char6').animate({top:'23%', left:'-10%'}, 1500);
+    $title.find('.char7').animate({top:'23%', left:'-11%'}, 1500);
+    $title.find('.char8').animate({top:'23%', left:'8%'}, 1500);
+    $title.find('.char9').animate({top:'50%', left:'-20%'}, 1500);
+    $title.find('.char10').animate({top:'50%', left:'-10%'}, 1500);
+    $title.find('.char11').animate({top:'50%', left:'-5%'}, 1500);
 
     //$('.char4').html('&#x25fc;');
 
