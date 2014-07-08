@@ -80,6 +80,10 @@ setTimeout(function() {
     $title.find('.char10').animate({top:'50%', left:'-10%'}, 1500);
     $title.find('.char11').animate({top:'50%', left:'-5%'}, 1500);
 
+    $('.square').each(function(i) {
+        $(this).delay(i * 100).fadeIn();
+    });
+
     //$('.char4').html('&#x25fc;');
 
     clearInterval(titleArc);
@@ -88,6 +92,6 @@ setTimeout(function() {
 
 setTimeout(function() {
 
+    //$title.find('span').animate({top:0, left:0}, 1000);
 
-
-}, 7000);
+}, 15000);

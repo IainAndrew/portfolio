@@ -404,6 +404,7 @@ header {
     opacity: 0.2;
     width: 15rem;
     height: 15rem;
+    display: none;
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     -ms-transform: rotate(45deg);

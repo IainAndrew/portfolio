@@ -102,6 +102,7 @@ header {
 		opacity:0.2;
 		width:15rem;
 		height:15rem;
+		display:none;
 		@include transform(rotate(45deg));
 	    @include media($tablet) {
 			width:20rem;
