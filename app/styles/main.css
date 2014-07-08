@@ -417,6 +417,14 @@ header {
       header .square {
         width: 25rem;
         height: 25rem; } }
+    header .square.square-primary {
+      -webkit-animation: squares1 3s ease infinite;
+      -moz-animation: squares1 3s ease infinite;
+      animation: squares1 3s ease infinite; }
+    header .square.square-secondary {
+      -webkit-animation: squares2 3s ease infinite;
+      -moz-animation: squares2 3s ease infinite;
+      animation: squares2 3s ease infinite; }
     header .square.square-1 {
       top: 0;
       left: 0; }
@@ -586,6 +594,84 @@ header {
 
   100% {
     margin-left: 0; } }
+@-webkit-keyframes squares1 {
+  0% {
+    -webkit-transform: scale(1) rotate(45deg); }
+
+  50% {
+    -webkit-transform: scale(1.1) rotate(45deg); }
+
+  100% {
+    -webkit-transform: scale(1) rotate(45deg); } }
+@-moz-keyframes squares1 {
+  0% {
+    -moz-transform: scale(1) rotate(45deg); }
+
+  50% {
+    -moz-transform: scale(1.1) rotate(45deg); }
+
+  100% {
+    -moz-transform: scale(1) rotate(45deg); } }
+@keyframes squares1 {
+  0% {
+    -webkit-transform: scale(1) rotate(45deg);
+    -moz-transform: scale(1) rotate(45deg);
+    -ms-transform: scale(1) rotate(45deg);
+    -o-transform: scale(1) rotate(45deg);
+    transform: scale(1) rotate(45deg); }
+
+  50% {
+    -webkit-transform: scale(1.1) rotate(45deg);
+    -moz-transform: scale(1.1) rotate(45deg);
+    -ms-transform: scale(1.1) rotate(45deg);
+    -o-transform: scale(1.1) rotate(45deg);
+    transform: scale(1.1) rotate(45deg); }
+
+  100% {
+    -webkit-transform: scale(1) rotate(45deg);
+    -moz-transform: scale(1) rotate(45deg);
+    -ms-transform: scale(1) rotate(45deg);
+    -o-transform: scale(1) rotate(45deg);
+    transform: scale(1) rotate(45deg); } }
+@-webkit-keyframes squares2 {
+  0% {
+    -webkit-transform: scale(1) rotate(45deg); }
+
+  50% {
+    -webkit-transform: scale(0.6) rotate(45deg); }
+
+  100% {
+    -webkit-transform: scale(1) rotate(45deg); } }
+@-moz-keyframes squares2 {
+  0% {
+    -moz-transform: scale(1) rotate(45deg); }
+
+  50% {
+    -moz-transform: scale(0.6) rotate(45deg); }
+
+  100% {
+    -moz-transform: scale(1) rotate(45deg); } }
+@keyframes squares2 {
+  0% {
+    -webkit-transform: scale(1) rotate(45deg);
+    -moz-transform: scale(1) rotate(45deg);
+    -ms-transform: scale(1) rotate(45deg);
+    -o-transform: scale(1) rotate(45deg);
+    transform: scale(1) rotate(45deg); }
+
+  50% {
+    -webkit-transform: scale(0.6) rotate(45deg);
+    -moz-transform: scale(0.6) rotate(45deg);
+    -ms-transform: scale(0.6) rotate(45deg);
+    -o-transform: scale(0.6) rotate(45deg);
+    transform: scale(0.6) rotate(45deg); }
+
+  100% {
+    -webkit-transform: scale(1) rotate(45deg);
+    -moz-transform: scale(1) rotate(45deg);
+    -ms-transform: scale(1) rotate(45deg);
+    -o-transform: scale(1) rotate(45deg);
+    transform: scale(1) rotate(45deg); } }
 section.intro .intro-outer {
   border: 1px solid #f7505a;
   width: 50%;

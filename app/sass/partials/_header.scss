@@ -102,6 +102,7 @@ header {
 		opacity:0.2;
 		width:15rem;
 		height:15rem;
+		@include transform(rotate(45deg));
 	    @include media($tablet) {
 			width:20rem;
 			height:20rem;
@@ -113,7 +114,12 @@ header {
 		@include media($widescreen) {
 			
 		}
-		@include transform(rotate(45deg));
+		&.square-primary {
+			@include animation(squares1 3s ease infinite);
+		}
+		&.square-secondary {
+			@include animation(squares2 3s ease infinite);
+		}
 		&.square-1 {
 			top:0;
 			left:0;
@@ -246,3 +252,26 @@ header {
   }
 }
 
+@include keyframes(squares1) {
+  0% {
+    @include transform(scale(1) rotate(45deg));
+  }
+  50% {
+    @include transform(scale(1.1) rotate(45deg));
+  }
+  100% {
+	@include transform(scale(1) rotate(45deg));
+  }
+}
+
+@include keyframes(squares2) {
+  0% {
+    @include transform(scale(1) rotate(45deg));
+  }
+  50% {
+    @include transform(scale(0.6) rotate(45deg));
+  }
+  100% {
+	@include transform(scale(1) rotate(45deg));
+  }
+}
