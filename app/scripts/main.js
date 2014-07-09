@@ -111,6 +111,12 @@ setTimeout(function() {
 
 setTimeout(function() {
 
-    //$title.find('span').animate({top:0, left:0}, 1000);
+    $title.find('span').animate({top:0, left:0}, 1000);
+    //$title.delay(1000).animate({marginLeft:'-6rem'}, 500);
+    //$title.removeClass('header-abstract');
+    $title.css({
+        color:'white',
+        'font-family': 'helvetica'
+    });
 
-}, 15000);
+}, 12000);
