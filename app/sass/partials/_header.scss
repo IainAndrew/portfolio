@@ -129,7 +129,11 @@ header {
 			}
 		}
 		&.zigzag-appear {
-			@include animation(zigzag 3s linear);
+			@include animation(zigzagAppear 3s linear);
+			@include animation-fill-mode(forwards);
+		}
+		&.zigzag-disappear {
+			@include animation(zigzagDisappear 1s linear);
 			@include animation-fill-mode(forwards);
 		}
 	}
@@ -314,11 +318,20 @@ header {
   }
 }
 
-@include keyframes(zigzag) {
+@include keyframes(zigzagAppear) {
 	from {
 		width:0;
 	}
 	to {
 		width:100%;
+	}
+}
+
+@include keyframes(zigzagDisappear) {
+	from {
+		width:100%;
+	}
+	to {
+		width:0;
 	}
 }

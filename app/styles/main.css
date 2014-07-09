@@ -430,9 +430,16 @@ header {
         header .zigzag img {
           top: 0; } }
     header .zigzag.zigzag-appear {
-      -webkit-animation: zigzag 3s linear;
-      -moz-animation: zigzag 3s linear;
-      animation: zigzag 3s linear;
+      -webkit-animation: zigzagAppear 3s linear;
+      -moz-animation: zigzagAppear 3s linear;
+      animation: zigzagAppear 3s linear;
+      -webkit-animation-fill-mode: forwards;
+      -moz-animation-fill-mode: forwards;
+      animation-fill-mode: forwards; }
+    header .zigzag.zigzag-disappear {
+      -webkit-animation: zigzagDisappear 1s linear;
+      -moz-animation: zigzagDisappear 1s linear;
+      animation: zigzagDisappear 1s linear;
       -webkit-animation-fill-mode: forwards;
       -moz-animation-fill-mode: forwards;
       animation-fill-mode: forwards; }
@@ -711,24 +718,42 @@ header {
     -ms-transform: scale(1) rotate(45deg);
     -o-transform: scale(1) rotate(45deg);
     transform: scale(1) rotate(45deg); } }
-@-webkit-keyframes zigzag {
+@-webkit-keyframes zigzagAppear {
   from {
     width: 0; }
 
   to {
     width: 100%; } }
-@-moz-keyframes zigzag {
+@-moz-keyframes zigzagAppear {
   from {
     width: 0; }
 
   to {
     width: 100%; } }
-@keyframes zigzag {
+@keyframes zigzagAppear {
   from {
     width: 0; }
 
   to {
     width: 100%; } }
+@-webkit-keyframes zigzagDisappear {
+  from {
+    width: 100%; }
+
+  to {
+    width: 0; } }
+@-moz-keyframes zigzagDisappear {
+  from {
+    width: 100%; }
+
+  to {
+    width: 0; } }
+@keyframes zigzagDisappear {
+  from {
+    width: 100%; }
+
+  to {
+    width: 0; } }
 section.intro .intro-outer {
   border: 1px solid #f7505a;
   width: 50%;
