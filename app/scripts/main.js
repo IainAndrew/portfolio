@@ -6,7 +6,8 @@ var all = function() {
         $island = $('header .island-wrap'),
         $cloud1 = $('header .cloud-1'),
         $cloud2 = $('header .cloud-2'),
-        $cloud3 = $('header .cloud-3');
+        $cloud3 = $('header .cloud-3'),
+        $treeBG = $('header .tree-item');
 
     $title.arctext({
         radius: -1
@@ -109,7 +110,7 @@ var all = function() {
 
         clearInterval(titleArc);
 
-    }, 5500);
+    }, 1000); //5500
 
     setTimeout(function() {
 
@@ -118,14 +119,20 @@ var all = function() {
         $title.removeClass('header-abstract');
 
         $('.square').each(function(i) {
-            $(this).delay(i * 100).fadeOut();
+            $(this).delay(i * 50).fadeOut();
         });
 
         $abstractBG.animate({opacity:0}, 1000);
 
         $('.zigzag').addClass('zigzag-disappear').removeClass('zigzag-appear');
 
-    }, 12000);
+        $title.addClass('header-tree');
+
+        $abstractBG.animate({opacity:0}, 1000);
+
+        $treeBG.animate({opacity:1}, 1000);
+
+    }, 3000); // 12000
 
     setTimeout(function() {
 
@@ -136,12 +143,19 @@ var all = function() {
 
         $('.zigzag').removeClass('zigzag-disappear');
 
-    }, 14000);
+        $title.removeClass('header-tree');
+
+        $treeBG.animate({opacity:0}, 1000);
+
+    }, 100000);
 };
+
+
+
 
 all();
 var allInterval = setInterval(function() {
 
     all();
 
-}, 14000);
+}, 100000);
