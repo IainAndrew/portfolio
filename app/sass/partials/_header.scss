@@ -37,12 +37,11 @@ header {
 			height:100%;
 		}
 		&.header-tree {
-			font-family:Helvetica;
+			font-family:$heading-font;
 			color:white;
 			text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.6);
 			width:auto;
 			height:auto;
-			font-weight:bold;
 		}
 	}
 	.island-wrap {
@@ -134,7 +133,7 @@ header {
 			@include animation-fill-mode(forwards);
 		}
 		&.zigzag-disappear {
-			@include animation(zigzagDisappear 1s linear);
+			@include animation(zigzagDisappear 3s ease);
 			@include animation-fill-mode(forwards);
 		}
 	}
@@ -263,20 +262,20 @@ header {
 		background-size:cover;
 		background-position:center;
 		z-index:2;
-		@include animation(branch1 6s ease infinite, branch2 10s ease infinite);
+		@include animation(branch1 5s ease infinite);
 	}
 	.leaf-2 {
 		background:url(../../images/leaf2.png);
 		background-size:cover;
 		background-position:center;
-		@include animation(branch1 8s ease infinite, branch2 10s ease infinite);
+		@include animation(branch1 6s ease infinite);
 	}
 	.branch {
 		background:url(../../images/branch.png);
 		background-size:cover;
 		background-position:center;
 		z-index:2;
-		@include animation(branch1 12s ease infinite, branch2 10s ease infinite);
+		@include animation(branch1 10s ease infinite);
 	}
 }
 
@@ -298,7 +297,7 @@ header {
     margin-left:0;
   }
   50% {
-    margin-left:1rem;
+    margin-left:2rem;
   }
   100% {
 	margin-left:0;
@@ -310,7 +309,7 @@ header {
     margin-right:0;
   }
   50% {
-    margin-right:0.8rem;
+    margin-right:1.3rem;
   }
   100% {
 	margin-right:0;
@@ -322,7 +321,7 @@ header {
     margin-left:0;
   }
   50% {
-    margin-left:2rem;
+    margin-left:3rem;
   }
   100% {
 	margin-left:0;
@@ -381,36 +380,4 @@ header {
     100% {
     	@include transform(rotate(0deg));
     }
-}
-@include media($mobile) {
-	@include keyframes(branch2) {
-	    0% {
-	    	background-position: center;
-	    }
-	    50% {
-	    	background-position: -51% 50%;
-	    }
-	    100% {
-	    	background-position: center;
-	    }
-	}
-}
-@include media($tablet) {
-	@include keyframes(branch2) {
-	    0% {
-	    	background-position: center;
-	    }
-	    50% {
-	    	background-position: -51% 50%;
-	    }
-	    100% {
-	    	background-position: center;
-	    }
-	}
-}
-@include media($desktop) {
-
-}
-@include media($widescreen) {
-
 }

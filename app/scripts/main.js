@@ -74,29 +74,42 @@ var all = function() {
 
         if (window.innerWidth <= 480) {
 
-            $title.find('.char1').animate({top:'-15%', left:'8%'}, 1500);
-            $title.find('.char2').animate({top:'-15%', left:'18%'}, 1500);
-            $title.find('.char3').animate({top:'0', left:'15%'}, 1500);
-            $title.find('.char4').animate({top:'0', left:'20%'}, 1500);
-            $title.find('.char6').animate({top:'23%', left:'-10%'}, 1500);
-            $title.find('.char7').animate({top:'23%', left:'-11%'}, 1500);
-            $title.find('.char8').animate({top:'23%', left:'8%'}, 1500);
+            $title.find('.char1').animate({top:'-10%', left:'8%'}, 1500);
+            $title.find('.char2').animate({top:'-10%', left:'18%'}, 1500);
+            $title.find('.char3').animate({top:'10%', left:'15%'}, 1500);
+            $title.find('.char4').animate({top:'10%', left:'20%'}, 1500);
+            $title.find('.char6').animate({top:'30%', left:'-10%'}, 1500);
+            $title.find('.char7').animate({top:'30%', left:'-11%'}, 1500);
+            $title.find('.char8').animate({top:'30%', left:'8%'}, 1500);
             $title.find('.char9').animate({top:'50%', left:'-20%'}, 1500);
             $title.find('.char10').animate({top:'50%', left:'-10%'}, 1500);
             $title.find('.char11').animate({top:'50%', left:'-5%'}, 1500);
 
-        } else if (window.innerWidth > 480) {
+        } else if (window.innerWidth <= 768) {
 
-            $title.find('.char1').animate({top:'-15%', left:'0'}, 1500);
-            $title.find('.char2').animate({top:'-15%', left:'12%'}, 1500);
-            $title.find('.char3').animate({top:'0', left:'15%'}, 1500);
-            $title.find('.char4').animate({top:'0', left:'20%'}, 1500);
-            $title.find('.char6').animate({top:'23%', left:'-5%'}, 1500);
-            $title.find('.char7').animate({top:'23%', left:'-5%'}, 1500);
-            $title.find('.char8').animate({top:'23%', left:'14%'}, 1500);
-            $title.find('.char9').animate({top:'50%', left:'-15%'}, 1500);
-            $title.find('.char10').animate({top:'50%', left:'-5%'}, 1500);
-            $title.find('.char11').animate({top:'50%', left:'0%'}, 1500);
+            $title.find('.char1').animate({top:'-10%', left:'-5%'}, 1500);
+            $title.find('.char2').animate({top:'-10%', left:'10%'}, 1500);
+            $title.find('.char3').animate({top:'10%', left:'5%'}, 1500);
+            $title.find('.char4').animate({top:'10%', left:'10%'}, 1500);
+            $title.find('.char6').animate({top:'30%', left:'-10%'}, 1500);
+            $title.find('.char7').animate({top:'30%', left:'-10%'}, 1500);
+            $title.find('.char8').animate({top:'30%', left:'5%'}, 1500);
+            $title.find('.char9').animate({top:'50%', left:'-20%'}, 1500);
+            $title.find('.char10').animate({top:'50%', left:'-10%'}, 1500);
+            $title.find('.char11').animate({top:'50%', left:'-5%'}, 1500);
+
+        } else if (window.innerWidth > 768) {
+
+            $title.find('.char1').animate({top:'-20%', left:'-5%'}, 1500);
+            $title.find('.char2').animate({top:'-20%', left:'10%'}, 1500);
+            $title.find('.char3').animate({top:'5%', left:'5%'}, 1500);
+            $title.find('.char4').animate({top:'5%', left:'10%'}, 1500);
+            $title.find('.char6').animate({top:'30%', left:'-10%'}, 1500);
+            $title.find('.char7').animate({top:'30%', left:'-10%'}, 1500);
+            $title.find('.char8').animate({top:'30%', left:'5%'}, 1500);
+            $title.find('.char9').animate({top:'55%', left:'-20%'}, 1500);
+            $title.find('.char10').animate({top:'55%', left:'-10%'}, 1500);
+            $title.find('.char11').animate({top:'55%', left:'-5%'}, 1500);
 
         }
 
@@ -110,29 +123,32 @@ var all = function() {
 
         clearInterval(titleArc);
 
-    }, 1000); //5500
+    }, 7000); //5500
 
     setTimeout(function() {
 
-        $title.find('span').animate({top:0, left:0}, {duration:1000, queue: false});
-        //$title.delay(1000).animate({marginLeft:'-6rem'}, 500);
-        $title.removeClass('header-abstract');
-
         $('.square').each(function(i) {
-            $(this).delay(i * 50).fadeOut();
+            $(this).delay(i * 20).fadeOut();
         });
+
+        $title.find('span').animate({top:0, left:0}, {duration:1000, queue: false});
+
+        setTimeout(function() {
+            $title.removeClass('header-abstract').addClass('header-tree');
+        }, 1000);
+        //$title.removeClass('header-abstract').addClass('header-tree');
 
         $abstractBG.animate({opacity:0}, 1000);
 
         $('.zigzag').addClass('zigzag-disappear').removeClass('zigzag-appear');
 
-        $title.addClass('header-tree');
+        //$title.addClass('header-tree');
 
         $abstractBG.animate({opacity:0}, 1000);
 
         $treeBG.animate({opacity:1}, 1000);
 
-    }, 3000); // 12000
+    }, 15000); // 12000
 
     setTimeout(function() {
 
@@ -147,7 +163,7 @@ var all = function() {
 
         $treeBG.animate({opacity:0}, 1000);
 
-    }, 100000);
+    }, 24000);
 };
 
 
@@ -158,4 +174,4 @@ var allInterval = setInterval(function() {
 
     all();
 
-}, 100000);
+}, 24000);

@@ -334,12 +334,11 @@ header {
       width: 100%;
       height: 100%; }
     header h1.header-title.header-tree {
-      font-family: Helvetica;
+      font-family: "proxima_nova_rgbold";
       color: white;
       text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.6);
       width: auto;
-      height: auto;
-      font-weight: bold; }
+      height: auto; }
   header .island-wrap {
     position: absolute;
     top: 37%;
@@ -438,9 +437,9 @@ header {
       -moz-animation-fill-mode: forwards;
       animation-fill-mode: forwards; }
     header .zigzag.zigzag-disappear {
-      -webkit-animation: zigzagDisappear 1s linear;
-      -moz-animation: zigzagDisappear 1s linear;
-      animation: zigzagDisappear 1s linear;
+      -webkit-animation: zigzagDisappear 3s ease;
+      -moz-animation: zigzagDisappear 3s ease;
+      animation: zigzagDisappear 3s ease;
       -webkit-animation-fill-mode: forwards;
       -moz-animation-fill-mode: forwards;
       animation-fill-mode: forwards; }
@@ -548,24 +547,24 @@ header {
     background-size: cover;
     background-position: center;
     z-index: 2;
-    -webkit-animation: branch1 6s ease infinite, branch2 10s ease infinite;
-    -moz-animation: branch1 6s ease infinite, branch2 10s ease infinite;
-    animation: branch1 6s ease infinite, branch2 10s ease infinite; }
+    -webkit-animation: branch1 5s ease infinite;
+    -moz-animation: branch1 5s ease infinite;
+    animation: branch1 5s ease infinite; }
   header .leaf-2 {
     background: url(../../images/leaf2.png);
     background-size: cover;
     background-position: center;
-    -webkit-animation: branch1 8s ease infinite, branch2 10s ease infinite;
-    -moz-animation: branch1 8s ease infinite, branch2 10s ease infinite;
-    animation: branch1 8s ease infinite, branch2 10s ease infinite; }
+    -webkit-animation: branch1 6s ease infinite;
+    -moz-animation: branch1 6s ease infinite;
+    animation: branch1 6s ease infinite; }
   header .branch {
     background: url(../../images/branch.png);
     background-size: cover;
     background-position: center;
     z-index: 2;
-    -webkit-animation: branch1 12s ease infinite, branch2 10s ease infinite;
-    -moz-animation: branch1 12s ease infinite, branch2 10s ease infinite;
-    animation: branch1 12s ease infinite, branch2 10s ease infinite; }
+    -webkit-animation: branch1 10s ease infinite;
+    -moz-animation: branch1 10s ease infinite;
+    animation: branch1 10s ease infinite; }
 
 @-webkit-keyframes float {
   0% {
@@ -599,7 +598,7 @@ header {
     margin-left: 0; }
 
   50% {
-    margin-left: 1rem; }
+    margin-left: 2rem; }
 
   100% {
     margin-left: 0; } }
@@ -608,7 +607,7 @@ header {
     margin-left: 0; }
 
   50% {
-    margin-left: 1rem; }
+    margin-left: 2rem; }
 
   100% {
     margin-left: 0; } }
@@ -617,7 +616,7 @@ header {
     margin-left: 0; }
 
   50% {
-    margin-left: 1rem; }
+    margin-left: 2rem; }
 
   100% {
     margin-left: 0; } }
@@ -626,7 +625,7 @@ header {
     margin-right: 0; }
 
   50% {
-    margin-right: 0.8rem; }
+    margin-right: 1.3rem; }
 
   100% {
     margin-right: 0; } }
@@ -635,7 +634,7 @@ header {
     margin-right: 0; }
 
   50% {
-    margin-right: 0.8rem; }
+    margin-right: 1.3rem; }
 
   100% {
     margin-right: 0; } }
@@ -644,7 +643,7 @@ header {
     margin-right: 0; }
 
   50% {
-    margin-right: 0.8rem; }
+    margin-right: 1.3rem; }
 
   100% {
     margin-right: 0; } }
@@ -653,7 +652,7 @@ header {
     margin-left: 0; }
 
   50% {
-    margin-left: 2rem; }
+    margin-left: 3rem; }
 
   100% {
     margin-left: 0; } }
@@ -662,7 +661,7 @@ header {
     margin-left: 0; }
 
   50% {
-    margin-left: 2rem; }
+    margin-left: 3rem; }
 
   100% {
     margin-left: 0; } }
@@ -671,7 +670,7 @@ header {
     margin-left: 0; }
 
   50% {
-    margin-left: 2rem; }
+    margin-left: 3rem; }
 
   100% {
     margin-left: 0; } }
@@ -828,62 +827,6 @@ header {
     -ms-transform: rotate(0deg);
     -o-transform: rotate(0deg);
     transform: rotate(0deg); } }
-@media screen and (min-width: 0px) {
-  @-webkit-keyframes branch2 {
-    0% {
-      background-position: center; }
-
-    50% {
-      background-position: -51% 50%; }
-
-    100% {
-      background-position: center; } }
-  @-moz-keyframes branch2 {
-    0% {
-      background-position: center; }
-
-    50% {
-      background-position: -51% 50%; }
-
-    100% {
-      background-position: center; } }
-  @keyframes branch2 {
-    0% {
-      background-position: center; }
-
-    50% {
-      background-position: -51% 50%; }
-
-    100% {
-      background-position: center; } } }
-@media screen and (min-width: 480px) {
-  @-webkit-keyframes branch2 {
-    0% {
-      background-position: center; }
-
-    50% {
-      background-position: -51% 50%; }
-
-    100% {
-      background-position: center; } }
-  @-moz-keyframes branch2 {
-    0% {
-      background-position: center; }
-
-    50% {
-      background-position: -51% 50%; }
-
-    100% {
-      background-position: center; } }
-  @keyframes branch2 {
-    0% {
-      background-position: center; }
-
-    50% {
-      background-position: -51% 50%; }
-
-    100% {
-      background-position: center; } } }
 section.intro .intro-outer {
   border: 1px solid #f7505a;
   width: 50%;
