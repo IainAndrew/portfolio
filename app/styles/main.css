@@ -944,9 +944,11 @@ section.projects {
   @media screen and (min-width: 768px) {
     section.projects {
       margin-top: 12rem; } }
-  @media screen and (min-width: 768px) {
-    section.projects .project {
-      padding: 0 2rem; } }
+  section.projects .project {
+    margin-top: 3rem; }
+    @media screen and (min-width: 768px) {
+      section.projects .project {
+        padding: 0 2rem; } }
 
 .project-image {
   background-image: url(http://lorempixel.com/700/500);
@@ -966,7 +968,7 @@ section.projects {
     text-transform: uppercase;
     font-size: 2em;
     margin: 0;
-    letter-spacing: 0.3em; }
+    letter-spacing: 0.2em; }
   .project-info hr {
     width: 40%;
     border: 1px solid #f8f419;
@@ -1018,6 +1020,10 @@ section.projects {
       -webkit-transition: all 0.1s;
       -moz-transition: all 0.1s;
       transition: all 0.1s; }
+    .project-info button:active {
+      font-size: 1.1em; }
+    .project-info button:focus {
+      outline: 0; }
 
 .no-touch .project-info button:hover {
   border-color: grey; }
