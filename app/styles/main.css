@@ -339,6 +339,15 @@ header {
       text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.6);
       width: auto;
       height: auto; }
+      @media screen and (min-width: 768px) {
+        header h1.header-title.header-tree {
+          font-size: 7.5em; } }
+      @media screen and (min-width: 1100px) {
+        header h1.header-title.header-tree {
+          font-size: 10em; } }
+      @media screen and (min-width: 1281px) {
+        header h1.header-title.header-tree {
+          font-size: 12em; } }
   header .island-wrap {
     position: absolute;
     top: 37%;
@@ -379,21 +388,36 @@ header {
     left: 2rem;
     -webkit-animation: cloud1 10s ease infinite;
     -moz-animation: cloud1 10s ease infinite;
-    animation: cloud1 10s ease infinite; }
+    animation: cloud1 10s ease infinite;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0); }
   header .cloud-2 {
     max-width: 279px;
     top: 10rem;
     right: 3rem;
     -webkit-animation: cloud2 10s ease infinite;
     -moz-animation: cloud2 10s ease infinite;
-    animation: cloud2 10s ease infinite; }
+    animation: cloud2 10s ease infinite;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0); }
   header .cloud-3 {
     max-width: 257px;
     bottom: 8rem;
     left: 1rem;
     -webkit-animation: cloud3 10s ease infinite;
     -moz-animation: cloud3 10s ease infinite;
-    animation: cloud3 10s ease infinite; }
+    animation: cloud3 10s ease infinite;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0); }
   header .abstract-bg {
     opacity: 0;
     background: url(../../images/train.jpg);
@@ -435,14 +459,24 @@ header {
       animation: zigzagAppear 3s linear;
       -webkit-animation-fill-mode: forwards;
       -moz-animation-fill-mode: forwards;
-      animation-fill-mode: forwards; }
+      animation-fill-mode: forwards;
+      -webkit-transform: translateZ(0);
+      -moz-transform: translateZ(0);
+      -ms-transform: translateZ(0);
+      -o-transform: translateZ(0);
+      transform: translateZ(0); }
     header .zigzag.zigzag-disappear {
       -webkit-animation: zigzagDisappear 3s ease;
       -moz-animation: zigzagDisappear 3s ease;
       animation: zigzagDisappear 3s ease;
       -webkit-animation-fill-mode: forwards;
       -moz-animation-fill-mode: forwards;
-      animation-fill-mode: forwards; }
+      animation-fill-mode: forwards;
+      -webkit-transform: translateZ(0);
+      -moz-transform: translateZ(0);
+      -ms-transform: translateZ(0);
+      -o-transform: translateZ(0);
+      transform: translateZ(0); }
   header .square {
     position: absolute;
     background: #000;
@@ -466,11 +500,21 @@ header {
     header .square.square-primary {
       -webkit-animation: squares1 3s ease infinite;
       -moz-animation: squares1 3s ease infinite;
-      animation: squares1 3s ease infinite; }
+      animation: squares1 3s ease infinite;
+      -webkit-transform: translateZ(0);
+      -moz-transform: translateZ(0);
+      -ms-transform: translateZ(0);
+      -o-transform: translateZ(0);
+      transform: translateZ(0); }
     header .square.square-secondary {
       -webkit-animation: squares2 3s ease infinite;
       -moz-animation: squares2 3s ease infinite;
-      animation: squares2 3s ease infinite; }
+      animation: squares2 3s ease infinite;
+      -webkit-transform: translateZ(0);
+      -moz-transform: translateZ(0);
+      -ms-transform: translateZ(0);
+      -o-transform: translateZ(0);
+      transform: translateZ(0); }
     header .square.square-1 {
       top: 0;
       left: 0; }
@@ -549,14 +593,24 @@ header {
     z-index: 2;
     -webkit-animation: branch1 5s ease infinite;
     -moz-animation: branch1 5s ease infinite;
-    animation: branch1 5s ease infinite; }
+    animation: branch1 5s ease infinite;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0); }
   header .leaf-2 {
     background: url(../../images/leaf2.png);
     background-size: cover;
     background-position: center;
     -webkit-animation: branch1 6s ease infinite;
     -moz-animation: branch1 6s ease infinite;
-    animation: branch1 6s ease infinite; }
+    animation: branch1 6s ease infinite;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0); }
   header .branch {
     background: url(../../images/branch.png);
     background-size: cover;
@@ -564,7 +618,12 @@ header {
     z-index: 2;
     -webkit-animation: branch1 10s ease infinite;
     -moz-animation: branch1 10s ease infinite;
-    animation: branch1 10s ease infinite; }
+    animation: branch1 10s ease infinite;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0); }
 
 @-webkit-keyframes float {
   0% {

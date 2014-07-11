@@ -42,6 +42,15 @@ header {
 			text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.6);
 			width:auto;
 			height:auto;
+			@include media($desktop) {
+				font-size:7.5em;
+			}
+			@include media($header-tree) {
+				font-size:10em;
+			}
+			@include media($widescreen) {
+				font-size:12em;
+			}
 		}
 	}
 	.island-wrap {
@@ -51,6 +60,7 @@ header {
 		width:100%;
 		@include transform(translateX(-50%));
 		@include animation(float 3s ease infinite);
+		//@include transform(translateZ(0));
 	}
 	img.island {
 		width:100%;
@@ -77,18 +87,21 @@ header {
 		top:2rem;
 		left:2rem;
 		@include animation(cloud1 10s ease infinite);
+		@include transform(translateZ(0));
 	}
 	.cloud-2 {
 		max-width:279px;
 		top:10rem;
 		right:3rem;
 		@include animation(cloud2 10s ease infinite);
+		@include transform(translateZ(0));
 	}
 	.cloud-3 {
 		max-width:257px;
 		bottom:8rem;
 		left:1rem;
 		@include animation(cloud3 10s ease infinite);
+		@include transform(translateZ(0));
 	}
 
 	.abstract-bg {
@@ -131,10 +144,12 @@ header {
 		&.zigzag-appear {
 			@include animation(zigzagAppear 3s linear);
 			@include animation-fill-mode(forwards);
+			@include transform(translateZ(0));
 		}
 		&.zigzag-disappear {
 			@include animation(zigzagDisappear 3s ease);
 			@include animation-fill-mode(forwards);
+			@include transform(translateZ(0));
 		}
 	}
 	.square {
@@ -158,9 +173,11 @@ header {
 		}
 		&.square-primary {
 			@include animation(squares1 3s ease infinite);
+			@include transform(translateZ(0));
 		}
 		&.square-secondary {
 			@include animation(squares2 3s ease infinite);
+			@include transform(translateZ(0));
 		}
 		&.square-1 {
 			top:0;
@@ -263,12 +280,14 @@ header {
 		background-position:center;
 		z-index:2;
 		@include animation(branch1 5s ease infinite);
+		@include transform(translateZ(0));
 	}
 	.leaf-2 {
 		background:url(../../images/leaf2.png);
 		background-size:cover;
 		background-position:center;
 		@include animation(branch1 6s ease infinite);
+		@include transform(translateZ(0));
 	}
 	.branch {
 		background:url(../../images/branch.png);
@@ -276,6 +295,7 @@ header {
 		background-position:center;
 		z-index:2;
 		@include animation(branch1 10s ease infinite);
+		@include transform(translateZ(0));
 	}
 }
 

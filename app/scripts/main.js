@@ -123,12 +123,12 @@ var all = function() {
 
         clearInterval(titleArc);
 
-    }, 7000); //5500
+    }, 6700); //5500
 
     setTimeout(function() {
 
         $('.square').each(function(i) {
-            $(this).delay(i * 20).fadeOut();
+            $(this).delay(i * 100).fadeOut();
         });
 
         $title.find('span').animate({top:0, left:0}, {duration:1000, queue: false});
