@@ -50,4 +50,26 @@ main {
 	section.intro {
 		@include outer-container;
 	}
+	section.projects {
+		@include outer-container;
+		.project {
+			@include outer-container;
+			.project-image {
+				@include media($mobile) {
+					@include span-columns(12);
+				}
+				@include media($desktop) {
+					@include span-columns(6);
+				} 
+			}
+			.project-info {
+				@include media($mobile) {
+					@include span-columns(12);
+				}
+				@include media($desktop) {
+					@include span-columns(6);
+				} 
+			}
+		}
+	}
 }

@@ -294,6 +294,54 @@ main {
       content: "";
       display: table;
       clear: both; }
+  main section.projects {
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto; }
+    main section.projects:after {
+      content: "";
+      display: table;
+      clear: both; }
+    main section.projects .project {
+      max-width: 68em;
+      margin-left: auto;
+      margin-right: auto; }
+      main section.projects .project:after {
+        content: "";
+        display: table;
+        clear: both; }
+      @media screen and (min-width: 0px) {
+        main section.projects .project .project-image {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 100%; }
+          main section.projects .project .project-image:last-child {
+            margin-right: 0; } }
+      @media screen and (min-width: 768px) {
+        main section.projects .project .project-image {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 48.82117%; }
+          main section.projects .project .project-image:last-child {
+            margin-right: 0; } }
+      @media screen and (min-width: 0px) {
+        main section.projects .project .project-info {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 100%; }
+          main section.projects .project .project-info:last-child {
+            margin-right: 0; } }
+      @media screen and (min-width: 768px) {
+        main section.projects .project .project-info {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 48.82117%; }
+          main section.projects .project .project-info:last-child {
+            margin-right: 0; } }
 
 header {
   background-color: #78C1B6;
@@ -301,7 +349,8 @@ header {
   width: 100%;
   text-align: center;
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  z-index: 1; }
   header h1.header-title {
     margin: 0;
     position: relative;
@@ -882,9 +931,35 @@ header {
     -o-transform: rotate(0deg);
     transform: rotate(0deg); } }
 main {
-  background: url(../../images/bg-white-noise.png);
-  position: relative;
-  z-index: -1; }
+  background: url(../../images/bg-white-noise.png); }
+
+section.projects {
+  margin-top: 6rem; }
+  section.projects .project:first-child {
+    height: 20rem;
+    position: relative; }
+    section.projects .project:first-child .project-image {
+      background-image: url(http://lorempixel.com/700/500);
+      background-size: cover;
+      background-position: center;
+      height: 100%; }
+    section.projects .project:first-child .project-info {
+      text-align: center;
+      padding: 1.5rem; }
+      section.projects .project:first-child .project-info h3 {
+        font-family: "proxima_nova_rgbold";
+        font-weight: normal;
+        text-transform: uppercase;
+        font-size: 2em;
+        margin: 0; }
+      section.projects .project:first-child .project-info hr {
+        width: 40%;
+        border: 1px solid #f8f419; }
+      section.projects .project:first-child .project-info .project-roles {
+        font-family: "libre_baskervilleitalic";
+        font-size: 0.8em; }
+      section.projects .project:first-child .project-info .project-description {
+        text-align: left; }
 
 section.intro {
   padding-top: 3rem;
@@ -908,6 +983,19 @@ section.intro {
       position: absolute;
       top: -3.0625rem;
       left: 50%; }
+    section.intro .intro-outer:after {
+      content: "";
+      background-color: lightgrey;
+      width: 50%;
+      height: 2px;
+      position: absolute;
+      bottom: -3rem;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      -o-transform: translateX(-50%);
+      transform: translateX(-50%); }
     section.intro .intro-outer .intro-inner {
       border: 1px dashed #f7505a;
       width: 100%;
@@ -937,16 +1025,7 @@ section.intro {
   color: #000;
   padding: 0.2em 0; }
 
-html, body {
+* {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
-
-p {
-  font-family: Verdana, Geneva, sans-serif;
-  -webkit-transition: all 0.2s ease;
-  -moz-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-  margin: 0; }
-  p:hover {
-    color: orange; }
