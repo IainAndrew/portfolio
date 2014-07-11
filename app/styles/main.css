@@ -224,6 +224,12 @@ table {
   src: url("../../styles/fonts/zigzag-notrounded-webfont.eot?#iefix") format("embedded-opentype"), url("../../styles/fonts/zigzag-notrounded-webfont.woff") format("woff"), url("../../styles/fonts/zigzag-notrounded-webfont.ttf") format("truetype"), url("../../styles/fonts/zigzag-notrounded-webfont.otf") format("opentype"), url("../../styles/fonts/zigzag-notrounded-webfont.svg#zigzag-notroundeduploadedfile") format("svg");
   font-weight: normal;
   font-style: normal; }
+@font-face {
+  font-family: 'proxima_nova_ltlight';
+  src: url("../../styles/fonts/mark_simonson_-_proxima_nova_light-webfont.eot");
+  src: url("../../styles/fonts/mark_simonson_-_proxima_nova_light-webfont.eot?#iefix") format("embedded-opentype"), url("../../styles/fonts/mark_simonson_-_proxima_nova_light-webfont.woff") format("woff"), url("../../styles/fonts/mark_simonson_-_proxima_nova_light-webfont.ttf") format("truetype"), url("../../styles/fonts/mark_simonson_-_proxima_nova_light-webfont.svg#proxima_nova_ltlight") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 .v-align:after, section.intro .intro-outer .intro-inner:after {
   display: inline-block;
   height: 100%;
@@ -935,31 +941,92 @@ main {
 
 section.projects {
   margin-top: 6rem; }
-  section.projects .project:first-child {
-    height: 20rem;
-    position: relative; }
-    section.projects .project:first-child .project-image {
-      background-image: url(http://lorempixel.com/700/500);
-      background-size: cover;
-      background-position: center;
-      height: 100%; }
-    section.projects .project:first-child .project-info {
-      text-align: center;
-      padding: 1.5rem; }
-      section.projects .project:first-child .project-info h3 {
-        font-family: "proxima_nova_rgbold";
-        font-weight: normal;
-        text-transform: uppercase;
-        font-size: 2em;
-        margin: 0; }
-      section.projects .project:first-child .project-info hr {
-        width: 40%;
-        border: 1px solid #f8f419; }
-      section.projects .project:first-child .project-info .project-roles {
-        font-family: "libre_baskervilleitalic";
-        font-size: 0.8em; }
-      section.projects .project:first-child .project-info .project-description {
-        text-align: left; }
+  @media screen and (min-width: 768px) {
+    section.projects {
+      margin-top: 12rem; } }
+  @media screen and (min-width: 768px) {
+    section.projects .project {
+      padding: 0 2rem; } }
+
+.project-image {
+  background-image: url(http://lorempixel.com/700/500);
+  background-size: cover;
+  background-position: center;
+  height: 20rem; }
+  @media screen and (min-width: 768px) {
+    .project-image {
+      height: 24rem; } }
+
+.project-info {
+  text-align: center;
+  padding: 1.5rem; }
+  .project-info h3 {
+    font-family: "proxima_nova_ltlight";
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 2em;
+    margin: 0;
+    letter-spacing: 0.3em; }
+  .project-info hr {
+    width: 40%;
+    border: 1px solid #f8f419;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem; }
+  .project-info .project-roles {
+    font-family: "libre_baskervilleitalic";
+    font-size: 0.8em; }
+  .project-info .project-description {
+    text-align: left;
+    font-family: "proxima_nova_ltlight";
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    padding: 0 1rem; }
+  .project-info button {
+    width: 15rem;
+    height: 4rem;
+    background: none;
+    border: 1px solid #f7505a;
+    border-left: 0;
+    border-right: 0;
+    font-family: "proxima_nova_ltlight";
+    text-transform: uppercase;
+    color: #f7505a;
+    font-size: 1.2em;
+    position: relative;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s; }
+    .project-info button:before {
+      content: "";
+      width: 1px;
+      height: 100%;
+      background: #f7505a;
+      position: absolute;
+      top: 0;
+      left: 0;
+      -webkit-transition: all 0.1s;
+      -moz-transition: all 0.1s;
+      transition: all 0.1s; }
+    .project-info button:after {
+      content: "";
+      width: 1px;
+      height: 100%;
+      background: #f7505a;
+      position: absolute;
+      top: 0;
+      right: 0;
+      -webkit-transition: all 0.1s;
+      -moz-transition: all 0.1s;
+      transition: all 0.1s; }
+
+.no-touch .project-info button:hover {
+  border-color: grey; }
+  .no-touch .project-info button:hover:before {
+    left: 1rem;
+    background: grey; }
+  .no-touch .project-info button:hover:after {
+    right: 1rem;
+    background: grey; }
 
 section.intro {
   padding-top: 3rem;
