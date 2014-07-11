@@ -1,3 +1,5 @@
+'use strict';
+
 var all = function() {
 
     var $title = $('#header-title'),

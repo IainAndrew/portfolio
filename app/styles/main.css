@@ -351,13 +351,8 @@ header {
   header .island-wrap {
     position: absolute;
     top: 37%;
-    left: 50%;
+    left: 0;
     width: 100%;
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
-    transform: translateX(-50%);
     -webkit-animation: float 3s ease infinite;
     -moz-animation: float 3s ease infinite;
     animation: float 3s ease infinite; }
@@ -886,28 +881,55 @@ header {
     -ms-transform: rotate(0deg);
     -o-transform: rotate(0deg);
     transform: rotate(0deg); } }
-section.intro .intro-outer {
-  border: 1px solid #f7505a;
-  width: 50%;
-  height: 17rem;
-  padding: 1.5rem;
-  margin: 3rem auto; }
-  section.intro .intro-outer .intro-inner {
-    border: 1px dashed #f7505a;
+main {
+  background: url(../../images/bg-white-noise.png);
+  position: relative;
+  z-index: -1; }
+
+section.intro {
+  padding-top: 3rem;
+  margin-top: 0; }
+  section.intro .intro-outer {
+    border: 1px solid #f7505a;
     width: 100%;
-    height: 100%;
-    text-align: center; }
-    section.intro .intro-outer .intro-inner h1 {
-      font-weight: normal;
-      color: #f7505a; }
-      section.intro .intro-outer .intro-inner h1:first-child {
-        font-family: "proxima_nova_rgbold";
-        text-transform: uppercase;
-        letter-spacing: 0.5em;
-        font-size: 1.7em; }
-      section.intro .intro-outer .intro-inner h1:nth-child(2) {
-        font-family: "libre_baskervilleitalic";
-        font-size: 1.2em; }
+    max-width: 30rem;
+    height: 12rem;
+    padding: 1rem;
+    margin: 0 auto;
+    position: relative; }
+    @media screen and (min-width: 480px) {
+      section.intro .intro-outer {
+        height: 15rem; } }
+    section.intro .intro-outer:before {
+      content: "";
+      background-color: #f7505a;
+      width: 1px;
+      height: 3rem;
+      position: absolute;
+      top: -3.0625rem;
+      left: 50%; }
+    section.intro .intro-outer .intro-inner {
+      border: 1px dashed #f7505a;
+      width: 100%;
+      height: 100%;
+      text-align: center; }
+      section.intro .intro-outer .intro-inner h1 {
+        font-weight: normal;
+        color: #f7505a; }
+        section.intro .intro-outer .intro-inner h1:first-child {
+          font-family: "proxima_nova_rgbold";
+          text-transform: uppercase;
+          letter-spacing: 0.3em;
+          font-size: 1.1em; }
+          @media screen and (min-width: 480px) {
+            section.intro .intro-outer .intro-inner h1:first-child {
+              font-size: 1.5em; } }
+        section.intro .intro-outer .intro-inner h1:nth-child(2) {
+          font-family: "libre_baskervilleitalic";
+          font-size: 0.8em; }
+          @media screen and (min-width: 480px) {
+            section.intro .intro-outer .intro-inner h1:nth-child(2) {
+              font-size: 1em; } }
 
 .browsehappy {
   margin: 0.2em 0;

@@ -56,9 +56,9 @@ header {
 	.island-wrap {
 		position:absolute;
 		top:37%;
-		left:50%;
+		left:0;
 		width:100%;
-		@include transform(translateX(-50%));
+		//@include transform(translateX(-50%));
 		@include animation(float 3s ease infinite);
 		//@include transform(translateZ(0));
 	}
