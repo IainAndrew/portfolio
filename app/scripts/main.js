@@ -1,5 +1,9 @@
 'use strict';
 
+$(document).ready(function() {
+    $('.intro-outer').addClass('intro-outer-rotate');
+});
+
 var all = function() {
 
     var $title = $('#header-title'),
