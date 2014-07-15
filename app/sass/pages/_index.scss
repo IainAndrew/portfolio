@@ -14,12 +14,29 @@ section.projects {
 	}
 }
 .project-image {
-	background-image:url(http://lorempixel.com/700/500);
 	background-size:cover;
 	background-position:center;
 	height:20rem;
 	@include media($desktop) {
 		height:24rem;
+	}
+	&.plugmedia {
+		background-image:url(../../images/plugmedia.gif);
+	}
+	&.peter-ashmore {
+		background-image:url(../../images/peter-ashmore.gif);
+	}
+	&.penrose {
+		background-image:url(../../images/plugmedia.gif);
+	}
+	&.trunkys {
+		background-image:url(../../images/plugmedia.gif);
+	}
+	&.simplespin {
+		background-image:url(../../images/simplespin.gif);
+	}
+	&.easter {
+		background-image:url(../../images/easter.gif);
 	}
 }
 .project-info {
