@@ -969,6 +969,8 @@ section.projects {
     background-image: url(../../images/simplespin.gif); }
   .project-image.easter {
     background-image: url(../../images/easter.gif); }
+  .project-image.footer-reveal {
+    background-image: url(../../images/footer-reveal.gif); }
 
 .project-info {
   text-align: center;
