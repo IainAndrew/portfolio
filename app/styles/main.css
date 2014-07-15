@@ -1045,11 +1045,24 @@ section.intro {
     padding: 1rem;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -100%;
+    margin-top: 0;
     position: relative;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
-    transition: all 0.3s; }
+    transition: all 0.3s;
+    /*&:after {
+    	content:"";
+    	background-color:lightgrey;
+    	width:50%;
+    	height:2px;
+    	position:absolute;
+    	bottom:-3rem;
+    	left:50%;
+    	@include transform(translateX(-50%));
+    }*/ }
+    @media screen and (min-width: 480px) {
+      section.intro .intro-outer {
+        margin-top: -100%; } }
     @media screen and (min-width: 480px) {
       section.intro .intro-outer {
         height: 15rem; } }
@@ -1061,19 +1074,6 @@ section.intro {
       position: absolute;
       top: -3.0625rem;
       left: 50%; }
-    section.intro .intro-outer:after {
-      content: "";
-      background-color: lightgrey;
-      width: 50%;
-      height: 2px;
-      position: absolute;
-      bottom: -3rem;
-      left: 50%;
-      -webkit-transform: translateX(-50%);
-      -moz-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-      -o-transform: translateX(-50%);
-      transform: translateX(-50%); }
     section.intro .intro-outer .intro-inner {
       border: 1px dashed #f7505a;
       width: 100%;

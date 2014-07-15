@@ -1,7 +1,9 @@
 'use strict';
 
-$(document).ready(function() {
-    $('.intro-outer').addClass('intro-outer-rotate');
+$(document).scroll(function() {
+    if ( $(this).scrollTop() >= $('.intro-outer').position().top - 500){
+        $('.intro-outer').addClass('intro-outer-rotate');
+    }
 });
 
 var all = function() {
@@ -76,7 +78,7 @@ var all = function() {
             $(this).hide();
         });
 
-        $title.addClass('header-abstract');
+        
 
         if (window.innerWidth <= 480) {
 
@@ -118,6 +120,8 @@ var all = function() {
             $title.find('.char11').animate({top:'55%', left:'-5%'}, 1500);
 
         }
+
+        $title.addClass('header-abstract');
 
         $('.square').each(function(i) {
             $(this).delay(2000).delay(i * 100).fadeIn();

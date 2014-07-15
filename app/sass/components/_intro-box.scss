@@ -9,7 +9,10 @@ section.intro {
 		padding:1rem;
 		margin-left:auto;
 		margin-right:auto;
-		margin-top:-100%;
+		margin-top:0;
+		@include media ($tablet) {
+			margin-top:-100%;
+		}
 		position:relative;
 		@include transition(all 0.3s);
 		@include media($tablet) {
@@ -24,7 +27,7 @@ section.intro {
 			top:-3.0625rem;
 			left:50%;
 		}
-		&:after {
+		/*&:after {
 			content:"";
 			background-color:lightgrey;
 			width:50%;
@@ -33,7 +36,7 @@ section.intro {
 			bottom:-3rem;
 			left:50%;
 			@include transform(translateX(-50%));
-		}
+		}*/
 		.intro-inner {
 			border:1px dashed $primary-color;
 			width:100%;
