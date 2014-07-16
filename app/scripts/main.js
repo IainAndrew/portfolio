@@ -32,7 +32,7 @@ var all = function() {
             }
         });
         $title.animate({marginTop:'-10%'}, 300);
-        $shadow.animate({width:'12rem'}, 300);
+        $shadow.animate({width:'12rem', opacity:0.15}, 300);
 
     };
 
@@ -47,7 +47,7 @@ var all = function() {
             }
         });
         $title.animate({marginTop:0}, 600);
-        $shadow.animate({width:'15rem'}, 600);
+        $shadow.animate({width:'15rem', opacity:0.2}, 600);
 
     };
 
