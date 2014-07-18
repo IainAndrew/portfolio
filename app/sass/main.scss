@@ -14,10 +14,12 @@
 @import "partials/grid";
 @import "partials/nav";
 @import "partials/header";
+@import "partials/projectpage";
 @import "partials/footer";
 
 // Pages
 @import "pages/index";
+@import "pages/plugmedia";
 
 // Components
 @import "components/intro-box";
@@ -32,4 +34,8 @@
 
 * {
     @include box-sizing(border-box);
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-weight:normal;
 }

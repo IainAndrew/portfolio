@@ -1,0 +1,38 @@
+section.project-overview {
+	text-align:center;
+	padding:2rem;
+	h1 {
+		font-family:$heading-font;
+		color:black;
+		text-transform:uppercase;
+		margin:0;
+	}
+	hr {
+		width:20%;
+		border:1px solid $secondary-color;
+
+	}
+	p {
+		font-family:$body-font;
+	}
+}
+
+section.project-stats {
+	p, ul {
+		font-family:$body-font;
+		color:white;
+	}
+	h2 {
+		font-family:$heading-font;
+		color:white;
+		text-transform:uppercase;
+		margin:0;
+		text-shadow:0px 2px 2px $primary-color - 40;
+	}
+
+	.ambition, .roles, .technologies {
+		background:$primary-color;
+		box-shadow:inset 0px 0px 2px $primary-color - 10;
+		padding:2rem;
+	}
+}

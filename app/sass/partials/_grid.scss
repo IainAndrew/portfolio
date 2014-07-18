@@ -47,29 +47,50 @@ header {
 }
 main {
 	@include row();
-	section.intro {
+}
+
+section.intro {
+	@include outer-container;
+}
+section.projects {
+	@include outer-container;
+	.project {
 		@include outer-container;
+		.project-image {
+			@include media($mobile) {
+				@include span-columns(12);
+			}
+			@include media($desktop) {
+				@include span-columns(6);
+			} 
+		}
+		.project-info {
+			@include media($mobile) {
+				@include span-columns(12);
+			}
+			@include media($desktop) {
+				@include span-columns(6);
+			} 
+		}
 	}
-	section.projects {
-		@include outer-container;
-		.project {
-			@include outer-container;
-			.project-image {
-				@include media($mobile) {
-					@include span-columns(12);
-				}
-				@include media($desktop) {
-					@include span-columns(6);
-				} 
-			}
-			.project-info {
-				@include media($mobile) {
-					@include span-columns(12);
-				}
-				@include media($desktop) {
-					@include span-columns(6);
-				} 
-			}
+}
+
+section.project-overview {
+	@include outer-container;
+}
+section.project-stats {
+	@include outer-container;
+	.ambition {
+		@include media($mobile) {
+			@include span-columns(12);
+		}
+	}
+	.roles, .technologies {
+		@include media($mobile) {
+			@include span-columns(12);
+		}
+		@include media($tablet) {
+			@include span-columns(6);
 		}
 	}
 }

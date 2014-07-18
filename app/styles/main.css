@@ -292,62 +292,106 @@ main {
     content: "";
     display: table;
     clear: both; }
-  main section.intro {
+
+section.intro {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  section.intro:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+section.projects {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  section.projects:after {
+    content: "";
+    display: table;
+    clear: both; }
+  section.projects .project {
     max-width: 68em;
     margin-left: auto;
     margin-right: auto; }
-    main section.intro:after {
+    section.projects .project:after {
       content: "";
       display: table;
       clear: both; }
-  main section.projects {
-    max-width: 68em;
-    margin-left: auto;
-    margin-right: auto; }
-    main section.projects:after {
-      content: "";
-      display: table;
-      clear: both; }
-    main section.projects .project {
-      max-width: 68em;
-      margin-left: auto;
-      margin-right: auto; }
-      main section.projects .project:after {
-        content: "";
-        display: table;
-        clear: both; }
-      @media screen and (min-width: 0px) {
-        main section.projects .project .project-image {
-          float: left;
-          display: block;
-          margin-right: 2.35765%;
-          width: 100%; }
-          main section.projects .project .project-image:last-child {
-            margin-right: 0; } }
-      @media screen and (min-width: 768px) {
-        main section.projects .project .project-image {
-          float: left;
-          display: block;
-          margin-right: 2.35765%;
-          width: 48.82117%; }
-          main section.projects .project .project-image:last-child {
-            margin-right: 0; } }
-      @media screen and (min-width: 0px) {
-        main section.projects .project .project-info {
-          float: left;
-          display: block;
-          margin-right: 2.35765%;
-          width: 100%; }
-          main section.projects .project .project-info:last-child {
-            margin-right: 0; } }
-      @media screen and (min-width: 768px) {
-        main section.projects .project .project-info {
-          float: left;
-          display: block;
-          margin-right: 2.35765%;
-          width: 48.82117%; }
-          main section.projects .project .project-info:last-child {
-            margin-right: 0; } }
+    @media screen and (min-width: 0px) {
+      section.projects .project .project-image {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%; }
+        section.projects .project .project-image:last-child {
+          margin-right: 0; } }
+    @media screen and (min-width: 768px) {
+      section.projects .project .project-image {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 48.82117%; }
+        section.projects .project .project-image:last-child {
+          margin-right: 0; } }
+    @media screen and (min-width: 0px) {
+      section.projects .project .project-info {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%; }
+        section.projects .project .project-info:last-child {
+          margin-right: 0; } }
+    @media screen and (min-width: 768px) {
+      section.projects .project .project-info {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 48.82117%; }
+        section.projects .project .project-info:last-child {
+          margin-right: 0; } }
+
+section.project-overview {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  section.project-overview:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+section.project-stats {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  section.project-stats:after {
+    content: "";
+    display: table;
+    clear: both; }
+  @media screen and (min-width: 0px) {
+    section.project-stats .ambition {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      section.project-stats .ambition:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 0px) {
+    section.project-stats .roles, section.project-stats .technologies {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      section.project-stats .roles:last-child, section.project-stats .technologies:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 480px) {
+    section.project-stats .roles, section.project-stats .technologies {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%; }
+      section.project-stats .roles:last-child, section.project-stats .technologies:last-child {
+        margin-right: 0; } }
 
 header {
   background-color: #78C1B6;
@@ -936,8 +980,33 @@ header {
     -ms-transform: rotate(0deg);
     -o-transform: rotate(0deg);
     transform: rotate(0deg); } }
-main {
-  background: url(../../images/bg-white-noise-1.png); }
+section.project-overview {
+  text-align: center;
+  padding: 2rem; }
+  section.project-overview h1 {
+    font-family: "proxima_nova_rgbold";
+    color: black;
+    text-transform: uppercase;
+    margin: 0; }
+  section.project-overview hr {
+    width: 20%;
+    border: 1px solid #f8f419; }
+  section.project-overview p {
+    font-family: "proxima_nova_ltlight"; }
+
+section.project-stats p, section.project-stats ul {
+  font-family: "proxima_nova_ltlight";
+  color: white; }
+section.project-stats h2 {
+  font-family: "proxima_nova_rgbold";
+  color: white;
+  text-transform: uppercase;
+  margin: 0;
+  text-shadow: 0px 2px 2px #cf2832; }
+section.project-stats .ambition, section.project-stats .roles, section.project-stats .technologies {
+  background: #f7505a;
+  box-shadow: inset 0px 0px 2px #ed4650;
+  padding: 2rem; }
 
 section.projects {
   margin-top: 6rem; }
@@ -1173,3 +1242,6 @@ section.intro {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal; }
