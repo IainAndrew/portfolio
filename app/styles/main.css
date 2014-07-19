@@ -395,7 +395,7 @@ section.project-stats {
 
 header {
   background-color: #78C1B6;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   text-align: center;
   position: relative;
