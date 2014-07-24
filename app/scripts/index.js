@@ -179,9 +179,9 @@ var all = function() {
 
 
 
-all();
+//all();
 var allInterval = setInterval(function() {
 
-	all();
+	//all();
 
 }, 24000);
