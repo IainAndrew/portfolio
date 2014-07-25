@@ -397,7 +397,7 @@ html, body {
   height: 100%; }
 
 header {
-  background-color: #78C1B6;
+  background-color: #00ccfe;
   height: 100%;
   width: 100%;
   text-align: center;
@@ -427,8 +427,6 @@ header {
     @media screen and (min-width: 1281px) {
       header h1.header-title {
         font-size: 7.5em; } }
-    header h1.header-title span {
-      position: relative; }
   header .island-shadow {
     position: absolute;
     top: 20%;

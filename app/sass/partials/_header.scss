@@ -3,7 +3,7 @@ html, body {
 }
 
 header {
-	background-color:#78C1B6;
+	background-color:#00ccfe;
 	height:100%;
 	width:100%;
 	text-align:center;
@@ -30,9 +30,6 @@ header {
 		}
 		@include media($widescreen) {
 			font-size:7.5em;
-		}
-		span {
-			position:relative;
 		}
 	}
 	.island-shadow {
