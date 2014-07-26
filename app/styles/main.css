@@ -396,6 +396,16 @@ section.project-stats {
 html, body {
   height: 100%; }
 
+.landscape-bottom {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  background: url("../images/bottom.png");
+  background-size: cover;
+  background-position: 50% 0%; }
+
 header {
   background-color: #00ccfe;
   height: 100%;
@@ -404,6 +414,33 @@ header {
   position: relative;
   overflow: hidden;
   z-index: 1; }
+  header .landscape-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: url("../images/back.png");
+    background-size: cover;
+    background-position: 50% 100%; }
+  header .landscape-middle {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: url("../images/middle.png");
+    background-size: cover;
+    background-position: 50% 100%; }
+  header .landscape-front {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: url("../images/front.png");
+    background-size: cover;
+    background-position: 50% 100%; }
   header h1.header-title {
     margin: 0;
     position: relative;
