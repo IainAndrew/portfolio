@@ -1,5 +1,9 @@
 'use strict';
 
+var s = skrollr.init({
+    forceHeight: false
+});
+
 $(document).scroll(function() {
 	if ( $(this).scrollTop() >= $('.intro-outer').position().top - 500){
 		$('.intro-outer').addClass('intro-outer-rotate');
