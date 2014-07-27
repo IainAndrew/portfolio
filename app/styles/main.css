@@ -637,6 +637,15 @@ section.intro {
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
+    /*&:before {
+    	content:"";
+    	background-color:$primary-color;
+    	width:1px;
+    	height:8rem;
+    	position:absolute;
+    	top:-8rem;
+    	left:50%;
+    }*/
     /*&:after {
     	content:"";
     	background-color:lightgrey;
@@ -653,14 +662,6 @@ section.intro {
     @media screen and (min-width: 480px) {
       section.intro .intro-outer {
         height: 15rem; } }
-    section.intro .intro-outer:before {
-      content: "";
-      background-color: #f7505a;
-      width: 1px;
-      height: 8rem;
-      position: absolute;
-      top: -8rem;
-      left: 50%; }
     section.intro .intro-outer .intro-inner {
       border: 1px dashed #f7505a;
       width: 100%;

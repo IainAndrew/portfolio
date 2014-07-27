@@ -18,7 +18,7 @@ section.intro {
 		@include media($tablet) {
 			height:15rem;
 		}
-		&:before {
+		/*&:before {
 			content:"";
 			background-color:$primary-color;
 			width:1px;
@@ -26,7 +26,7 @@ section.intro {
 			position:absolute;
 			top:-8rem;
 			left:50%;
-		}
+		}*/
 		/*&:after {
 			content:"";
 			background-color:lightgrey;
