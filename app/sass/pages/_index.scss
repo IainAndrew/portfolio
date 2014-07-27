@@ -1,6 +1,8 @@
 main {
 	//background:url(../../images/bg-white-noise-1.png);
 	background-color:#94ffea;
+	position:relative;
+	z-index:1;
 }
 section.projects {
 	margin-top:6rem;

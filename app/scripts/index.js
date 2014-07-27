@@ -1,7 +1,8 @@
 'use strict';
 
 var s = skrollr.init({
-    forceHeight: false
+    forceHeight: false,
+    smoothScrolling: true
 });
 
 $(document).scroll(function() {
