@@ -24,16 +24,6 @@ section.intro {
 			top:-8rem;
 			left:50%;
 		}*/
-		/*&:after {
-			content:"";
-			background-color:lightgrey;
-			width:50%;
-			height:2px;
-			position:absolute;
-			bottom:-3rem;
-			left:50%;
-			@include transform(translateX(-50%));
-		}*/
 		.intro-inner {
 			border:1px dashed $primary-color;
 			width:100%;
