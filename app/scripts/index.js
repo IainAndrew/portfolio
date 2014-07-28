@@ -1,9 +1,10 @@
 'use strict';
 
-var s = skrollr.init({
-    forceHeight: false,
-    smoothScrolling: true
+
+$.stellar({
+  horizontalScrolling: false,
 });
+
 
 $(document).scroll(function() {
 	if ( $(this).scrollTop() >= $('.intro-outer').position().top - 500){
