@@ -6,12 +6,6 @@ $.stellar({
 });
 
 
-$(document).scroll(function() {
-	if ( $(this).scrollTop() >= $('.intro-outer').position().top - 500){
-		$('.intro-outer').addClass('intro-outer-rotate');
-	}
-});
-
 var all = function() {
 
 	var $title = $('#header-title'),

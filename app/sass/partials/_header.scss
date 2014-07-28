@@ -2,7 +2,8 @@ html, body {
 	height:100%;
 }
 header {
-	background-color:#00ccfe;
+	//@include linear-gradient(#e55d87, #00ccfe);
+	@include linear-gradient(#00ccfe 0%, #e55d87 80%, $fallback:#00ccfe );
 	height:100%;
 	width:100%;
 	text-align:center;
