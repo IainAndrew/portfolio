@@ -101,7 +101,7 @@ header {
 	top:0;
 	left:0;
 	background:url('../images/mist.png');
-	background-size:3541px 100%;
+	background-size:1920px 100%;
 	background-position:0 0;
 	background-repeat:repeat-x;
 	animation: mist 25s infinite linear;
@@ -112,6 +112,6 @@ header {
 		background-position:0 0;
 	}
 	to {
-		background-position:3541px 0;
+		background-position:1920px 0;
 	}
 }
