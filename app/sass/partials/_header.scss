@@ -14,7 +14,7 @@ header {
 	h1.header-title {
 		margin:0;
 		position:relative;
-		top:20%;
+		top:25%;
 		text-transform:uppercase;
 		font-family:$header-bubble-font;
 		font-weight:normal;
@@ -27,23 +27,24 @@ header {
 			font-size:4.6em;
 		}
 		@include media($desktop) {
-			font-size:6em;
+			font-size:4em;
 		}
 		@include media($widescreen) {
 			font-size:7.5em;
 		}
 	}
-	.island-shadow {
-		position:absolute;
-		top:20%;
-		left:50%;
-		width:15rem;
-		height:1rem;
-		background:black;
-		border-radius:50%;
-		opacity:0.2;
-		@include transform(translateX(-50%));
-	}
+}
+
+.island-shadow {
+	position:fixed;
+	top:47%;
+	left:50%;
+	width:10rem;
+	height:1rem;
+	background:black;
+	border-radius:50%;
+	opacity:0.2;
+	@include transform(translateX(-50%));
 }
 
 .landscape-back {
@@ -107,11 +108,11 @@ header {
 	animation: mist 25s infinite linear;
 }
 
-@include keyframes(mist) {
+/*@include keyframes(mist) {
 	from {
 		background-position:0 0;
 	}
 	to {
 		background-position:1920px 0;
 	}
-}
+}*/

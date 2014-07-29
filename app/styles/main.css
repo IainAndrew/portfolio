@@ -409,7 +409,7 @@ header {
   header h1.header-title {
     margin: 0;
     position: relative;
-    top: 20%;
+    top: 25%;
     text-transform: uppercase;
     font-family: "bubblegumregular";
     font-weight: normal;
@@ -417,6 +417,13 @@ header {
     font-size: 2.8em;
     z-index: 1;
     text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.6);
+    white-space: nowrap;
+    -webkit-animation: title 1s ease-in;
+    -moz-animation: title 1s ease-in;
+    animation: title 1s ease-in;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
     -webkit-transition: color 1s, top 1s;
     -moz-transition: color 1s, top 1s;
     transition: color 1s, top 1s; }
@@ -425,24 +432,25 @@ header {
         font-size: 4.6em; } }
     @media screen and (min-width: 768px) {
       header h1.header-title {
-        font-size: 6em; } }
+        font-size: 4em; } }
     @media screen and (min-width: 1281px) {
       header h1.header-title {
         font-size: 7.5em; } }
-  header .island-shadow {
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    width: 15rem;
-    height: 1rem;
-    background: black;
-    border-radius: 50%;
-    opacity: 0.2;
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
-    transform: translateX(-50%); }
+
+.island-shadow {
+  position: fixed;
+  top: 47%;
+  left: 50%;
+  width: 10rem;
+  height: 1rem;
+  background: black;
+  border-radius: 50%;
+  opacity: 0.2;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%); }
 
 .landscape-back {
   width: 100%;
@@ -508,24 +516,32 @@ header {
   background-repeat: repeat-x;
   animation: mist 25s infinite linear; }
 
-@-webkit-keyframes mist {
+/*@include keyframes(mist) {
+	from {
+		background-position:0 0;
+	}
+	to {
+		background-position:1920px 0;
+	}
+}*/
+@-webkit-keyframes title {
   from {
-    background-position: 0 0; }
+    letter-spacing: 10rem; }
 
   to {
-    background-position: 1920px 0; } }
-@-moz-keyframes mist {
+    letter-spacing: 0; } }
+@-moz-keyframes title {
   from {
-    background-position: 0 0; }
+    letter-spacing: 10rem; }
 
   to {
-    background-position: 1920px 0; } }
-@keyframes mist {
+    letter-spacing: 0; } }
+@keyframes title {
   from {
-    background-position: 0 0; }
+    letter-spacing: 10rem; }
 
   to {
-    background-position: 1920px 0; } }
+    letter-spacing: 0; } }
 section.project-overview {
   text-align: center;
   padding: 2rem; }
