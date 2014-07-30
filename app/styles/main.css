@@ -219,12 +219,6 @@ table {
   font-weight: normal;
   font-style: normal; }
 @font-face {
-  font-family: 'zigzag-notroundeduploadedfile';
-  src: url("../../styles/fonts/zigzag-notrounded-webfont.eot");
-  src: url("../../styles/fonts/zigzag-notrounded-webfont.eot?#iefix") format("embedded-opentype"), url("../../styles/fonts/zigzag-notrounded-webfont.woff") format("woff"), url("../../styles/fonts/zigzag-notrounded-webfont.ttf") format("truetype"), url("../../styles/fonts/zigzag-notrounded-webfont.otf") format("opentype"), url("../../styles/fonts/zigzag-notrounded-webfont.svg#zigzag-notroundeduploadedfile") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
   font-family: 'proxima_nova_ltlight';
   src: url("../../styles/fonts/mark_simonson_-_proxima_nova_light-webfont.eot");
   src: url("../../styles/fonts/mark_simonson_-_proxima_nova_light-webfont.eot?#iefix") format("embedded-opentype"), url("../../styles/fonts/mark_simonson_-_proxima_nova_light-webfont.woff") format("woff"), url("../../styles/fonts/mark_simonson_-_proxima_nova_light-webfont.ttf") format("truetype"), url("../../styles/fonts/mark_simonson_-_proxima_nova_light-webfont.svg#proxima_nova_ltlight") format("svg");
@@ -241,44 +235,6 @@ table {
   display: inline-block;
   vertical-align: middle; }
 
-/*
-.wrapper {
-    @include row();
-    .primary { 
-		@include media($mobile) {
-			@include span-columns(12);
-		}
-		@include media($tablet) {
-			@include span-columns(6);
-		}
-		@include media($desktop) {
-			@include span-columns(4);
-		}
-    }
-    .secondary { 
-        @include media($mobile) {
-			@include span-columns(12);
-		}
-		@include media($tablet) {
-			@include span-columns(6);
-		}
-		@include media($desktop) {
-			@include span-columns(4);
-		}
-    }
-    .tertiary { 
-        @include media($mobile) {
-			@include span-columns(12);
-		}
-		@include media($tablet) {
-			@include span-columns(6);
-		}
-		@include media($desktop) {
-			@include span-columns(4);
-		}
-    }
-}
-*/
 header {
   display: block; }
   header:after {

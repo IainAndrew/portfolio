@@ -5,44 +5,6 @@ $desktop: new-breakpoint(min-width 768px);
 $header-tree: new-breakpoint(min-width 1100px);
 $widescreen: new-breakpoint(min-width 1281px);
 
-/*
-.wrapper {
-    @include row();
-    .primary { 
-		@include media($mobile) {
-			@include span-columns(12);
-		}
-		@include media($tablet) {
-			@include span-columns(6);
-		}
-		@include media($desktop) {
-			@include span-columns(4);
-		}
-    }
-    .secondary { 
-        @include media($mobile) {
-			@include span-columns(12);
-		}
-		@include media($tablet) {
-			@include span-columns(6);
-		}
-		@include media($desktop) {
-			@include span-columns(4);
-		}
-    }
-    .tertiary { 
-        @include media($mobile) {
-			@include span-columns(12);
-		}
-		@include media($tablet) {
-			@include span-columns(6);
-		}
-		@include media($desktop) {
-			@include span-columns(4);
-		}
-    }
-}
-*/
 header {
 	@include row();
 }
