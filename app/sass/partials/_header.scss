@@ -20,8 +20,7 @@ header {
 		font-weight:normal;
 		color:#fff;
 		z-index:1;
-		text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.6);
-	    @include transition(color 1s, top 1s);
+		text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2);
 	    @include media($zero) {
 			font-size:2em;
 			top:30%;
@@ -116,11 +115,11 @@ header {
 	animation: mist 25s infinite linear;
 }
 
-/*@include keyframes(mist) {
+@include keyframes(mist) {
 	from {
 		background-position:0 0;
 	}
 	to {
 		background-position:1920px 0;
 	}
-}*/
+}

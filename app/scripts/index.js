@@ -52,7 +52,7 @@ var all = function() {
 			titleArcDown();
 		}, 300);
 
-	}, 2000);
+	}, 5000);
 };
 
 all();
