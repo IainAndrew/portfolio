@@ -2,7 +2,7 @@ section.intro {
 	padding-top:5rem;
 	margin-top:0;
 	.intro-outer {
-		border:1px solid $primary-color;
+		//border:1px solid $primary-color;
 		width:100%;
 		max-width:30rem;
 		height:12rem;
@@ -15,17 +15,8 @@ section.intro {
 		@include media($tablet) {
 			height:15rem;
 		}
-		/*&:before {
-			content:"";
-			background-color:$primary-color;
-			width:1px;
-			height:8rem;
-			position:absolute;
-			top:-8rem;
-			left:50%;
-		}*/
 		.intro-inner {
-			border:1px dashed $primary-color;
+			//border:1px dashed $primary-color;
 			width:100%;
 			height:100%;
 			text-align:center;
@@ -35,49 +26,20 @@ section.intro {
 			}
 			h1 {
 				font-weight:normal;
-				color:$primary-color;
+				color:white;
+				text-shadow:0 -2px 2px #94ffea - 40;
 				&:first-child {
 					font-family:$heading-font;
 					text-transform:uppercase;
-					letter-spacing:0.3em;
-					font-size:1.1em;
-					@include media($tablet) {
-						font-size:1.5em;
-					}
+					letter-spacing:0.2em;
+					font-size:2em;
 				}
 				&:nth-child(2) {
 					font-family:$sub-heading-font;
-					font-size:0.8em;
-					@include media($tablet) {
-						font-size:1em;
-					}
+					font-size:1em;
 				}
 
 			}
 		}
-	}
-}
-
-.intro-outer {
-	&.intro-outer-rotate {
-		@include animation(intro 1s linear);
-		@include animation-fill-mode(forwards);
-	}
-}
-@include keyframes(intro) {
-	0% {
-		margin-top:-100%;
-	}
-	25% {
-		margin-top:2%;
-	}
-	50% {
-		margin-top:-2%;
-	}
-	75% {
-		margin-top:0;
-	}
-	100% {
-		margin-top:0;
 	}
 }
