@@ -44,7 +44,7 @@ var all = function() {
 		$shadow.animate({width:'10rem', opacity:0.2}, 600);
 
 	};
-
+	/*
 	var titleArc = setInterval(function() {
 
 		titleArcUp();
@@ -52,7 +52,7 @@ var all = function() {
 			titleArcDown();
 		}, 300);
 
-	}, 5000);
+	}, 5000);*/
 };
 
 all();

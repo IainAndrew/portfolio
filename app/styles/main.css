@@ -439,7 +439,10 @@ header {
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   -o-transform: translateX(-50%);
-  transform: translateX(-50%); }
+  transform: translateX(-50%);
+  -webkit-animation: float 3s ease infinite;
+  -moz-animation: float 3s ease infinite;
+  animation: float 3s ease infinite; }
 
 .island {
   width: 100%; }
@@ -471,24 +474,43 @@ header {
   background-repeat: repeat-x;
   animation: mist 25s infinite linear; }
 
-@-webkit-keyframes mist {
-  from {
-    background-position: 0 0; }
+/*
+@include keyframes(mist) {
+	from {
+		background-position:0 0;
+	}
+	to {
+		background-position:1920px 0;
+	}
+}
+*/
+@-webkit-keyframes float {
+  0% {
+    margin-top: 0; }
 
-  to {
-    background-position: 1920px 0; } }
-@-moz-keyframes mist {
-  from {
-    background-position: 0 0; }
+  50% {
+    margin-top: 0.3%; }
 
-  to {
-    background-position: 1920px 0; } }
-@keyframes mist {
-  from {
-    background-position: 0 0; }
+  100% {
+    margin-top: 0; } }
+@-moz-keyframes float {
+  0% {
+    margin-top: 0; }
 
-  to {
-    background-position: 1920px 0; } }
+  50% {
+    margin-top: 0.3%; }
+
+  100% {
+    margin-top: 0; } }
+@keyframes float {
+  0% {
+    margin-top: 0; }
+
+  50% {
+    margin-top: 0.3%; }
+
+  100% {
+    margin-top: 0; } }
 section.project-overview {
   text-align: center;
   padding: 2rem; }
