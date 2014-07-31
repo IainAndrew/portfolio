@@ -224,14 +224,14 @@ table {
   src: url("../../styles/fonts/mark_simonson_-_proxima_nova_light-webfont.eot?#iefix") format("embedded-opentype"), url("../../styles/fonts/mark_simonson_-_proxima_nova_light-webfont.woff") format("woff"), url("../../styles/fonts/mark_simonson_-_proxima_nova_light-webfont.ttf") format("truetype"), url("../../styles/fonts/mark_simonson_-_proxima_nova_light-webfont.svg#proxima_nova_ltlight") format("svg");
   font-weight: normal;
   font-style: normal; }
-.v-align:after, section.intro .intro-outer .intro-inner:after {
+.v-align:after {
   display: inline-block;
   height: 100%;
   width: 0;
   vertical-align: middle;
   content: ''; }
 
-.v-align > .v-aligned, section.intro .intro-outer .intro-inner > .v-aligned, section.intro .intro-outer .intro-inner .v-align > .intro-heading, section.intro .intro-outer .intro-inner > .intro-heading {
+.v-align > .v-aligned {
   display: inline-block;
   vertical-align: middle; }
 
@@ -250,18 +250,14 @@ main {
     clear: both; }
 
 section.intro {
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto; }
+  display: block; }
   section.intro:after {
     content: "";
     display: table;
     clear: both; }
 
 section.projects {
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto; }
+  display: block; }
   section.projects:after {
     content: "";
     display: table;
@@ -484,33 +480,19 @@ header {
 	}
 }
 */
-@-webkit-keyframes float {
+/*
+@include keyframes(float) {
   0% {
-    margin-top: 0; }
-
+    margin-top:0;
+  }
   50% {
-    margin-top: 0.3%; }
-
+    margin-top:0.3%;
+  }
   100% {
-    margin-top: 0; } }
-@-moz-keyframes float {
-  0% {
-    margin-top: 0; }
-
-  50% {
-    margin-top: 0.3%; }
-
-  100% {
-    margin-top: 0; } }
-@keyframes float {
-  0% {
-    margin-top: 0; }
-
-  50% {
-    margin-top: 0.3%; }
-
-  100% {
-    margin-top: 0; } }
+	margin-top:0;
+  }
+}
+*/
 section.project-overview {
   text-align: center;
   padding: 2rem; }
@@ -541,19 +523,45 @@ section.project-stats .ambition, section.project-stats .roles, section.project-s
 
 main {
   background-color: #94ffea;
+  background-image: -webkit-linear-gradient(#94ffea 0%, white 50%);
+  background-image: linear-gradient(#94ffea 0%, white 50%);
   position: relative;
   z-index: 1; }
 
-section.projects {
-  margin-top: 6rem; }
-  @media screen and (min-width: 768px) {
-    section.projects {
-      margin-top: 12rem; } }
+section.intro {
+  text-align: center;
+  padding-top: 15rem;
+  padding-bottom: 15rem; }
+  section.intro h1 {
+    font-weight: normal;
+    color: white;
+    text-shadow: 0 -2px 2px #6cd7c2;
+    margin: 0; }
+    section.intro h1:first-child {
+      font-family: "proxima_nova_rgbold";
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      margin-bottom: 1rem; }
+      @media screen and (min-width: 0px) {
+        section.intro h1:first-child {
+          font-size: 2em; } }
+      @media screen and (min-width: 320px) {
+        section.intro h1:first-child {
+          font-size: 2.5em; } }
+    section.intro h1:nth-child(2) {
+      font-family: "libre_baskervilleitalic"; }
+      @media screen and (min-width: 0px) {
+        section.intro h1:nth-child(2) {
+          font-size: 1em; } }
+      @media screen and (min-width: 320px) {
+        section.intro h1:nth-child(2) {
+          font-size: 1.3em; } }
+
+section.projects .project:not(:first-child) {
+  margin-top: 12rem; }
+@media screen and (min-width: 768px) {
   section.projects .project {
-    margin-top: 12rem; }
-    @media screen and (min-width: 768px) {
-      section.projects .project {
-        padding: 0 2rem; } }
+    padding: 0 2rem; } }
 
 .project-image {
   background-size: cover;
@@ -651,41 +659,6 @@ section.projects {
   .no-touch .project-info button:hover:after {
     right: 1rem;
     background: grey; }
-
-section.intro {
-  padding-top: 5rem;
-  margin-top: 0; }
-  section.intro .intro-outer {
-    width: 100%;
-    max-width: 30rem;
-    height: 12rem;
-    padding: 1rem;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0;
-    position: relative;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s; }
-    @media screen and (min-width: 480px) {
-      section.intro .intro-outer {
-        height: 15rem; } }
-    section.intro .intro-outer .intro-inner {
-      width: 100%;
-      height: 100%;
-      text-align: center; }
-      section.intro .intro-outer .intro-inner h1 {
-        font-weight: normal;
-        color: white;
-        text-shadow: 0 -2px 2px #6cd7c2; }
-        section.intro .intro-outer .intro-inner h1:first-child {
-          font-family: "proxima_nova_rgbold";
-          text-transform: uppercase;
-          letter-spacing: 0.2em;
-          font-size: 2em; }
-        section.intro .intro-outer .intro-inner h1:nth-child(2) {
-          font-family: "libre_baskervilleitalic";
-          font-size: 1em; }
 
 .browsehappy {
   margin: 0.2em 0;

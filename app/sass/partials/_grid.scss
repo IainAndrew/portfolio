@@ -13,10 +13,10 @@ main {
 }
 
 section.intro {
-	@include outer-container;
+	@include row();
 }
 section.projects {
-	@include outer-container;
+	@include row();
 	.project {
 		@include outer-container;
 		.project-image {

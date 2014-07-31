@@ -1,16 +1,51 @@
 main {
-	//background:url(../../images/bg-white-noise-1.png);
-	background-color:#94ffea;
+	//background-color:#94ffea;
+	@include linear-gradient(#94ffea 0%, #fff 50%, $fallback:#94ffea );
 	position:relative;
 	z-index:1;
 }
+
+section.intro {
+	text-align:center;
+	padding-top:15rem;
+	padding-bottom:15rem;
+	h1 {
+		font-weight:normal;
+		color:white;
+		text-shadow:0 -2px 2px #94ffea - 40;
+		margin:0;
+		&:first-child {
+			font-family:$heading-font;
+			text-transform:uppercase;
+			letter-spacing:0.2em;
+			margin-bottom:1rem;
+			@include media($zero) {
+				font-size:2em;
+			}
+			@include media($mobile) {
+				font-size:2.5em;
+			}
+		}
+		&:nth-child(2) {
+			font-family:$sub-heading-font;
+			@include media($zero) {
+				font-size:1em;
+			}
+			@include media($mobile) {
+				font-size:1.3em;
+			}
+		}
+	}
+}
+
 section.projects {
-	margin-top:6rem;
 	@include media($desktop) {
-		margin-top:12rem;
+		//margin-top:12rem;
 	}
 	.project {
-		margin-top:12rem;
+		&:not(:first-child) {
+			margin-top:12rem;
+		}
 		@include media($desktop) {
 			padding:0 2rem;
 		}
