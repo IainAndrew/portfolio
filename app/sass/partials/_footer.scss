@@ -1,11 +1,18 @@
 footer {
+	position:absolute;
+	bottom:0;
+	left:0;
+	width:100%;
+	height:100vh;
+	overflow:hidden;
+	z-index:1;
+}
+.wrap {
+	position:relative;
+}
+.sea {
 	width:100%;
 	height:100%;
-	position:absolute;
-	bottom:100%;
-	left:0;
-	overflow:hidden;
-	z-index:100000;
 }
 .sea-back {
 	width:100%;
