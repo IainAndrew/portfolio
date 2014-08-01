@@ -1,6 +1,6 @@
 main {
 	//background-color:#94ffea;
-	@include linear-gradient(#94ffea 0%, #fff 50%, $fallback:#94ffea );
+	@include linear-gradient(#94ffea 0%, #34495e 50%, $fallback:#94ffea );
 	position:relative;
 	z-index:1;
 }

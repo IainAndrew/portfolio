@@ -1,0 +1,49 @@
+footer {
+	width:100%;
+	height:100%;
+	position:absolute;
+	bottom:100%;
+	left:0;
+	overflow:hidden;
+	z-index:100000;
+}
+.sea-back {
+	width:100%;
+	height:100%;
+	position:absolute;
+	bottom:0;
+	left:0;
+	background:url('../images/sea-back.png');
+	background-size:cover;
+	background-position:50% 100%;
+}
+.sea-middle-1 {
+	width:100%;
+	height:100%;
+	position:absolute;
+	bottom:0;
+	left:0;
+	background:url('../images/sea-middle-1.png');
+	background-size:cover;
+	background-position:50% 100%;
+}
+.sea-middle-2 {
+	width:100%;
+	height:100%;
+	position:absolute;
+	bottom:0;
+	left:0;
+	background:url('../images/sea-middle-2.png');
+	background-size:cover;
+	background-position:50% 100%;
+}
+.sea-front {
+	width:100%;
+	height:100%;
+	position:absolute;
+	bottom:0;
+	left:0;
+	background:url('../images/sea-front.png');
+	background-size:cover;
+	background-position:50% 100%;
+}

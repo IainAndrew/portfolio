@@ -521,10 +521,59 @@ section.project-stats .ambition, section.project-stats .roles, section.project-s
   box-shadow: inset 0px 0px 2px #ed4650;
   padding: 2rem; }
 
+footer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  overflow: hidden;
+  z-index: 100000; }
+
+.sea-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: url("../images/sea-back.png");
+  background-size: cover;
+  background-position: 50% 100%; }
+
+.sea-middle-1 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: url("../images/sea-middle-1.png");
+  background-size: cover;
+  background-position: 50% 100%; }
+
+.sea-middle-2 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: url("../images/sea-middle-2.png");
+  background-size: cover;
+  background-position: 50% 100%; }
+
+.sea-front {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: url("../images/sea-front.png");
+  background-size: cover;
+  background-position: 50% 100%; }
+
 main {
   background-color: #94ffea;
-  background-image: -webkit-linear-gradient(#94ffea 0%, white 50%);
-  background-image: linear-gradient(#94ffea 0%, white 50%);
+  background-image: -webkit-linear-gradient(#94ffea 0%, #34495e 50%);
+  background-image: linear-gradient(#94ffea 0%, #34495e 50%);
   position: relative;
   z-index: 1; }
 
