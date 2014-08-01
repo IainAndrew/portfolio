@@ -9,7 +9,7 @@ section.project-overview {
 	}
 	hr {
 		width:20%;
-		border:1px solid $secondary-color;
+		border:1px solid $body-color;
 
 	}
 	p {
@@ -27,12 +27,12 @@ section.project-stats {
 		color:white;
 		text-transform:uppercase;
 		margin:0;
-		text-shadow:0px 2px 2px $primary-color - 40;
+		text-shadow:0px 2px 2px $body-color - 40;
 	}
 
 	.ambition, .roles, .technologies {
-		background:$primary-color;
-		box-shadow:inset 0px 0px 2px $primary-color - 10;
+		background:$body-color;
+		box-shadow:inset 0px 0px 2px $body-color - 10;
 		padding:2rem;
 	}
 }

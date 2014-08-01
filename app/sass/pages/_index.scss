@@ -1,6 +1,6 @@
 main {
 	//background-color:#94ffea;
-	@include linear-gradient(#94ffea 0%, #34495e 50%, $fallback:#94ffea );
+	@include linear-gradient(#94ffea 0%, #2a8892 50%, $fallback:#94ffea );
 	position:relative;
 	z-index:1;
 }
@@ -11,7 +11,7 @@ section.intro {
 	padding-bottom:15rem;
 	h1 {
 		font-weight:normal;
-		color:white;
+		color:$body-color;
 		text-shadow:0 -2px 2px #94ffea - 40;
 		margin:0;
 		&:first-child {
@@ -39,6 +39,7 @@ section.intro {
 }
 
 section.projects {
+	padding-bottom:20rem;
 	@include media($desktop) {
 		//margin-top:12rem;
 	}
@@ -83,6 +84,7 @@ section.projects {
 .project-info {
 	text-align:center;
 	padding:1.5rem;
+	color:$body-color;
 	h3 {
 		font-family:$body-font;
 		font-weight:normal;
@@ -93,7 +95,7 @@ section.projects {
 	}
 	hr {
 		width:40%;
-		border:1px solid white;
+		border:1px solid $body-color;
 		margin-top:1.5rem;
 		margin-bottom:1.5rem;
 	}
@@ -112,12 +114,12 @@ section.projects {
 		width:15rem;
 		height:4rem;
 		background:none;
-		border:1px solid $primary-color;
+		border:1px solid $body-color;
 		border-left:0;
 		border-right:0;
 		font-family:$body-font;
 		text-transform:uppercase;
-		color:$primary-color;
+		color:$body-color;
 		font-size:1.2em;
 		position:relative;
 		@include transition(all 0.2s);
@@ -125,7 +127,7 @@ section.projects {
 			content:"";
 			width:1px;
 			height:100%;
-			background:$primary-color;
+			background:$body-color;
 			position:absolute;
 			top:0;
 			left:0;
@@ -135,7 +137,7 @@ section.projects {
 			content:"";
 			width:1px;
 			height:100%;
-			background:$primary-color;
+			background:$body-color;
 			position:absolute;
 			top:0;
 			right:0;
@@ -154,14 +156,14 @@ section.projects {
 	.project-info {
 		button {
 			&:hover {
-				border-color:grey;
+				border-color:#2a8892 - 20;
 				&:before {
 					left:1rem;
-					background:grey;
+					background:#2a8892 - 20;
 				}
 				&:after {
 					right:1rem;
-					background:grey;
+					background:#2a8892 - 20;
 				}
 			}
 		}

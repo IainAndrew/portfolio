@@ -503,7 +503,7 @@ section.project-overview {
     margin: 0; }
   section.project-overview hr {
     width: 20%;
-    border: 1px solid #f8f419; }
+    border: 1px solid white; }
   section.project-overview p {
     font-family: "proxima_nova_ltlight"; }
 
@@ -515,10 +515,10 @@ section.project-stats h2 {
   color: white;
   text-transform: uppercase;
   margin: 0;
-  text-shadow: 0px 2px 2px #cf2832; }
+  text-shadow: 0px 2px 2px #d7d7d7; }
 section.project-stats .ambition, section.project-stats .roles, section.project-stats .technologies {
-  background: #f7505a;
-  box-shadow: inset 0px 0px 2px #ed4650;
+  background: white;
+  box-shadow: inset 0px 0px 2px whitesmoke;
   padding: 2rem; }
 
 footer {
@@ -532,10 +532,6 @@ footer {
 
 .wrap {
   position: relative; }
-
-.sea {
-  width: 100%;
-  height: 100%; }
 
 .sea-back {
   width: 100%;
@@ -579,8 +575,8 @@ footer {
 
 main {
   background-color: #94ffea;
-  background-image: -webkit-linear-gradient(#94ffea 0%, #34495e 50%);
-  background-image: linear-gradient(#94ffea 0%, #34495e 50%);
+  background-image: -webkit-linear-gradient(#94ffea 0%, #2a8892 50%);
+  background-image: linear-gradient(#94ffea 0%, #2a8892 50%);
   position: relative;
   z-index: 1; }
 
@@ -613,11 +609,13 @@ section.intro {
         section.intro h1:nth-child(2) {
           font-size: 1.3em; } }
 
-section.projects .project:not(:first-child) {
-  margin-top: 12rem; }
-@media screen and (min-width: 768px) {
-  section.projects .project {
-    padding: 0 2rem; } }
+section.projects {
+  padding-bottom: 20rem; }
+  section.projects .project:not(:first-child) {
+    margin-top: 12rem; }
+  @media screen and (min-width: 768px) {
+    section.projects .project {
+      padding: 0 2rem; } }
 
 .project-image {
   background-size: cover;
@@ -643,7 +641,8 @@ section.projects .project:not(:first-child) {
 
 .project-info {
   text-align: center;
-  padding: 1.5rem; }
+  padding: 1.5rem;
+  color: white; }
   .project-info h3 {
     font-family: "proxima_nova_ltlight";
     font-weight: normal;
@@ -669,12 +668,12 @@ section.projects .project:not(:first-child) {
     width: 15rem;
     height: 4rem;
     background: none;
-    border: 1px solid #f7505a;
+    border: 1px solid white;
     border-left: 0;
     border-right: 0;
     font-family: "proxima_nova_ltlight";
     text-transform: uppercase;
-    color: #f7505a;
+    color: white;
     font-size: 1.2em;
     position: relative;
     -webkit-transition: all 0.2s;
@@ -684,7 +683,7 @@ section.projects .project:not(:first-child) {
       content: "";
       width: 1px;
       height: 100%;
-      background: #f7505a;
+      background: white;
       position: absolute;
       top: 0;
       left: 0;
@@ -695,7 +694,7 @@ section.projects .project:not(:first-child) {
       content: "";
       width: 1px;
       height: 100%;
-      background: #f7505a;
+      background: white;
       position: absolute;
       top: 0;
       right: 0;
@@ -708,13 +707,13 @@ section.projects .project:not(:first-child) {
       outline: 0; }
 
 .no-touch .project-info button:hover {
-  border-color: grey; }
+  border-color: #16747e; }
   .no-touch .project-info button:hover:before {
     left: 1rem;
-    background: grey; }
+    background: #16747e; }
   .no-touch .project-info button:hover:after {
     right: 1rem;
-    background: grey; }
+    background: #16747e; }
 
 .browsehappy {
   margin: 0.2em 0;
