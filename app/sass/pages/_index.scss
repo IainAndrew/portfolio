@@ -1,6 +1,6 @@
 main {
 	//background-color:#94ffea;
-	@include linear-gradient(#94ffea 0%, #2a8892 50%, $fallback:#94ffea );
+	//@include linear-gradient(#94ffea 0%, #2a8892 50%, $fallback:#94ffea );
 	position:relative;
 	z-index:1;
 }
@@ -131,7 +131,7 @@ section.projects {
 			position:absolute;
 			top:0;
 			left:0;
-			@include transition(all 0.1s);
+			@include transition(all 0.2s ease-out);
 		}
 		&:after {
 			content:"";
@@ -141,7 +141,7 @@ section.projects {
 			position:absolute;
 			top:0;
 			right:0;
-			@include transition(all 0.1s);
+			@include transition(all 0.2s ease-out);
 		}
 		&:active {
 			font-size:1.1em;
