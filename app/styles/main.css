@@ -581,6 +581,7 @@ footer {
   bottom: -20rem;
   width: 100%;
   text-align: center;
+  opacity: 0;
   -webkit-transition: -webkit-transform 0.7s ease-out;
   -moz-transition: -moz-transform 0.7s ease-out;
   transition: transform 0.7s ease-out; }
@@ -625,7 +626,7 @@ section.intro {
           font-size: 1.3em; } }
 
 section.projects {
-  padding-bottom: 20rem; }
+  padding-bottom: 100%; }
   section.projects .project {
     padding: 0 0.5rem; }
     section.projects .project:not(:first-child) {

@@ -64,3 +64,19 @@ $(window).scroll(function() {
 		$('.island-speedo').removeClass('speedo-tilt');
 	}
 });
+
+/*$(window).scroll(function() {
+	if ($(window).scrollTop() + $(window).height() > $(document).height() - $(window).height()) {
+		$('.island-speedo').animate({opacity:1}, 1000);
+	}
+});*/
+
+
+/*var limit = 5000;  /* scrolltop value when opacity should be 0 */
+/*
+$(window).on('scroll', function() {
+   var st = $(window).scrollTop();
+   if (st <= limit) {
+      $('.island-speedo').css({ 'opacity' : (0 + st/limit) });
+   }
+});*/
