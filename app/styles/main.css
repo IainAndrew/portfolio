@@ -579,12 +579,17 @@ footer {
 .island-speedo {
   position: fixed;
   bottom: -20rem;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-  transform: translateX(-50%); }
+  width: 100%;
+  text-align: center;
+  -webkit-transition: -webkit-transform 0.7s ease-out;
+  -moz-transition: -moz-transform 0.7s ease-out;
+  transition: transform 0.7s ease-out; }
+  .island-speedo.speedo-tilt {
+    -webkit-transform: rotate(3deg);
+    -moz-transform: rotate(3deg);
+    -ms-transform: rotate(3deg);
+    -o-transform: rotate(3deg);
+    transform: rotate(3deg); }
 
 main {
   position: relative;
@@ -621,11 +626,13 @@ section.intro {
 
 section.projects {
   padding-bottom: 20rem; }
-  section.projects .project:not(:first-child) {
-    margin-top: 12rem; }
-  @media screen and (min-width: 768px) {
-    section.projects .project {
-      padding: 0 2rem; } }
+  section.projects .project {
+    padding: 0 0.5rem; }
+    section.projects .project:not(:first-child) {
+      margin-top: 12rem; }
+    @media screen and (min-width: 768px) {
+      section.projects .project {
+        padding: 0 2rem; } }
 
 .project-image {
   background-size: cover;

@@ -56,3 +56,11 @@ var all = function() {
 };
 
 all();
+
+$(window).scroll(function() {
+	if($(window).scrollTop() + $(window).height() == $(document).height()) {
+		$('.island-speedo').addClass('speedo-tilt');
+	} else {
+		$('.island-speedo').removeClass('speedo-tilt');
+	}
+});

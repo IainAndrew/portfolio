@@ -44,6 +44,7 @@ section.projects {
 		//margin-top:12rem;
 	}
 	.project {
+		padding:0 0.5rem;
 		&:not(:first-child) {
 			margin-top:12rem;
 		}
