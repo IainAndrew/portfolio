@@ -270,7 +270,7 @@ section.projects {
       content: "";
       display: table;
       clear: both; }
-    @media screen and (min-width: 320px) {
+    @media screen and (min-width: 0px) {
       section.projects .project .project-image {
         float: left;
         display: block;
@@ -286,7 +286,7 @@ section.projects {
         width: 48.82117%; }
         section.projects .project .project-image:last-child {
           margin-right: 0; } }
-    @media screen and (min-width: 320px) {
+    @media screen and (min-width: 0px) {
       section.projects .project .project-info {
         float: left;
         display: block;
@@ -320,7 +320,7 @@ section.project-stats {
     content: "";
     display: table;
     clear: both; }
-  @media screen and (min-width: 320px) {
+  @media screen and (min-width: 0px) {
     section.project-stats .ambition {
       float: left;
       display: block;
@@ -328,7 +328,16 @@ section.project-stats {
       width: 100%; }
       section.project-stats .ambition:last-child {
         margin-right: 0; } }
-  @media screen and (min-width: 320px) {
+  @media screen and (min-width: 768px) {
+    section.project-stats .ambition {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%;
+      margin-right: 0; }
+      section.project-stats .ambition:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 0px) {
     section.project-stats .roles, section.project-stats .technologies {
       float: left;
       display: block;
@@ -336,12 +345,13 @@ section.project-stats {
       width: 100%; }
       section.project-stats .roles:last-child, section.project-stats .technologies:last-child {
         margin-right: 0; } }
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 768px) {
     section.project-stats .roles, section.project-stats .technologies {
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 48.82117%; }
+      width: 23.23176%;
+      margin-right: 0; }
       section.project-stats .roles:last-child, section.project-stats .technologies:last-child {
         margin-right: 0; } }
 
@@ -495,31 +505,33 @@ header {
 */
 section.project-overview {
   text-align: center;
-  padding: 2rem; }
+  padding: 4rem; }
   section.project-overview h1 {
     font-family: "proxima_nova_rgbold";
-    color: black;
     text-transform: uppercase;
     margin: 0; }
   section.project-overview hr {
     width: 20%;
-    border: 1px solid white; }
+    border: 1px solid; }
   section.project-overview p {
     font-family: "proxima_nova_ltlight"; }
 
+@media screen and (min-width: 768px) {
+  section.project-stats {
+    border: 1px solid; } }
 section.project-stats p, section.project-stats ul {
-  font-family: "proxima_nova_ltlight";
-  color: white; }
+  font-family: "proxima_nova_ltlight"; }
 section.project-stats h2 {
   font-family: "proxima_nova_rgbold";
-  color: white;
   text-transform: uppercase;
-  margin: 0;
-  text-shadow: 0px 2px 2px #d7d7d7; }
+  margin: 0; }
 section.project-stats .ambition, section.project-stats .roles, section.project-stats .technologies {
-  background: white;
-  box-shadow: inset 0px 0px 2px whitesmoke;
-  padding: 2rem; }
+  padding: 2rem;
+  border: 1px solid;
+  margin-bottom: 1rem; }
+  @media screen and (min-width: 768px) {
+    section.project-stats .ambition, section.project-stats .roles, section.project-stats .technologies {
+      border: 0; } }
 
 footer {
   position: absolute;
@@ -581,7 +593,6 @@ footer {
   bottom: -20rem;
   width: 100%;
   text-align: center;
-  opacity: 0;
   -webkit-transition: -webkit-transform 0.7s ease-out;
   -moz-transition: -moz-transform 0.7s ease-out;
   transition: transform 0.7s ease-out; }
@@ -732,6 +743,11 @@ section.projects {
   .no-touch .project-info button:hover:after {
     right: 1rem;
     background: #16747e; }
+
+main.plugmedia-project section.project-overview hr {
+  border-color: #E14D3D; }
+main.plugmedia-project section.project-stats, main.plugmedia-project .ambition, main.plugmedia-project .roles, main.plugmedia-project .technologies {
+  border-color: #E14D3D; }
 
 .browsehappy {
   margin: 0.2em 0;

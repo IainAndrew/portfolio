@@ -20,7 +20,7 @@ section.projects {
 	.project {
 		@include outer-container;
 		.project-image {
-			@include media($mobile) {
+			@include media($zero) {
 				@include span-columns(12);
 			}
 			@include media($desktop) {
@@ -28,7 +28,7 @@ section.projects {
 			} 
 		}
 		.project-info {
-			@include media($mobile) {
+			@include media($zero) {
 				@include span-columns(12);
 			}
 			@include media($desktop) {
@@ -37,23 +37,27 @@ section.projects {
 		}
 	}
 }
-
 section.project-overview {
 	@include outer-container;
 }
 section.project-stats {
 	@include outer-container;
 	.ambition {
-		@include media($mobile) {
+		@include media($zero) {
 			@include span-columns(12);
+		}
+		@include media($desktop) {
+			@include span-columns(6);
+			@include omega;
 		}
 	}
 	.roles, .technologies {
-		@include media($mobile) {
+		@include media($zero) {
 			@include span-columns(12);
 		}
-		@include media($tablet) {
-			@include span-columns(6);
+		@include media($desktop) {
+			@include span-columns(3);
+			@include omega;
 		}
 	}
 }

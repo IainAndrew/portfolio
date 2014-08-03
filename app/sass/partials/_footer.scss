@@ -57,7 +57,7 @@ footer {
 	bottom:-20rem;
 	width:100%;
 	text-align:center;
-	opacity:0;
+	//opacity:0;
 	@include transition(transform 0.7s ease-out);
 	&.speedo-tilt {
 		@include transform(rotate(3deg));
