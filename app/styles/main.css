@@ -558,6 +558,10 @@ section.project-stats .ambition, section.project-stats .roles, section.project-s
       border: 0;
       border-radius: 0;
       margin-bottom: 0; } }
+@media screen and (min-width: 768px) {
+  section.project-stats .ambition {
+    height: 100%;
+    border-right: 1px solid; } }
 
 main.project-page button {
   position: relative;
@@ -569,10 +573,31 @@ main.project-page button {
   background: green;
   border: 0;
   -webkit-font-smoothing: antialiased;
-  border-radius: 3px; }
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out; }
   @media screen and (min-width: 480px) {
     main.project-page button {
       font-size: 1.5em; } }
+  main.project-page button:focus {
+    outline: 0; }
+
+.no-touch main.project-page button:hover {
+  -webkit-transform: scale(1.03);
+  -moz-transform: scale(1.03);
+  -ms-transform: scale(1.03);
+  -o-transform: scale(1.03);
+  transform: scale(1.03);
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3); }
+.no-touch main.project-page button:active {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  -webkit-transform: scale(0.97);
+  -moz-transform: scale(0.97);
+  -ms-transform: scale(0.97);
+  -o-transform: scale(0.97);
+  transform: scale(0.97); }
 
 footer {
   position: absolute;

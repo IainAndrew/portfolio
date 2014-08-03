@@ -61,6 +61,12 @@ section.project-stats {
 			margin-bottom:0;
 		}
 	}
+	.ambition {
+		@include media($desktop) {
+			height:100%;
+			border-right:1px solid;
+		}
+	}
 }
 
 main.project-page {
@@ -74,9 +80,29 @@ main.project-page {
 		background:green;
 		border:0;
 		-webkit-font-smoothing: antialiased;
+		box-shadow:0px 5px 10px rgba(black, 0.2);
 		@include bradius;
+		@include transition(all 0.2s ease-out);
 		@include media($tablet) {
 			font-size:1.5em;
+		}
+		&:focus {
+			outline:0;
+		}
+	}
+}
+
+.no-touch {
+	main.project-page {
+		button {
+			&:hover {
+				@include transform(scale(1.03));
+				box-shadow:0px 10px 15px rgba(black, 0.3);
+			}
+			&:active {
+				box-shadow:0px 0px 10px rgba(black, 0.2);
+				@include transform(scale(0.97));
+			}
 		}
 	}
 }
