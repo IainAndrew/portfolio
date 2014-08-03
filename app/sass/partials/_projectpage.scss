@@ -5,20 +5,42 @@ section.project-overview {
 		font-family:$heading-font;
 		text-transform:uppercase;
 		margin:0;
+		@include media($zero) {
+			font-size:1em;
+		}
+		@include media($mobile) {
+			font-size:2em;
+		}
+		@include media($tablet) {
+			font-size:3em;
+		}
+		@include media($desktop) {
+			font-size:4em;
+		}
 	}
 	hr {
 		width:20%;
 		border:1px solid;
-
+		max-width:7rem;
 	}
 	p {
 		font-family:$body-font;
+		margin:0;
+		padding:2rem 0 2rem 0;
+		@include media($tablet) {
+			padding:2rem 1rem 2rem 1rem;
+		}
+		@include media($desktop) {
+			padding:4rem 10rem 4rem 10rem;
+		}
 	}
 }
 
 section.project-stats {
 	@include media($desktop) {
 		border:1px solid;
+		@include bradius;
+		padding:2rem;
 	}
 	p, ul {
 		font-family:$body-font;
@@ -31,9 +53,30 @@ section.project-stats {
 	.ambition, .roles, .technologies {
 		padding:2rem;
 		border:1px solid;
+		@include bradius;
 		margin-bottom:1rem;
 		@include media($desktop) {
 			border:0;
+			border-radius:0;
+			margin-bottom:0;
+		}
+	}
+}
+
+main.project-page {
+	button {
+		position:relative;
+		padding:2rem;
+		text-transform:uppercase;
+		font-family:$body-font;
+		font-size:1em;
+		color:white;
+		background:green;
+		border:0;
+		-webkit-font-smoothing: antialiased;
+		@include bradius;
+		@include media($tablet) {
+			font-size:1.5em;
 		}
 	}
 }
