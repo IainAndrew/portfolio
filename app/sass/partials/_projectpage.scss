@@ -61,9 +61,8 @@ section.project-stats {
 			margin-bottom:0;
 		}
 	}
-	.ambition {
+	.ambition, .roles {
 		@include media($desktop) {
-			height:100%;
 			border-right:1px solid;
 		}
 	}

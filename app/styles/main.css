@@ -559,8 +559,7 @@ section.project-stats .ambition, section.project-stats .roles, section.project-s
       border-radius: 0;
       margin-bottom: 0; } }
 @media screen and (min-width: 768px) {
-  section.project-stats .ambition {
-    height: 100%;
+  section.project-stats .ambition, section.project-stats .roles {
     border-right: 1px solid; } }
 
 main.project-page button {
