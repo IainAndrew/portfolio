@@ -1,3 +1,31 @@
+main.project-page {
+	nav {
+		position:fixed;
+		top:0;
+		left:0;
+		width:100%;
+		ul {
+			padding:0;
+			li {
+				list-style-type:none;
+				font-family:$body-font;
+				text-transform:uppercase;
+				padding:1rem;
+				&:first-child {
+					float:left;
+				}
+				&:nth-child(2) {
+					float:right;
+				}
+				a {
+					text-decoration:none;
+					color:inherit;
+				}
+			}
+		}
+	}
+}
+
 section.project-overview {
 	text-align:center;
 	padding:4rem 1rem 0 1rem;

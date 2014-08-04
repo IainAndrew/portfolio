@@ -519,6 +519,26 @@ header {
   }
 }
 */
+main.project-page nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; }
+  main.project-page nav ul {
+    padding: 0; }
+    main.project-page nav ul li {
+      list-style-type: none;
+      font-family: "proxima_nova_ltlight";
+      text-transform: uppercase;
+      padding: 1rem; }
+      main.project-page nav ul li:first-child {
+        float: left; }
+      main.project-page nav ul li:nth-child(2) {
+        float: right; }
+      main.project-page nav ul li a {
+        text-decoration: none;
+        color: inherit; }
+
 section.project-overview {
   text-align: center;
   padding: 4rem 1rem 0 1rem; }
