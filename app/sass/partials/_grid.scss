@@ -40,6 +40,9 @@ section.projects {
 section.project-overview {
 	@include outer-container;
 }
+section.project-buttons {
+	@include row();
+}
 section.project-stats {
 	@include outer-container;
 	.ambition {
@@ -60,4 +63,7 @@ section.project-stats {
 			@include omega;
 		}
 	}
+}
+section.project-images {
+	@include outer-container;
 }

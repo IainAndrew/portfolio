@@ -64,6 +64,12 @@ section.project-stats {
 			border-radius:0;
 			margin-bottom:0;
 		}
+		ul {
+			padding:0;
+			li {
+				list-style-type:none;
+			}
+		}
 	}
 	.ambition, .roles {
 		@include media($desktop) {
@@ -116,7 +122,7 @@ section.project-buttons {
 		button {
 			&:hover {
 				@include transform(scale(1.03));
-				box-shadow:0px 10px 15px rgba(black, 0.3);
+				box-shadow:0px 10px 15px rgba(black, 0.1);
 			}
 			&:active {
 				box-shadow:0px 0px 10px rgba(black, 0.2);

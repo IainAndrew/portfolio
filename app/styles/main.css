@@ -312,6 +312,13 @@ section.project-overview {
     display: table;
     clear: both; }
 
+section.project-buttons {
+  display: block; }
+  section.project-buttons:after {
+    content: "";
+    display: table;
+    clear: both; }
+
 section.project-stats {
   max-width: 68em;
   margin-left: auto;
@@ -354,6 +361,15 @@ section.project-stats {
       margin-right: 0; }
       section.project-stats .roles:last-child, section.project-stats .technologies:last-child {
         margin-right: 0; } }
+
+section.project-images {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  section.project-images:after {
+    content: "";
+    display: table;
+    clear: both; }
 
 html, body {
   height: 100%; }
@@ -562,6 +578,10 @@ section.project-stats .ambition, section.project-stats .roles, section.project-s
       border: 0;
       border-radius: 0;
       margin-bottom: 0; } }
+  section.project-stats .ambition ul, section.project-stats .roles ul, section.project-stats .technologies ul {
+    padding: 0; }
+    section.project-stats .ambition ul li, section.project-stats .roles ul li, section.project-stats .technologies ul li {
+      list-style-type: none; }
 @media screen and (min-width: 768px) {
   section.project-stats .ambition, section.project-stats .roles {
     border-right: 1px solid; } }
@@ -606,7 +626,7 @@ section.project-buttons {
   -ms-transform: scale(1.03);
   -o-transform: scale(1.03);
   transform: scale(1.03);
-  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3); }
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1); }
 .no-touch main.project-page button:active {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   -webkit-transform: scale(0.97);
