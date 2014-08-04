@@ -1,6 +1,9 @@
 section.project-overview {
 	text-align:center;
-	padding:4rem;
+	padding:4rem 1rem 0 1rem;
+	@include media($mobile) {
+		padding:4rem 4rem 0 4rem;
+	}
 	h1 {
 		font-family:$heading-font;
 		text-transform:uppercase;
@@ -22,6 +25,7 @@ section.project-overview {
 		width:20%;
 		border:1px solid;
 		max-width:7rem;
+		margin-bottom:0;
 	}
 	p {
 		font-family:$body-font;
@@ -68,13 +72,28 @@ section.project-stats {
 	}
 }
 
-main.project-page {
+section.project-buttons {
+	text-align:center;
+	padding-bottom:4rem;
+	a {
+		text-decoration:none;
+		&:first-child button {
+			margin-bottom:2rem;
+		}
+		@include media($tablet) {
+			&:first-child button {
+				margin-bottom:0;
+				margin-right:2rem;
+			}
+		}
+	}
 	button {
 		position:relative;
 		padding:2rem;
+		width:12rem;
 		text-transform:uppercase;
 		font-family:$body-font;
-		font-size:1em;
+		font-size:1.2em;
 		color:white;
 		background:green;
 		border:0;
@@ -82,7 +101,8 @@ main.project-page {
 		box-shadow:0px 5px 10px rgba(black, 0.2);
 		@include bradius;
 		@include transition(all 0.2s ease-out);
-		@include media($tablet) {
+		@include media($desktop) {
+			width:15rem;
 			font-size:1.5em;
 		}
 		&:focus {

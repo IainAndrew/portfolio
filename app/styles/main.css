@@ -505,7 +505,10 @@ header {
 */
 section.project-overview {
   text-align: center;
-  padding: 4rem; }
+  padding: 4rem 1rem 0 1rem; }
+  @media screen and (min-width: 320px) {
+    section.project-overview {
+      padding: 4rem 4rem 0 4rem; } }
   section.project-overview h1 {
     font-family: "proxima_nova_rgbold";
     text-transform: uppercase;
@@ -525,7 +528,8 @@ section.project-overview {
   section.project-overview hr {
     width: 20%;
     border: 1px solid;
-    max-width: 7rem; }
+    max-width: 7rem;
+    margin-bottom: 0; }
   section.project-overview p {
     font-family: "proxima_nova_ltlight";
     margin: 0;
@@ -562,26 +566,39 @@ section.project-stats .ambition, section.project-stats .roles, section.project-s
   section.project-stats .ambition, section.project-stats .roles {
     border-right: 1px solid; } }
 
-main.project-page button {
-  position: relative;
-  padding: 2rem;
-  text-transform: uppercase;
-  font-family: "proxima_nova_ltlight";
-  font-size: 1em;
-  color: white;
-  background: green;
-  border: 0;
-  -webkit-font-smoothing: antialiased;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
-  border-radius: 3px;
-  -webkit-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out; }
-  @media screen and (min-width: 480px) {
-    main.project-page button {
-      font-size: 1.5em; } }
-  main.project-page button:focus {
-    outline: 0; }
+section.project-buttons {
+  text-align: center;
+  padding-bottom: 4rem; }
+  section.project-buttons a {
+    text-decoration: none; }
+    section.project-buttons a:first-child button {
+      margin-bottom: 2rem; }
+    @media screen and (min-width: 480px) {
+      section.project-buttons a:first-child button {
+        margin-bottom: 0;
+        margin-right: 2rem; } }
+  section.project-buttons button {
+    position: relative;
+    padding: 2rem;
+    width: 12rem;
+    text-transform: uppercase;
+    font-family: "proxima_nova_ltlight";
+    font-size: 1.2em;
+    color: white;
+    background: green;
+    border: 0;
+    -webkit-font-smoothing: antialiased;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out; }
+    @media screen and (min-width: 768px) {
+      section.project-buttons button {
+        width: 15rem;
+        font-size: 1.5em; } }
+    section.project-buttons button:focus {
+      outline: 0; }
 
 .no-touch main.project-page button:hover {
   -webkit-transform: scale(1.03);
