@@ -116,7 +116,7 @@ header {
 	background-repeat:repeat-x;
 	animation: mist 25s infinite linear;
 }
-/*
+
 @include keyframes(mist) {
 	from {
 		background-position:0 0;
@@ -125,10 +125,10 @@ header {
 		background-position:1920px 0;
 	}
 }
-*/
+
 
 // Island float
-/*
+
 @include keyframes(float) {
   0% {
     margin-top:0;
@@ -140,4 +140,3 @@ header {
 	margin-top:0;
   }
 }
-*/
