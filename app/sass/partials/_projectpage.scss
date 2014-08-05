@@ -124,6 +124,9 @@ section.project-stats {
 			border-right:1px solid;
 		}
 	}
+	.technologies {
+		margin-bottom:0;
+	}
 }
 
 section.project-buttons {
@@ -162,12 +165,7 @@ section.project-buttons {
 		&:focus {
 			outline:0;
 		}
-	}
-}
-
-.no-touch {
-	main.project-page {
-		button {
+		.no-touch & {
 			&:hover {
 				@include transform(scale(1.03));
 				box-shadow:0px 10px 15px rgba(black, 0.1);
@@ -177,5 +175,14 @@ section.project-buttons {
 				@include transform(scale(0.97));
 			}
 		}
+	}
+}
+
+section.project-images {
+	padding:4rem 0 4rem 0;
+}
+.project-img {
+	img {
+		width:100%;
 	}
 }

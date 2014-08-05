@@ -683,6 +683,8 @@ section.project-stats .ambition, section.project-stats .roles, section.project-s
 @media screen and (min-width: 768px) {
   section.project-stats .ambition, section.project-stats .roles {
     border-right: 1px solid; } }
+section.project-stats .technologies {
+  margin-bottom: 0; }
 
 section.project-buttons {
   text-align: center;
@@ -717,21 +719,26 @@ section.project-buttons {
         font-size: 1.5em; } }
     section.project-buttons button:focus {
       outline: 0; }
+    .no-touch section.project-buttons button:hover {
+      -webkit-transform: scale(1.03);
+      -moz-transform: scale(1.03);
+      -ms-transform: scale(1.03);
+      -o-transform: scale(1.03);
+      transform: scale(1.03);
+      box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1); }
+    .no-touch section.project-buttons button:active {
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+      -webkit-transform: scale(0.97);
+      -moz-transform: scale(0.97);
+      -ms-transform: scale(0.97);
+      -o-transform: scale(0.97);
+      transform: scale(0.97); }
 
-.no-touch main.project-page button:hover {
-  -webkit-transform: scale(1.03);
-  -moz-transform: scale(1.03);
-  -ms-transform: scale(1.03);
-  -o-transform: scale(1.03);
-  transform: scale(1.03);
-  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1); }
-.no-touch main.project-page button:active {
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  -webkit-transform: scale(0.97);
-  -moz-transform: scale(0.97);
-  -ms-transform: scale(0.97);
-  -o-transform: scale(0.97);
-  transform: scale(0.97); }
+section.project-images {
+  padding: 4rem 0 4rem 0; }
+
+.project-img img {
+  width: 100%; }
 
 footer {
   position: absolute;
