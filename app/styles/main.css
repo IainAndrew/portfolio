@@ -224,6 +224,66 @@ table {
   src: url("../../styles/fonts/mark_simonson_-_proxima_nova_light-webfont.eot?#iefix") format("embedded-opentype"), url("../../styles/fonts/mark_simonson_-_proxima_nova_light-webfont.woff") format("woff"), url("../../styles/fonts/mark_simonson_-_proxima_nova_light-webfont.ttf") format("truetype"), url("../../styles/fonts/mark_simonson_-_proxima_nova_light-webfont.svg#proxima_nova_ltlight") format("svg");
   font-weight: normal;
   font-style: normal; }
+@font-face {
+  font-family: 'fontello';
+  src: url("../../styles/fonts/fontello.eot?49172639");
+  src: url("../../styles/fonts/fontello.eot?49172639#iefix") format("embedded-opentype"), url("../../styles/fonts/fontello.woff?49172639") format("woff"), url("../../styles/fonts/fontello.ttf?49172639") format("truetype"), url("../../styles/fonts/fontello.svg?49172639#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?49172639#fontello') format('svg');
+  }
+}
+*/
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */ }
+
+.icon-right-open-big:before {
+  content: '\e800'; }
+
+/* '' */
+.icon-left-open-big:before {
+  content: '\e801'; }
+
+/* '' */
+.icon-github-circled-alt2:before {
+  content: '\e802'; }
+
+/* '' */
+.icon-linkedin-circled:before {
+  content: '\e803'; }
+
+/* '' */
+.icon-doc-circled:before {
+  content: '\e804'; }
+
+/* '' */
 .v-align:after {
   display: inline-block;
   height: 100%;
@@ -523,28 +583,46 @@ main.project-page nav {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%; }
+  width: 100%;
+  background: rgba(255, 255, 255, 0.95);
+  z-index: 1;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05); }
   main.project-page nav ul {
-    padding: 0; }
+    padding: 0;
+    margin: 0; }
     main.project-page nav ul li {
       list-style-type: none;
       font-family: "proxima_nova_ltlight";
       text-transform: uppercase;
-      padding: 1rem; }
+      padding: 1rem;
+      font-size: 0.5em; }
       main.project-page nav ul li:first-child {
         float: left; }
       main.project-page nav ul li:nth-child(2) {
         float: right; }
+      main.project-page nav ul li:nth-child(3) {
+        float: right; }
+      @media screen and (min-width: 320px) {
+        main.project-page nav ul li {
+          font-size: 0.7em; } }
+      @media screen and (min-width: 480px) {
+        main.project-page nav ul li {
+          font-size: 1em; } }
       main.project-page nav ul li a {
         text-decoration: none;
-        color: inherit; }
+        color: inherit;
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out; }
+        .no-touch main.project-page nav ul li a:hover {
+          color: rgba(0, 0, 0, 0.5); }
 
 section.project-overview {
   text-align: center;
-  padding: 4rem 1rem 0 1rem; }
+  padding: 6rem 1rem 0 1rem; }
   @media screen and (min-width: 320px) {
     section.project-overview {
-      padding: 4rem 4rem 0 4rem; } }
+      padding: 6rem 4rem 0 4rem; } }
   section.project-overview h1 {
     font-family: "proxima_nova_rgbold";
     text-transform: uppercase;
