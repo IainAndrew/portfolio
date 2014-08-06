@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -521,10 +522,7 @@ header {
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   -o-transform: translateX(-50%);
-  transform: translateX(-50%);
-  -webkit-animation: float 3s ease infinite;
-  -moz-animation: float 3s ease infinite;
-  animation: float 3s ease infinite; }
+  transform: translateX(-50%); }
 
 .island {
   width: 100%; }
@@ -553,8 +551,7 @@ header {
   background: url("../images/mist.png");
   background-size: 1920px 100%;
   background-position: 0 0;
-  background-repeat: repeat-x;
-  animation: mist 25s infinite linear; }
+  background-repeat: repeat-x; }
 
 @-webkit-keyframes mist {
   from {
@@ -606,7 +603,7 @@ main.project-page nav {
   top: 0;
   left: 0;
   width: 100%;
-  background: rgba(255, 255, 255, 0.95);
+  background-color: rgba(255, 255, 255, 0.95);
   z-index: 1;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05); }
   main.project-page nav ul {
