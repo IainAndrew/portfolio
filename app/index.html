@@ -14,7 +14,6 @@
         <!-- endbuild -->
         <!-- build:css(.tmp) styles/main.css -->
         <link rel="stylesheet" href="styles/main.css">
-        <link rel="stylesheet" href="styles/scrollability.css">
         <!-- endbuild -->
         <!-- build:js scripts/vendor/modernizr.js -->
         <script src="../bower_components/modernizr/modernizr.js"></script>
@@ -24,10 +23,15 @@
         <!-- endbuild -->
 
     </head>
-    <body class="scrollable vertical">
+    <body>
         <!--[if lt IE 10]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+
+    <div id="wrapper">
+
+
+        <div id="scroller">
 
 
         <header>
@@ -46,7 +50,9 @@
             <div class="island"><img src="images/island.png" alt=""></div>
             <div class="island-shadow"></div>
         </div>
+
         <div class="landscape-bottom"></div>
+
         <div class="wrap">
         <main>
             
@@ -224,6 +230,8 @@
 
         </footer>
         </div>
+        </div>
+    </div>
 
 
         <!-- build:js scripts/vendor.js -->
@@ -231,8 +239,8 @@
         <script src="../bower_components/jquery/dist/jquery.min.js"></script>
         <!-- endbower -->
         <script src="scripts/jquery.arctext.js"></script>
-        <script src="scripts/scrollability.js"></script>
         <script src="scripts/jquery.stellar.min.js"></script>
+        <script src="scripts/iscroll.js"></script>
         <!-- endbuild -->
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

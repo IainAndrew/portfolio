@@ -1,7 +1,25 @@
 html, body {
 	height:100%;
 }
-
+.mobile body {
+  overflow: hidden;
+}
+#wrapper {
+	height:100%;
+}
+.mobile #wrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+#scroller {
+	height:100%;
+}
+.mobile #scroller {
+  height: 3000px;
+}
 header {
 	//@include linear-gradient(#e55d87, #00ccfe);
 	@include linear-gradient(#00ccfe 0%, #e55d87 80%, $fallback:#00ccfe );
