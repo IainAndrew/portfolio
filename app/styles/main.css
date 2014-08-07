@@ -748,9 +748,9 @@ section.project-buttons {
     -webkit-font-smoothing: antialiased;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
     border-radius: 3px;
-    -webkit-transition: all 0.2s ease-out;
-    -moz-transition: all 0.2s ease-out;
-    transition: all 0.2s ease-out; }
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out; }
     @media screen and (min-width: 768px) {
       section.project-buttons button {
         width: 15rem;
@@ -997,6 +997,20 @@ main.plugmedia-project section.project-stats, main.plugmedia-project .ambition, 
   border-color: #E14D3D; }
 main.plugmedia-project button {
   background: #E14D3D; }
+
+main.peterashmore-project section.project-overview hr {
+  border-color: #56a9d8; }
+main.peterashmore-project section.project-stats, main.peterashmore-project .ambition, main.peterashmore-project .roles, main.peterashmore-project .technologies {
+  border-color: #56a9d8; }
+main.peterashmore-project button {
+  background: #56a9d8; }
+
+main.footerreveal-project section.project-overview hr {
+  border-color: #f1c40f; }
+main.footerreveal-project section.project-stats, main.footerreveal-project .ambition, main.footerreveal-project .roles, main.footerreveal-project .technologies {
+  border-color: #f1c40f; }
+main.footerreveal-project button {
+  background: #f1c40f; }
 
 .browsehappy {
   margin: 0.2em 0;

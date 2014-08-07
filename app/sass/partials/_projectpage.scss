@@ -157,7 +157,7 @@ section.project-buttons {
 		-webkit-font-smoothing: antialiased;
 		box-shadow:0px 5px 10px rgba(black, 0.2);
 		@include bradius;
-		@include transition(all 0.2s ease-out);
+		@include transition(all 0.1s ease-in-out);
 		@include media($desktop) {
 			width:15rem;
 			font-size:1.5em;
