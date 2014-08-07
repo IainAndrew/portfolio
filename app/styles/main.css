@@ -432,9 +432,6 @@ section.project-images {
     display: table;
     clear: both; }
 
-html, body {
-  height: 100%; }
-
 .mobile body {
   overflow: hidden; }
 
@@ -458,7 +455,7 @@ header {
   background-color: #00ccfe;
   background-image: -webkit-linear-gradient(#00ccfe 0%, #e55d87 80%);
   background-image: linear-gradient(#00ccfe 0%, #e55d87 80%);
-  height: 100%;
+  height: 100vh;
   width: 100%;
   text-align: center;
   position: relative;
