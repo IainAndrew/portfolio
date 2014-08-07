@@ -19,12 +19,12 @@
         scrollProperty: 'transform',
         positionProperty: 'transform',
         horizontalScrolling: false,
-        verticalOffset: 150
+        //verticalOffset: 150
       });
     } else {
       $.stellar({
         horizontalScrolling: false,
-        verticalOffset: 150
+        //verticalOffset: 150
       });
     }
   });
