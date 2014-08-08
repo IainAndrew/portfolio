@@ -435,9 +435,9 @@ section.project-images {
 .mobile body {
   overflow: hidden; }
 
-#wrapper {
-  height: 100%; }
-
+/*#wrapper {
+	height:100%;
+}*/
 .mobile #wrapper {
   position: absolute;
   top: 0;
@@ -445,11 +445,11 @@ section.project-images {
   left: 0;
   width: 100%; }
 
-#scroller {
-  height: 100%; }
-
+/*#scroller {
+	height:100%;
+}*/
 .mobile #scroller {
-  height: 3000px; }
+  height: 100vh; }
 
 header {
   background-color: #00ccfe;
@@ -530,15 +530,11 @@ header {
   z-index: 2; }
 
 .island-wrap {
-  position: fixed;
+  position: absolute;
+  width: 100%;
+  text-align: center;
   z-index: 0;
-  top: 40%;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-  transform: translateX(-50%); }
+  top: 40%; }
 
 .island {
   width: 100%; }
@@ -881,7 +877,7 @@ section.intro {
           font-size: 1.3em; } }
 
 section.projects {
-  padding-bottom: 100%; }
+  padding-bottom: 10rem; }
   section.projects .project {
     padding: 0 0.5rem; }
     section.projects .project:not(:first-child) {

@@ -5,9 +5,9 @@ html, body {
 .mobile body {
   overflow: hidden;
 }
-#wrapper {
+/*#wrapper {
 	height:100%;
-}
+}*/
 .mobile #wrapper {
   position: absolute;
   top: 0;
@@ -15,11 +15,11 @@ html, body {
   left: 0;
   width: 100%;
 }
-#scroller {
+/*#scroller {
 	height:100%;
-}
+}*/
 .mobile #scroller {
-  height: 3000px;
+  height: 100vh;
 }
 
 header {
@@ -103,11 +103,13 @@ header {
 	z-index:2;
 }
 .island-wrap {
-	position:fixed;
+	position:absolute;
+	width:100%;
+	text-align:center;
 	z-index:0;
 	top:40%;
-	left:50%;
-	@include transform(translateX(-50%));
+	//left:50%;
+	//@include transform(translateX(-50%) translateZ(0));
 	//@include animation(float 3s ease infinite);
 }
 .island {
