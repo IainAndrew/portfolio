@@ -1007,6 +1007,20 @@ main.footerreveal-project section.project-stats, main.footerreveal-project .ambi
 main.footerreveal-project button {
   background: #f1c40f; }
 
+main.simplespin-project section.project-overview hr {
+  border-color: #1abc9c; }
+main.simplespin-project section.project-stats, main.simplespin-project .ambition, main.simplespin-project .roles, main.simplespin-project .technologies {
+  border-color: #1abc9c; }
+main.simplespin-project button {
+  background: #1abc9c; }
+
+main.trunkys-project section.project-overview hr {
+  border-color: #F05B5C; }
+main.trunkys-project section.project-stats, main.trunkys-project .ambition, main.trunkys-project .roles, main.trunkys-project .technologies {
+  border-color: #F05B5C; }
+main.trunkys-project button {
+  background: #F05B5C; }
+
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
