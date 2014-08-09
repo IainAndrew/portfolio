@@ -1,5 +1,6 @@
 'use strict';
 
+window.viewportUnitsBuggyfill.init();
 
 (function(){
   var ua = navigator.userAgent,
@@ -21,6 +22,7 @@
         horizontalScrolling: false,
         //verticalOffset: 150
       });
+
     } else {
       $.stellar({
         horizontalScrolling: false,

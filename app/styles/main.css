@@ -830,7 +830,7 @@ footer {
 
 .island-speedo {
   position: fixed;
-  bottom: -20rem;
+  bottom: 0rem;
   width: 100%;
   text-align: center;
   -webkit-transition: -webkit-transform 0.7s ease-out;
