@@ -830,9 +830,10 @@ footer {
 
 .island-speedo {
   position: fixed;
-  bottom: 0rem;
+  bottom: -15rem;
   width: 100%;
   text-align: center;
+  opacity: 0;
   -webkit-transition: -webkit-transform 0.7s ease-out;
   -moz-transition: -moz-transform 0.7s ease-out;
   transition: transform 0.7s ease-out; }
@@ -877,7 +878,7 @@ section.intro {
           font-size: 1.3em; } }
 
 section.projects {
-  padding-bottom: 10rem; }
+  padding-bottom: 100vh; }
   section.projects .project {
     padding: 0 0.5rem; }
     section.projects .project:not(:first-child) {

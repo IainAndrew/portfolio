@@ -1,6 +1,10 @@
 'use strict';
 
-window.viewportUnitsBuggyfill.init();
+//window.viewportUnitsBuggyfill.init();
+
+var s = skrollr.init({
+	smoothScrolling: true
+});
 
 (function(){
   var ua = navigator.userAgent,
@@ -43,10 +47,12 @@ var all = function() {
 	var $title = $('#header-title'),
 		$shadow = $('.island-shadow');
 
+	// initialise Arctext on the title
 	$title.arctext({
 		radius: -1
 	});
 
+	// upward bounce animation
 	var titleArcUp = function() {
 
 		$title.arctext('set', {
@@ -62,6 +68,7 @@ var all = function() {
 
 	};
 
+	//downward bounce animation
 	var titleArcDown = function() {
 
 		$title.arctext('set', {
@@ -89,6 +96,7 @@ var all = function() {
 
 all();
 
+// Tilt animation when island hits the sea floor
 $(window).scroll(function() {
 	if($(window).scrollTop() + $(window).height() == $(document).height()) {
 		$('.island-speedo').addClass('speedo-tilt');
