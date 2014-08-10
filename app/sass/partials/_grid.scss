@@ -19,7 +19,7 @@ section.projects {
 	@include row();
 	.project {
 		@include outer-container;
-		.project-image {
+		.project-thumb {
 			@include media($zero) {
 				@include span-columns(12);
 			}

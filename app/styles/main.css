@@ -332,20 +332,20 @@ section.projects {
       display: table;
       clear: both; }
     @media screen and (min-width: 0px) {
-      section.projects .project .project-image {
+      section.projects .project .project-thumb {
         float: left;
         display: block;
         margin-right: 2.35765%;
         width: 100%; }
-        section.projects .project .project-image:last-child {
+        section.projects .project .project-thumb:last-child {
           margin-right: 0; } }
     @media screen and (min-width: 768px) {
-      section.projects .project .project-image {
+      section.projects .project .project-thumb {
         float: left;
         display: block;
         margin-right: 2.35765%;
         width: 48.82117%; }
-        section.projects .project .project-image:last-child {
+        section.projects .project .project-thumb:last-child {
           margin-right: 0; } }
     @media screen and (min-width: 0px) {
       section.projects .project .project-info {
@@ -768,10 +768,14 @@ section.project-buttons {
 section.project-images {
   padding: 4rem 0 4rem 0; }
 
-.project-img img {
-  width: 100%;
-  height: 100%;
-  border-radius: 3px; }
+.project-img {
+  margin-bottom: 4rem;
+  text-align: center; }
+  .project-img:last-child {
+    margin-bottom: 0; }
+  .project-img img {
+    max-width: 100%;
+    border-radius: 3px; }
 
 footer {
   position: absolute;
@@ -887,24 +891,24 @@ section.projects {
       section.projects .project {
         padding: 0 2rem; } }
 
-.project-image {
+.project-thumb {
   background-size: cover;
   background-position: center;
   height: 20rem; }
   @media screen and (min-width: 768px) {
-    .project-image {
+    .project-thumb {
       height: 24rem; } }
-  .project-image.plugmedia {
+  .project-thumb.plugmedia {
     background-image: url(../../images/plugmedia.gif); }
-  .project-image.peter-ashmore {
+  .project-thumb.peter-ashmore {
     background-image: url(../../images/peter-ashmore.gif); }
-  .project-image.penrose {
+  .project-thumb.penrose {
     background-image: url(../../images/plugmedia.gif); }
-  .project-image.trunkys {
+  .project-thumb.trunkys {
     background-image: url(../../images/plugmedia.gif); }
-  .project-image.simplespin {
+  .project-thumb.simplespin {
     background-image: url(../../images/simplespin.gif); }
-  .project-image.footer-reveal {
+  .project-thumb.footer-reveal {
     background-image: url(../../images/footer-reveal.gif); }
 
 .project-info {
@@ -1017,6 +1021,9 @@ main.trunkys-project section.project-stats, main.trunkys-project .ambition, main
   border-color: #F05B5C; }
 main.trunkys-project button {
   background: #F05B5C; }
+@media screen and (min-width: 768px) {
+  main.trunkys-project .project-img.trunkys-ui {
+    width: 50%; } }
 
 .browsehappy {
   margin: 0.2em 0;

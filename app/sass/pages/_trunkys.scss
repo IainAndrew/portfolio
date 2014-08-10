@@ -13,4 +13,9 @@ main.trunkys-project {
 	button {
 		background:#F05B5C;
 	}
+	.project-img.trunkys-ui {
+		@include media($desktop) {
+			width:50%;
+		}
+	}
 }
