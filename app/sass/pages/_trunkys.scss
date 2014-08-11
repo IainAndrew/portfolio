@@ -16,6 +16,7 @@ main.trunkys-project {
 	.project-img.trunkys-ui {
 		@include media($desktop) {
 			width:50%;
+			text-align:left;
 		}
 	}
 }

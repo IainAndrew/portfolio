@@ -13,4 +13,10 @@ main.peterashmore-project {
 	button {
 		background:#56a9d8;
 	}
+	.project-img.peterashmore-mobile-header {
+		@include media($desktop) {
+			width:50%;
+			text-align:left;
+		}
+	}
 }

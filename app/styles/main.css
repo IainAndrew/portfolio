@@ -776,6 +776,8 @@ section.project-images {
   .project-img img {
     max-width: 100%;
     border-radius: 3px; }
+    .project-img img.img-bordered {
+      border: 1px solid lightgrey; }
 
 footer {
   position: absolute;
@@ -905,7 +907,7 @@ section.projects {
   .project-thumb.penrose {
     background-image: url(../../images/plugmedia.gif); }
   .project-thumb.trunkys {
-    background-image: url(../../images/plugmedia.gif); }
+    background-image: url(../../images/trunkys/trunkys-carboxman.png); }
   .project-thumb.simplespin {
     background-image: url(../../images/simplespin.gif); }
   .project-thumb.footer-reveal {
@@ -1000,6 +1002,10 @@ main.peterashmore-project section.project-stats, main.peterashmore-project .ambi
   border-color: #56a9d8; }
 main.peterashmore-project button {
   background: #56a9d8; }
+@media screen and (min-width: 768px) {
+  main.peterashmore-project .project-img.peterashmore-mobile-header {
+    width: 50%;
+    text-align: left; } }
 
 main.footerreveal-project section.project-overview hr {
   border-color: #f1c40f; }
@@ -1023,7 +1029,8 @@ main.trunkys-project button {
   background: #F05B5C; }
 @media screen and (min-width: 768px) {
   main.trunkys-project .project-img.trunkys-ui {
-    width: 50%; } }
+    width: 50%;
+    text-align: left; } }
 
 .browsehappy {
   margin: 0.2em 0;

@@ -190,6 +190,10 @@ section.project-images {
 	img {
 		max-width:100%;
 		@include bradius;
+		&.img-bordered {
+			border:1px solid lightgrey;
+		}
+
 	}
 
 }
