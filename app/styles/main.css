@@ -995,6 +995,10 @@ main.plugmedia-project section.project-stats, main.plugmedia-project .ambition, 
   border-color: #E14D3D; }
 main.plugmedia-project button {
   background: #E14D3D; }
+@media screen and (min-width: 768px) {
+  main.plugmedia-project .project-img.plugmedia-mobile {
+    width: 50%;
+    text-align: left; } }
 
 main.peterashmore-project section.project-overview hr {
   border-color: #56a9d8; }
