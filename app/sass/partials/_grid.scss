@@ -47,7 +47,7 @@ section.project-stats {
 	@include outer-container;
 	.ambition {
 		@include media($zero) {
-			@include span-columns(12);
+			//@include span-columns(12);
 		}
 		@include media($desktop) {
 			@include span-columns(6);
@@ -56,7 +56,7 @@ section.project-stats {
 	}
 	.roles, .technologies {
 		@include media($zero) {
-			@include span-columns(12);
+			//@include span-columns(12);
 		}
 		@include media($desktop) {
 			@include span-columns(3);
@@ -66,4 +66,12 @@ section.project-stats {
 }
 section.project-images {
 	@include outer-container;
+	.project-descrip {
+		@include span-columns(10);
+		@include shift(1);
+		@include media($desktop) {
+			@include span-columns(7);
+			@include shift(2.5);
+		}
+	}
 }

@@ -13,10 +13,5 @@ main.plugmedia-project {
 	button {
 		background:#E14D3D;
 	}
-	.project-img.plugmedia-mobile {
-		@include media($desktop) {
-			width:50%;
-			text-align:left;
-		}
-	}
+
 }

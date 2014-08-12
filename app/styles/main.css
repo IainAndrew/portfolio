@@ -388,14 +388,6 @@ section.project-stats {
     content: "";
     display: table;
     clear: both; }
-  @media screen and (min-width: 0px) {
-    section.project-stats .ambition {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 100%; }
-      section.project-stats .ambition:last-child {
-        margin-right: 0; } }
   @media screen and (min-width: 768px) {
     section.project-stats .ambition {
       float: left;
@@ -404,14 +396,6 @@ section.project-stats {
       width: 48.82117%;
       margin-right: 0; }
       section.project-stats .ambition:last-child {
-        margin-right: 0; } }
-  @media screen and (min-width: 0px) {
-    section.project-stats .roles, section.project-stats .technologies {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 100%; }
-      section.project-stats .roles:last-child, section.project-stats .technologies:last-child {
         margin-right: 0; } }
   @media screen and (min-width: 768px) {
     section.project-stats .roles, section.project-stats .technologies {
@@ -431,6 +415,23 @@ section.project-images {
     content: "";
     display: table;
     clear: both; }
+  section.project-images .project-descrip {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 82.94039%;
+    margin-left: 8.5298%; }
+    section.project-images .project-descrip:last-child {
+      margin-right: 0; }
+    @media screen and (min-width: 768px) {
+      section.project-images .project-descrip {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 57.35098%;
+        margin-left: 21.32451%; }
+        section.project-images .project-descrip:last-child {
+          margin-right: 0; } }
 
 .mobile body {
   overflow: hidden; }
@@ -701,12 +702,12 @@ section.project-stats .ambition, section.project-stats .roles, section.project-s
   padding: 2rem;
   border: 1px solid;
   border-radius: 3px;
-  margin-bottom: 1rem; }
+  margin: 1rem; }
   @media screen and (min-width: 768px) {
     section.project-stats .ambition, section.project-stats .roles, section.project-stats .technologies {
       border: 0;
       border-radius: 0;
-      margin-bottom: 0; } }
+      margin: 0; } }
   section.project-stats .ambition ul, section.project-stats .roles ul, section.project-stats .technologies ul {
     padding: 0; }
     section.project-stats .ambition ul li, section.project-stats .roles ul li, section.project-stats .technologies ul li {
@@ -719,14 +720,14 @@ section.project-stats .technologies {
 
 section.project-buttons {
   text-align: center;
-  padding-bottom: 4rem; }
+  margin-bottom: 2rem; }
+  @media screen and (min-width: 768px) {
+    section.project-buttons {
+      margin-bottom: 4rem; } }
   section.project-buttons a {
     text-decoration: none; }
-    section.project-buttons a:first-child button {
-      margin-bottom: 2rem; }
     @media screen and (min-width: 480px) {
       section.project-buttons a:first-child button {
-        margin-bottom: 0;
         margin-right: 2rem; } }
   section.project-buttons button {
     position: relative;
@@ -766,11 +767,21 @@ section.project-buttons {
       transform: scale(0.97); }
 
 section.project-images {
-  padding: 4rem 0 4rem 0; }
+  padding: 2rem 0 2rem 0; }
+  @media screen and (min-width: 768px) {
+    section.project-images {
+      padding: 4rem 0 4rem 0; } }
 
 .project-img {
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   text-align: center; }
+  @media screen and (min-width: 768px) {
+    .project-img {
+      padding-left: 0;
+      padding-right: 0;
+      margin-bottom: 4rem; } }
   .project-img:last-child {
     margin-bottom: 0; }
   .project-img img {
@@ -778,6 +789,28 @@ section.project-images {
     border-radius: 3px; }
     .project-img img.img-bordered {
       border: 1px solid lightgrey; }
+
+.project-descrip {
+  font-family: "proxima_nova_ltlight";
+  margin-bottom: 2rem; }
+  @media screen and (min-width: 768px) {
+    .project-descrip {
+      margin-bottom: 4rem; } }
+  .project-descrip:last-child {
+    margin-bottom: 0; }
+  .project-descrip p {
+    margin: 0;
+    font-size: 1em; }
+    @media screen and (min-width: 480px) {
+      .project-descrip p {
+        font-size: 1.2em; } }
+  .project-descrip hr {
+    width: 50%;
+    border: 1px solid black;
+    margin-top: 2rem; }
+    @media screen and (min-width: 768px) {
+      .project-descrip hr {
+        margin-top: 4rem; } }
 
 footer {
   position: absolute;
@@ -995,10 +1028,6 @@ main.plugmedia-project section.project-stats, main.plugmedia-project .ambition, 
   border-color: #E14D3D; }
 main.plugmedia-project button {
   background: #E14D3D; }
-@media screen and (min-width: 768px) {
-  main.plugmedia-project .project-img.plugmedia-mobile {
-    width: 50%;
-    text-align: left; } }
 
 main.peterashmore-project section.project-overview hr {
   border-color: #56a9d8; }
