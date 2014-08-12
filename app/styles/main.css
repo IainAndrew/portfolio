@@ -726,9 +726,12 @@ section.project-buttons {
       margin-bottom: 4rem; } }
   section.project-buttons a {
     text-decoration: none; }
+    section.project-buttons a:first-child button {
+      margin-bottom: 2rem; }
     @media screen and (min-width: 480px) {
       section.project-buttons a:first-child button {
-        margin-right: 2rem; } }
+        margin-right: 2rem;
+        margin-bottom: 0; } }
   section.project-buttons button {
     position: relative;
     padding: 2rem;
@@ -1022,6 +1025,8 @@ section.projects {
     right: 1rem;
     background: #16747e; }
 
+main.plugmedia-project nav li:last-child {
+  opacity: 0.2; }
 main.plugmedia-project section.project-overview hr {
   border-color: #E14D3D; }
 main.plugmedia-project section.project-stats, main.plugmedia-project .ambition, main.plugmedia-project .roles, main.plugmedia-project .technologies {

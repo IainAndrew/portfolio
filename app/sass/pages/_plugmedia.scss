@@ -1,5 +1,13 @@
 main.plugmedia-project {
 
+	nav {
+		li {
+			&:last-child {
+				opacity:0.2;
+			}
+		}
+	}
+
 	section.project-overview {
 		hr {
 			border-color:#E14D3D;

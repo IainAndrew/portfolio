@@ -137,9 +137,13 @@ section.project-buttons {
 	}
 	a {
 		text-decoration:none;
+		&:first-child button {
+			margin-bottom:2rem;
+		}
 		@include media($tablet) {
 			&:first-child button {
 				margin-right:2rem;
+				margin-bottom:0;
 			}
 		}
 	}
