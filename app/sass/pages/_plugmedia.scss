@@ -18,6 +18,17 @@ main.plugmedia-project {
 		border-color:#E14D3D;
 	}
 
+	section.project-buttons {
+		p {
+			font-family:$heading-font;
+			font-style:italic;
+			margin:2rem 0 0 0;
+			@include media($desktop) {
+				margin:4rem 0 0 0;
+			}
+		}
+	}
+
 	button {
 		background:#E14D3D;
 	}

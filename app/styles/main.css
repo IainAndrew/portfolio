@@ -1032,6 +1032,13 @@ main.plugmedia-project section.project-overview hr {
   border-color: #E14D3D; }
 main.plugmedia-project section.project-stats, main.plugmedia-project .ambition, main.plugmedia-project .roles, main.plugmedia-project .technologies {
   border-color: #E14D3D; }
+main.plugmedia-project section.project-buttons p {
+  font-family: "proxima_nova_rgbold";
+  font-style: italic;
+  margin: 2rem 0 0 0; }
+  @media screen and (min-width: 768px) {
+    main.plugmedia-project section.project-buttons p {
+      margin: 4rem 0 0 0; } }
 main.plugmedia-project button {
   background: #E14D3D; }
 
