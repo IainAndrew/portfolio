@@ -536,6 +536,8 @@ header {
   text-align: center;
   z-index: 0;
   top: 40%; }
+  .no-js .island-wrap {
+    position: fixed; }
 
 .island {
   width: 100%; }
@@ -932,22 +934,21 @@ section.projects {
 .project-thumb {
   background-size: cover;
   background-position: center;
-  height: 20rem; }
+  height: 20rem;
+  border-radius: 3px; }
   @media screen and (min-width: 768px) {
     .project-thumb {
       height: 24rem; } }
   .project-thumb.plugmedia {
-    background-image: url(../../images/plugmedia.gif); }
+    background-image: url(../images/plugmedia/plugmedia-scroll.gif); }
   .project-thumb.peter-ashmore {
-    background-image: url(../../images/peter-ashmore.gif); }
-  .project-thumb.penrose {
-    background-image: url(../../images/plugmedia.gif); }
+    background-image: url(../images/peterashmore/peterashmore-audio.gif); }
   .project-thumb.trunkys {
-    background-image: url(../../images/trunkys/trunkys-carboxman.png); }
+    background-image: url(../images/trunkys/trunkys-carboxman.png); }
   .project-thumb.simplespin {
-    background-image: url(../../images/simplespin.gif); }
+    background-image: url(../images/simplespin/simplespin-demo.gif); }
   .project-thumb.footer-reveal {
-    background-image: url(../../images/footer-reveal.gif); }
+    background-image: url(../images/footerreveal/footerreveal-demo.gif); }
 
 .project-info {
   text-align: center;

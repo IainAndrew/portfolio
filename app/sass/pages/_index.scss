@@ -57,26 +57,24 @@ section.projects {
 	background-size:cover;
 	background-position:center;
 	height:20rem;
+	@include bradius;
 	@include media($desktop) {
 		height:24rem;
 	}
 	&.plugmedia {
-		background-image:url(../../images/plugmedia.gif);
+		background-image:url(../images/plugmedia/plugmedia-scroll.gif);
 	}
 	&.peter-ashmore {
-		background-image:url(../../images/peter-ashmore.gif);
-	}
-	&.penrose {
-		background-image:url(../../images/plugmedia.gif);
+		background-image:url(../images/peterashmore/peterashmore-audio.gif);
 	}
 	&.trunkys {
-		background-image:url(../../images/trunkys/trunkys-carboxman.png);
+		background-image:url(../images/trunkys/trunkys-carboxman.png);
 	}
 	&.simplespin {
-		background-image:url(../../images/simplespin.gif);
+		background-image:url(../images/simplespin/simplespin-demo.gif);
 	}
 	&.footer-reveal {
-		background-image:url(../../images/footer-reveal.gif);
+		background-image:url(../images/footerreveal/footerreveal-demo.gif);
 	}
 }
 .project-info {
