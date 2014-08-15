@@ -65,14 +65,14 @@ var all = function() {
 
 	};
 	
-	/*var titleArc = setInterval(function() {
+	var titleArc = setInterval(function() {
 
 		titleArcUp();
 		setTimeout(function() {
 			titleArcDown();
 		}, 300);
 
-	}, 2000);*/
+	}, 2000);
 };
 
 all();

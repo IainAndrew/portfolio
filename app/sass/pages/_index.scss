@@ -118,7 +118,7 @@ section.projects {
 		color:$body-color;
 		font-size:1.2em;
 		position:relative;
-		@include transition(all 0.2s);
+		@include transition(all 0.4s);
 		&:before {
 			content:"";
 			width:1px;
@@ -127,7 +127,7 @@ section.projects {
 			position:absolute;
 			top:0;
 			left:0;
-			@include transition(all 0.2s ease-out);
+			@include transition(all 0.4s cubic-bezier(.87,-.41,.19,1.44));
 		}
 		&:after {
 			content:"";
@@ -137,7 +137,7 @@ section.projects {
 			position:absolute;
 			top:0;
 			right:0;
-			@include transition(all 0.2s ease-out);
+			@include transition(all 0.4s cubic-bezier(.87,-.41,.19,1.44));
 		}
 		&:active {
 			font-size:1.1em;

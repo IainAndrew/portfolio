@@ -1011,9 +1011,9 @@ section.projects {
     color: white;
     font-size: 1.2em;
     position: relative;
-    -webkit-transition: all 0.2s;
-    -moz-transition: all 0.2s;
-    transition: all 0.2s; }
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s; }
     .project-info button:before {
       content: "";
       width: 1px;
@@ -1022,9 +1022,9 @@ section.projects {
       position: absolute;
       top: 0;
       left: 0;
-      -webkit-transition: all 0.2s ease-out;
-      -moz-transition: all 0.2s ease-out;
-      transition: all 0.2s ease-out; }
+      -webkit-transition: all 0.4s cubic-bezier(0.87, -0.41, 0.19, 1.44);
+      -moz-transition: all 0.4s cubic-bezier(0.87, -0.41, 0.19, 1.44);
+      transition: all 0.4s cubic-bezier(0.87, -0.41, 0.19, 1.44); }
     .project-info button:after {
       content: "";
       width: 1px;
@@ -1033,9 +1033,9 @@ section.projects {
       position: absolute;
       top: 0;
       right: 0;
-      -webkit-transition: all 0.2s ease-out;
-      -moz-transition: all 0.2s ease-out;
-      transition: all 0.2s ease-out; }
+      -webkit-transition: all 0.4s cubic-bezier(0.87, -0.41, 0.19, 1.44);
+      -moz-transition: all 0.4s cubic-bezier(0.87, -0.41, 0.19, 1.44);
+      transition: all 0.4s cubic-bezier(0.87, -0.41, 0.19, 1.44); }
     .project-info button:active {
       font-size: 1.1em; }
     .project-info button:focus {
