@@ -37,11 +37,11 @@ var all = function() {
 	var titleArcUp = function() {
 
 		$title.arctext('set', {
-			radius      : 200, 
+			radius      : 220, 
 			dir         : 1,
 			animation   : {
 				speed   : 300,
-				easing  : 'ease-in'
+				easing  : 'cubic-bezier(.87,-.41,.19,1.44)'
 			}
 		});
 		$title.animate({marginTop:'-10%'}, 300);

@@ -563,8 +563,65 @@ header {
   .no-js .island-wrap {
     position: fixed; }
 
+@-webkit-keyframes island-onload {
+  from {
+    -webkit-transform: translateZ(500px); }
+
+  to {
+    -webkit-transform: translateZ(0); } }
+@-moz-keyframes island-onload {
+  from {
+    -moz-transform: translateZ(500px); }
+
+  to {
+    -moz-transform: translateZ(0); } }
+@keyframes island-onload {
+  from {
+    -webkit-transform: translateZ(500px);
+    -moz-transform: translateZ(500px);
+    -ms-transform: translateZ(500px);
+    -o-transform: translateZ(500px);
+    transform: translateZ(500px); }
+
+  to {
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0); } }
+@-webkit-keyframes bg-onload {
+  from {
+    background-position: 50% 0; }
+
+  to {
+    background-position: 50% 100%; } }
+@-moz-keyframes bg-onload {
+  from {
+    background-position: 50% 0; }
+
+  to {
+    background-position: 50% 100%; } }
+@keyframes bg-onload {
+  from {
+    background-position: 50% 0; }
+
+  to {
+    background-position: 50% 100%; } }
 .island {
-  width: 100%; }
+  width: 100%;
+  -webkit-animation: island-onload 0.8s cubic-bezier(0.87, -0.41, 0.19, 1.44);
+  -moz-animation: island-onload 0.8s cubic-bezier(0.87, -0.41, 0.19, 1.44);
+  animation: island-onload 0.8s cubic-bezier(0.87, -0.41, 0.19, 1.44);
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  -moz-perspective: 1000;
+  perspective: 1000; }
 
 .island-shadow {
   position: absolute;
