@@ -622,6 +622,8 @@ header {
   -webkit-perspective: 1000;
   -moz-perspective: 1000;
   perspective: 1000; }
+  .island img {
+    max-width: 100%; }
 
 .island-shadow {
   position: absolute;
@@ -1007,7 +1009,10 @@ section.projects {
   section.projects .project {
     padding: 0 0.5rem; }
     section.projects .project:not(:first-child) {
-      margin-top: 12rem; }
+      margin-top: 4rem; }
+      @media screen and (min-width: 768px) {
+        section.projects .project:not(:first-child) {
+          margin-top: 12rem; } }
     @media screen and (min-width: 768px) {
       section.projects .project {
         padding: 0 2rem; } }

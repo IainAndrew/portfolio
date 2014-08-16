@@ -128,6 +128,9 @@ header {
 	@include transform(translate3d(0, 0, 0));
 	@include backface-visibility(hidden);
 	@include perspective(1000);
+	img {
+		max-width:100%;
+	}
 }
 .island-shadow {
 	position:absolute;

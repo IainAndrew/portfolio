@@ -46,7 +46,10 @@ section.projects {
 	.project {
 		padding:0 0.5rem;
 		&:not(:first-child) {
-			margin-top:12rem;
+			margin-top:4rem;
+			@include media($desktop) {
+				margin-top:12rem;
+			}
 		}
 		@include media($desktop) {
 			padding:0 2rem;
