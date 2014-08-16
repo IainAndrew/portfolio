@@ -45,7 +45,7 @@ var all = function() {
 			}
 		});
 		$title.animate({marginTop:'-10%'}, 300);
-		$shadow.animate({width:'5rem', opacity:0.15}, 300);
+		$shadow.animate({width:'5rem', opacity:0.07}, 300);
 
 	};
 
@@ -61,7 +61,7 @@ var all = function() {
 			}
 		});
 		$title.animate({marginTop:0}, 600);
-		$shadow.animate({width:'10rem', opacity:0.2}, 600);
+		$shadow.animate({width:'10rem', opacity:0.12}, 600);
 
 	};
 	
