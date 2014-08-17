@@ -317,6 +317,31 @@ section.intro {
     display: table;
     clear: both; }
 
+section.about {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  section.about:after {
+    content: "";
+    display: table;
+    clear: both; }
+  @media screen and (min-width: 0px) {
+    section.about .about-about, section.about .about-technologies {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      section.about .about-about:last-child, section.about .about-technologies:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 768px) {
+    section.about .about-about, section.about .about-technologies {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%; }
+      section.about .about-about:last-child, section.about .about-technologies:last-child {
+        margin-right: 0; } }
+
 section.projects {
   display: block; }
   section.projects:after {
@@ -450,7 +475,8 @@ header {
     margin: 0;
     position: relative;
     top: 25%;
-    font-family: "libre_baskervilleitalic";
+    text-transform: uppercase;
+    font-family: "bubblegumregular";
     font-weight: normal;
     color: #fff;
     z-index: 1;
@@ -559,7 +585,7 @@ header {
   -webkit-perspective: 1000;
   -moz-perspective: 1000;
   perspective: 1000; }
-  .no-js .island-wrap {
+  .no-js .island-wrap, .touch .island-wrap {
     position: fixed; }
 
 @-webkit-keyframes island-onload {
@@ -1014,7 +1040,7 @@ section.projects {
           margin-top: 12rem; } }
     @media screen and (min-width: 768px) {
       section.projects .project {
-        padding: 0 2rem; } }
+        padding: 0; } }
 
 .project-thumb {
   background-size: cover;

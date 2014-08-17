@@ -15,6 +15,17 @@ main {
 section.intro {
 	@include row();
 }
+section.about {
+	@include outer-container;
+	.about-about, .about-technologies {
+		@include media($zero) {
+			@include span-columns(12);
+		}
+		@include media($desktop) {
+			@include span-columns(6);
+		}
+	}
+}
 section.projects {
 	@include row();
 	.project {
