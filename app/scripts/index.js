@@ -4,10 +4,7 @@ window.viewportUnitsBuggyfill.init();
 
 (function() {
 
-	var ua = navigator.userAgent,
-		isMobileWebkit = /WebKit/.test(ua) && /Mobile/.test(ua);
-
-	if ( isMobileWebkit ) {
+	if ( Modernizr.touch ) {
 		alert("I'm a mobile device!");
 	} else {
 		$.stellar({
@@ -21,7 +18,6 @@ window.viewportUnitsBuggyfill.init();
 	}
 
 })();
-
 
 var all = function() {
 
