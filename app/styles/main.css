@@ -1031,7 +1031,8 @@ section.intro {
 
 section.about {
   color: white;
-  font-family: "proxima_nova_ltlight"; }
+  font-family: "proxima_nova_ltlight";
+  padding-bottom: 10rem; }
   section.about h2 {
     font-family: "proxima_nova_rgbold";
     text-transform: uppercase; }
