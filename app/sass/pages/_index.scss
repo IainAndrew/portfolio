@@ -38,6 +38,23 @@ section.intro {
 	}
 }
 
+section.about {
+	color:white;
+	font-family:$body-font;
+	h2 {
+		font-family:$heading-font;
+		text-transform:uppercase;
+	}
+	.about-technologies {
+		ul {
+			padding:0;
+			li {
+				display:inline-block;
+			}
+		}
+	}
+}
+
 section.projects {
 	padding-bottom:100vh;
 	@include media($desktop) {

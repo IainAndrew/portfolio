@@ -1029,6 +1029,17 @@ section.intro {
         section.intro h1:nth-child(2) {
           font-size: 1.3em; } }
 
+section.about {
+  color: white;
+  font-family: "proxima_nova_ltlight"; }
+  section.about h2 {
+    font-family: "proxima_nova_rgbold";
+    text-transform: uppercase; }
+  section.about .about-technologies ul {
+    padding: 0; }
+    section.about .about-technologies ul li {
+      display: inline-block; }
+
 section.projects {
   padding-bottom: 100vh; }
   section.projects .project {
