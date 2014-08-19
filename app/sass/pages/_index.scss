@@ -48,11 +48,17 @@ section.about {
 		color:#2a8892 - 20;
 	}
 	.about-about, .about-technologies {
-		padding:0 5rem;
+		padding:0 2rem;
+		@include media($mobile) {
+			padding:0 3rem;
+		}
+		@include media($tablet) {
+			padding:0 5rem;
+		}
 	}
 	.about-about {
 		p {
-			text-align:justify;
+			//text-align:justify;
 		}
 	}
 	.about-technologies {
@@ -65,7 +71,7 @@ section.about {
 				display:inline-block;
 				border:1px solid white;
 				padding:0.4em;
-				margin:0.2em;
+				margin:0.3em 0 0.3rem 0.3rem;
 				line-height:1em;
 			}
 		}
