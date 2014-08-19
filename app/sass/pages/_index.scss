@@ -7,18 +7,28 @@ main {
 
 section.intro {
 	text-align:center;
-	padding-top:15rem;
-	padding-bottom:15rem;
+	padding-top:10rem;
+	padding-bottom:10rem;
+	@include media($desktop) {
+		padding-top:15rem;
+	}
+	hr {
+		padding:0;
+		border:0;
+		border-top:1px dashed #fff;
+		width:50%;
+	}
 	h1 {
 		font-weight:normal;
 		color:$body-color;
 		text-shadow:0 -2px 2px #94ffea - 40;
 		margin:0;
-		&:first-child {
+		&:first-of-type {
 			font-family:$heading-font;
 			text-transform:uppercase;
 			letter-spacing:0.2em;
 			margin-bottom:1rem;
+			margin-top:4rem;
 			@include media($zero) {
 				font-size:2em;
 			}
@@ -26,8 +36,10 @@ section.intro {
 				font-size:2.5em;
 			}
 		}
-		&:nth-child(2) {
+		&:nth-of-type(2) {
 			font-family:$sub-heading-font;
+			margin-bottom:4rem;
+			-webkit-font-smoothing: antialiased;
 			@include media($zero) {
 				font-size:1em;
 			}
@@ -46,6 +58,8 @@ section.about {
 		font-family:$heading-font;
 		text-transform:uppercase;
 		color:#2a8892 - 20;
+		margin:0;
+		margin-bottom:1rem;
 	}
 	.about-about, .about-technologies {
 		padding:0 2rem;
@@ -58,7 +72,7 @@ section.about {
 	}
 	.about-about {
 		p {
-			//text-align:justify;
+			margin:0;
 		}
 	}
 	.about-technologies {
@@ -67,6 +81,7 @@ section.about {
 		}
 		ul {
 			padding:0;
+			margin:0;
 			li {
 				display:inline-block;
 				border:1px solid white;
@@ -134,13 +149,15 @@ section.projects {
 	}
 	hr {
 		width:40%;
-		border:1px solid $body-color;
+		border:0;
+		border-top:1px solid $body-color;
 		margin-top:1.5rem;
 		margin-bottom:1.5rem;
 	}
 	.project-roles {
 		font-family:$sub-heading-font;
 		font-size:0.8em;
+		-webkit-font-smoothing: antialiased;
 	}
 	.project-description {
 		text-align:left;

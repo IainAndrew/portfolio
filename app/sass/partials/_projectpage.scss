@@ -71,7 +71,8 @@ section.project-overview {
 	}
 	hr {
 		width:20%;
-		border:1px solid;
+		border:0;
+		border-top:1px solid;
 		max-width:7rem;
 		margin-bottom:0;
 	}
@@ -234,7 +235,8 @@ section.project-images {
 	}
 	hr {
 		width:50%;
-		border:1px solid black;
+		border:0;
+		border-top:1px solid black;
 		margin-top:2rem;
 		@include media($desktop) {
 			margin-top:4rem;
