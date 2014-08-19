@@ -23,6 +23,7 @@ section.about {
 		}
 		@include media($desktop) {
 			@include span-columns(6);
+			@include omega;
 		}
 	}
 }

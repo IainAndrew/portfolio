@@ -338,7 +338,8 @@ section.about {
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 48.82117%; }
+      width: 48.82117%;
+      margin-right: 0; }
       section.about .about-about:last-child, section.about .about-technologies:last-child {
         margin-right: 0; } }
 
@@ -1040,14 +1041,19 @@ section.about {
     text-transform: uppercase; }
   section.about .about-about, section.about .about-technologies {
     padding: 0 5rem; }
-  section.about .about-about {
-    border-right: 1px solid white; }
-    section.about .about-about p {
-      text-align: justify; }
+  section.about .about-about p {
+    text-align: justify; }
+  @media screen and (min-width: 768px) {
+    section.about .about-technologies {
+      border-left: 1px solid white; } }
   section.about .about-technologies ul {
     padding: 0; }
     section.about .about-technologies ul li {
-      display: inline-block; }
+      display: inline-block;
+      border: 1px solid white;
+      padding: 0.4em;
+      margin: 0.2em;
+      line-height: 1em; }
 
 section.projects {
   padding-bottom: 100vh; }
