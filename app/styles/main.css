@@ -555,7 +555,7 @@ header {
   position: absolute;
   bottom: 0;
   left: 0;
-  background: url("../images/front.png");
+  background: url("../images/front-new.png");
   background-size: cover;
   background-position: 50% 100%; }
 
@@ -565,7 +565,7 @@ header {
   position: absolute;
   top: 100%;
   left: 0;
-  background: url("../images/btm.png");
+  background: url("../images/bottom-new.png");
   background-size: cover;
   background-position: 50% 0%;
   z-index: 2; }
