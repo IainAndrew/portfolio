@@ -800,8 +800,7 @@ section.project-overview {
 @media screen and (min-width: 768px) {
   section.project-stats {
     border: 1px solid;
-    border-radius: 3px;
-    padding: 2rem; } }
+    border-radius: 3px; } }
 section.project-stats p, section.project-stats ul {
   font-family: "proxima_nova_ltlight"; }
 section.project-stats h2 {
@@ -822,6 +821,8 @@ section.project-stats .ambition, section.project-stats .roles, section.project-s
     padding: 0; }
     section.project-stats .ambition ul li, section.project-stats .roles ul li, section.project-stats .technologies ul li {
       list-style-type: none; }
+section.project-stats .ambition p {
+  text-align: justify; }
 @media screen and (min-width: 768px) {
   section.project-stats .ambition, section.project-stats .roles {
     border-right: 1px solid; } }
@@ -913,7 +914,8 @@ section.project-images {
     margin-bottom: 0; }
   .project-descrip p {
     margin: 0;
-    font-size: 1em; }
+    font-size: 1em;
+    text-align: justify; }
     @media screen and (min-width: 480px) {
       .project-descrip p {
         font-size: 1.2em; } }
@@ -1036,6 +1038,12 @@ section.about {
   section.about h2 {
     font-family: "proxima_nova_rgbold";
     text-transform: uppercase; }
+  section.about .about-about, section.about .about-technologies {
+    padding: 0 5rem; }
+  section.about .about-about {
+    border-right: 1px solid white; }
+    section.about .about-about p {
+      text-align: justify; }
   section.about .about-technologies ul {
     padding: 0; }
     section.about .about-technologies ul li {

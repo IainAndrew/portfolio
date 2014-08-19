@@ -92,7 +92,7 @@ section.project-stats {
 	@include media($desktop) {
 		border:1px solid;
 		@include bradius;
-		padding:2rem;
+		//padding:2rem;
 	}
 	p, ul {
 		font-family:$body-font;
@@ -117,6 +117,11 @@ section.project-stats {
 			li {
 				list-style-type:none;
 			}
+		}
+	}
+	.ambition {
+		p {
+			text-align:justify;
 		}
 	}
 	.ambition, .roles {
@@ -222,6 +227,7 @@ section.project-images {
 	p {
 		margin:0;
 		font-size:1em;
+		text-align:justify;
 		@include media($tablet) {
 			font-size:1.2em;
 		}

@@ -46,6 +46,15 @@ section.about {
 		font-family:$heading-font;
 		text-transform:uppercase;
 	}
+	.about-about, .about-technologies {
+		padding:0 5rem;
+	}
+	.about-about {
+		border-right:1px solid white;
+		p {
+			text-align:justify;
+		}
+	}
 	.about-technologies {
 		ul {
 			padding:0;
