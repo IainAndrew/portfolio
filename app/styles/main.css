@@ -1035,10 +1035,11 @@ section.intro {
 section.about {
   color: white;
   font-family: "proxima_nova_ltlight";
-  padding-bottom: 10rem; }
+  margin-bottom: 10rem; }
   section.about h2 {
     font-family: "proxima_nova_rgbold";
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    color: #16747e; }
   section.about .about-about, section.about .about-technologies {
     padding: 0 5rem; }
   section.about .about-about p {

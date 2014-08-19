@@ -41,10 +41,11 @@ section.intro {
 section.about {
 	color:white;
 	font-family:$body-font;
-	padding-bottom:10rem;
+	margin-bottom:10rem;
 	h2 {
 		font-family:$heading-font;
 		text-transform:uppercase;
+		color:#2a8892 - 20;
 	}
 	.about-about, .about-technologies {
 		padding:0 5rem;
