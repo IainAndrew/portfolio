@@ -53,11 +53,15 @@ section.intro {
 section.about {
 	color:#000;
 	font-family:$body-font;
-	margin-bottom:10rem;
+	margin:0 0.5rem 10rem 0.5rem;
 	background:white;
-	padding:4rem 0 4rem;
+	padding:2rem 0 2rem;
 	box-shadow:-2px -2px 3px rgba(#000, 0.1);
 	@include bradius;
+	@include media($desktop) {
+		@include outer-container;
+		margin-bottom:10rem;
+	}
 	h2 {
 		font-family:$heading-font;
 		text-transform:uppercase;
@@ -66,12 +70,12 @@ section.about {
 		margin-bottom:1rem;
 	}
 	.about-about, .about-technologies {
-		padding:0 2rem;
+		padding:2rem;
 		@include media($mobile) {
-			padding:0 3rem;
+			padding:2rem 3rem;
 		}
 		@include media($tablet) {
-			padding:0 5rem;
+			padding:2rem 5rem;
 		}
 	}
 	.about-about {
