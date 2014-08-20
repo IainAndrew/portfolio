@@ -51,13 +51,17 @@ section.intro {
 }
 
 section.about {
-	color:#fff;
+	color:#000;
 	font-family:$body-font;
 	margin-bottom:10rem;
+	background:white;
+	padding:4rem 0 4rem;
+	box-shadow:-2px -2px 3px rgba(#000, 0.1);
+	@include bradius;
 	h2 {
 		font-family:$heading-font;
 		text-transform:uppercase;
-		color:#2a8892 - 20;
+		//color:#2a8892 - 20;
 		margin:0;
 		margin-bottom:1rem;
 	}
