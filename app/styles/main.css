@@ -731,6 +731,8 @@ main.project-page nav {
       text-transform: uppercase;
       padding: 1rem;
       font-size: 0.5em; }
+      main.project-page nav ul li.nav-disabled {
+        opacity: 0.2; }
       main.project-page nav ul li:first-child {
         float: left; }
       main.project-page nav ul li:nth-child(2) {
@@ -916,7 +918,7 @@ section.project-images {
   .project-descrip hr {
     width: 50%;
     border: 0;
-    border-top: 1px solid black;
+    border-top: 1px dotted black;
     margin-top: 2rem; }
     @media screen and (min-width: 768px) {
       .project-descrip hr {
@@ -1038,7 +1040,7 @@ section.intro {
           font-size: 1.3em; } }
 
 section.about {
-  color: white;
+  color: #fff;
   font-family: "proxima_nova_ltlight";
   margin-bottom: 10rem; }
   section.about h2 {
@@ -1059,13 +1061,13 @@ section.about {
     margin: 0; }
   @media screen and (min-width: 768px) {
     section.about .about-technologies {
-      border-left: 1px solid white; } }
+      border-left: 1px dotted; } }
   section.about .about-technologies ul {
     padding: 0;
     margin: 0; }
     section.about .about-technologies ul li {
       display: inline-block;
-      border: 1px solid white;
+      border: 1px solid;
       padding: 0.4em;
       margin: 0.3em 0 0.3rem 0.3rem;
       line-height: 1em; }
@@ -1121,7 +1123,7 @@ section.projects {
     margin-bottom: 1.5rem; }
   .project-info .project-roles {
     font-family: "libre_baskervilleitalic";
-    font-size: 0.8em;
+    font-size: 0.9em;
     -webkit-font-smoothing: antialiased; }
   .project-info .project-description {
     text-align: left;
@@ -1180,8 +1182,6 @@ section.projects {
     right: 1rem;
     background: #16747e; }
 
-main.plugmedia-project nav li:last-child {
-  opacity: 0.2; }
 main.plugmedia-project section.project-overview hr {
   border-color: #E14D3D; }
 main.plugmedia-project section.project-stats, main.plugmedia-project .ambition, main.plugmedia-project .roles, main.plugmedia-project .technologies {

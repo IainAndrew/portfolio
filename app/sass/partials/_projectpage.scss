@@ -16,6 +16,9 @@ main.project-page {
 				text-transform:uppercase;
 				padding:1rem;
 				font-size:0.5em;
+				&.nav-disabled {
+					opacity:0.2;
+				}
 				&:first-child {
 					float:left;
 				}
@@ -236,7 +239,7 @@ section.project-images {
 	hr {
 		width:50%;
 		border:0;
-		border-top:1px solid black;
+		border-top:1px dotted black;
 		margin-top:2rem;
 		@include media($desktop) {
 			margin-top:4rem;
