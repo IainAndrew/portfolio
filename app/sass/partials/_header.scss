@@ -127,7 +127,7 @@ header {
 }
 .island {
 	width:100%;
-	@include animation(island-onload 0.8s cubic-bezier(.87,-.41,.19,1.44));
+	@include animation(island-onload 0.5s cubic-bezier(.87,-.41,.19,1.44));
 	@include transform(translate3d(0, 0, 0));
 	@include backface-visibility(hidden);
 	@include perspective(1000);

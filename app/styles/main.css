@@ -627,9 +627,9 @@ header {
     transform: translateZ(0); } }
 .island {
   width: 100%;
-  -webkit-animation: island-onload 0.8s cubic-bezier(0.87, -0.41, 0.19, 1.44);
-  -moz-animation: island-onload 0.8s cubic-bezier(0.87, -0.41, 0.19, 1.44);
-  animation: island-onload 0.8s cubic-bezier(0.87, -0.41, 0.19, 1.44);
+  -webkit-animation: island-onload 0.5s cubic-bezier(0.87, -0.41, 0.19, 1.44);
+  -moz-animation: island-onload 0.5s cubic-bezier(0.87, -0.41, 0.19, 1.44);
+  animation: island-onload 0.5s cubic-bezier(0.87, -0.41, 0.19, 1.44);
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
   -ms-transform: translate3d(0, 0, 0);
@@ -995,18 +995,18 @@ footer {
     -o-transform: rotate(3deg);
     transform: rotate(3deg); }
 
-main {
+main.index {
   position: relative;
   z-index: 1; }
   @media screen and (min-width: 768px) {
-    main {
+    main.index {
       padding-left: 0.5rem;
       padding-right: 0.5rem; } }
   @media screen and (min-width: 1088px) {
-    main {
+    main.index {
       padding-left: 0;
       padding-right: 0; } }
-  main:after {
+  main.index:after {
     content: "";
     width: 15rem;
     height: 5rem;
