@@ -998,6 +998,25 @@ footer {
 main {
   position: relative;
   z-index: 1; }
+  @media screen and (min-width: 768px) {
+    main {
+      padding-left: 0.5rem;
+      padding-right: 0.5rem; } }
+  @media screen and (min-width: 1088px) {
+    main {
+      padding-left: 0;
+      padding-right: 0; } }
+  main:after {
+    content: "";
+    width: 15rem;
+    height: 5rem;
+    background: #94ffea;
+    position: absolute;
+    top: -1.5rem;
+    left: 50%;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    box-shadow: -10rem 0.5rem 0 #94ffea; }
 
 section.intro {
   text-align: center;

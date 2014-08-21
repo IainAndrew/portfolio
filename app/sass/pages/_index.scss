@@ -3,6 +3,27 @@ main {
 	//@include linear-gradient(#94ffea 0%, #2a8892 50%, $fallback:#94ffea );
 	position:relative;
 	z-index:1;
+	@include media($desktop) {
+		padding-left:0.5rem;
+		padding-right:0.5rem;
+	}
+	@include media($container) {
+		padding-left:0;
+		padding-right:0;
+	}
+	&:after {
+		content:"";
+		width:15rem;
+		height:5rem;
+		background:#94ffea;
+		position:absolute;
+		top:-1.5rem;
+		left:50%;
+		border-top-left-radius:100%;
+		border-top-right-radius:100%;
+		//border:1px solid black;
+		box-shadow:-10rem 0.5rem 0 #94ffea;
+	}
 }
 
 section.intro {
