@@ -1073,7 +1073,7 @@ section.about {
   font-family: "libre_baskervilleregular";
   -webkit-font-smoothing: antialiased;
   margin: 0 0.5rem 10rem 0.5rem;
-  background: white;
+  background: #fff;
   padding: 2rem;
   box-shadow: -2px -2px 3px rgba(0, 0, 0, 0.1);
   border-radius: 3px; }
@@ -1178,21 +1178,40 @@ section.projects {
   .project-info hr {
     width: 40%;
     border: 0;
-    border-top: 1px solid #fff;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem; }
+    border-top: 1px dotted;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem; }
   .project-info .project-roles {
     font-family: "libre_baskervilleitalic";
     -webkit-font-smoothing: antialiased;
-    font-size: 0.9em;
+    font-size: 1em;
     -webkit-font-smoothing: antialiased; }
   .project-info .project-description {
-    text-align: left;
     font-family: "libre_baskervilleregular";
     -webkit-font-smoothing: antialiased;
+    font-size: 0.8em;
     margin-top: 2.5rem;
     margin-bottom: 2.5rem;
-    padding: 0 1rem; }
+    padding: 2rem;
+    background: white;
+    border-radius: 3px;
+    color: #444444;
+    position: relative; }
+    .project-info .project-description:before {
+      content: "";
+      width: 1rem;
+      height: 1rem;
+      position: absolute;
+      top: -0.5rem;
+      left: 50%;
+      margin-left: -0.5rem;
+      background: white;
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      transform: rotate(45deg);
+      border-radius: 1px; }
   .project-info button {
     width: 15rem;
     height: 4rem;
