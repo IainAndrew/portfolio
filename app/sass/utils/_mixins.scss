@@ -6,3 +6,7 @@
 	font-family:$body-font;
 	-webkit-font-smoothing: antialiased;
 }
+@mixin subheadingfont {
+	font-family:$sub-heading-font;
+	-webkit-font-smoothing: antialiased;
+}

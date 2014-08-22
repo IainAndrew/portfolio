@@ -12,7 +12,7 @@ main.project-page {
 			margin:0;
 			li {
 				list-style-type:none;
-				font-family:$body-font;
+				font-family:$heading-font-light;
 				text-transform:uppercase;
 				padding:1rem;
 				font-size:0.5em;
@@ -80,7 +80,7 @@ section.project-overview {
 		margin-bottom:0;
 	}
 	p {
-		font-family:$body-font;
+		@include bodyfont;
 		margin:0;
 		padding:2rem 0 2rem 0;
 		@include media($tablet) {
@@ -99,7 +99,7 @@ section.project-stats {
 		//padding:2rem;
 	}
 	p, ul {
-		font-family:$body-font;
+		@include bodyfont;
 	}
 	h2 {
 		font-family:$heading-font;
@@ -161,7 +161,7 @@ section.project-buttons {
 		padding:2rem;
 		width:12rem;
 		text-transform:uppercase;
-		font-family:$body-font;
+		font-family:$heading-font-light;
 		font-size:1.2em;
 		color:white;
 		background:green;
@@ -220,7 +220,7 @@ section.project-images {
 
 }
 .project-descrip {
-	font-family:$body-font;
+	@include bodyfont;
 	margin-bottom:2rem;
 	@include media($desktop) {
 		margin-bottom:4rem;

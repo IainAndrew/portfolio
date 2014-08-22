@@ -733,7 +733,7 @@ main.project-page nav {
     margin: 0; }
     main.project-page nav ul li {
       list-style-type: none;
-      font-family: "libre_baskervilleregular";
+      font-family: "proxima_nova_ltlight";
       text-transform: uppercase;
       padding: 1rem;
       font-size: 0.5em; }
@@ -790,6 +790,7 @@ section.project-overview {
     margin-bottom: 0; }
   section.project-overview p {
     font-family: "libre_baskervilleregular";
+    -webkit-font-smoothing: antialiased;
     margin: 0;
     padding: 2rem 0 2rem 0; }
     @media screen and (min-width: 480px) {
@@ -804,7 +805,8 @@ section.project-overview {
     border: 1px solid;
     border-radius: 3px; } }
 section.project-stats p, section.project-stats ul {
-  font-family: "libre_baskervilleregular"; }
+  font-family: "libre_baskervilleregular";
+  -webkit-font-smoothing: antialiased; }
 section.project-stats h2 {
   font-family: "proxima_nova_rgbold";
   text-transform: uppercase;
@@ -850,7 +852,7 @@ section.project-buttons {
     padding: 2rem;
     width: 12rem;
     text-transform: uppercase;
-    font-family: "libre_baskervilleregular";
+    font-family: "proxima_nova_ltlight";
     font-size: 1.2em;
     color: white;
     background: green;
@@ -908,6 +910,7 @@ section.project-images {
 
 .project-descrip {
   font-family: "libre_baskervilleregular";
+  -webkit-font-smoothing: antialiased;
   margin-bottom: 2rem; }
   @media screen and (min-width: 768px) {
     .project-descrip {
@@ -1055,6 +1058,7 @@ section.intro {
           font-size: 2.5em; } }
     section.intro h1:nth-of-type(2) {
       font-family: "libre_baskervilleitalic";
+      -webkit-font-smoothing: antialiased;
       margin-bottom: 4rem;
       -webkit-font-smoothing: antialiased; }
       @media screen and (min-width: 0px) {
@@ -1149,7 +1153,7 @@ section.projects {
   padding: 1.5rem;
   color: white; }
   .project-info h3 {
-    font-family: "libre_baskervilleregular";
+    font-family: "proxima_nova_rgbold";
     font-weight: normal;
     text-transform: uppercase;
     font-size: 2em;
@@ -1163,11 +1167,13 @@ section.projects {
     margin-bottom: 1.5rem; }
   .project-info .project-roles {
     font-family: "libre_baskervilleitalic";
+    -webkit-font-smoothing: antialiased;
     font-size: 0.9em;
     -webkit-font-smoothing: antialiased; }
   .project-info .project-description {
     text-align: left;
     font-family: "libre_baskervilleregular";
+    -webkit-font-smoothing: antialiased;
     margin-top: 2.5rem;
     margin-bottom: 2.5rem;
     padding: 0 1rem; }
@@ -1178,7 +1184,7 @@ section.projects {
     border: 1px solid white;
     border-left: 0;
     border-right: 0;
-    font-family: "libre_baskervilleregular";
+    font-family: "proxima_nova_ltlight";
     text-transform: uppercase;
     color: white;
     font-size: 1.2em;

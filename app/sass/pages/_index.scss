@@ -58,7 +58,7 @@ section.intro {
 			}
 		}
 		&:nth-of-type(2) {
-			font-family:$sub-heading-font;
+			@include subheadingfont;
 			margin-bottom:4rem;
 			-webkit-font-smoothing: antialiased;
 			@include media($zero) {
@@ -170,7 +170,7 @@ section.projects {
 	padding:1.5rem;
 	color:$body-color;
 	h3 {
-		font-family:$body-font;
+		font-family:$heading-font;
 		font-weight:normal;
 		text-transform:uppercase;
 		font-size:2em;
@@ -185,13 +185,13 @@ section.projects {
 		margin-bottom:1.5rem;
 	}
 	.project-roles {
-		font-family:$sub-heading-font;
+		@include subheadingfont;
 		font-size:0.9em;
 		-webkit-font-smoothing: antialiased;
 	}
 	.project-description {
 		text-align:left;
-		font-family:$body-font;
+		@include bodyfont;
 		margin-top:2.5rem;
 		margin-bottom:2.5rem;
 		padding:0 1rem;
@@ -203,7 +203,7 @@ section.projects {
 		border:1px solid $body-color;
 		border-left:0;
 		border-right:0;
-		font-family:$body-font;
+		font-family:$heading-font-light;
 		text-transform:uppercase;
 		color:$body-color;
 		font-size:1.2em;
