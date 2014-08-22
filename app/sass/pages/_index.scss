@@ -38,6 +38,13 @@ section.intro {
 		border:0;
 		border-top:1px dashed #fff;
 		width:50%;
+		position:relative;
+		&:first-child {
+			@include animation(introtop 1s cubic-bezier(.87,-.41,.19,1.44));
+		}
+		&:last-child {
+			@include animation(introbottom 1s cubic-bezier(.87,-.41,.19,1.44));
+		}
 	}
 	h1 {
 		font-weight:normal;
@@ -68,6 +75,23 @@ section.intro {
 				font-size:1.3em;
 			}
 		}
+	}
+}
+
+@include keyframes(introtop) {
+	from {
+		left:-100%;
+	}
+	to {
+		left:0;
+	}
+}
+@include keyframes(introbottom) {
+	from {
+		right:-100%;
+	}
+	to {
+		right:0;
 	}
 }
 
@@ -211,6 +235,7 @@ section.projects {
 		@include bradius;
 		color:$body-color;
 		position:relative;
+		box-shadow:-2px -2px 3px rgba(#000, 0.1);
 		&:before {
 			content:"";
 			width:1rem;

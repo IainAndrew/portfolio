@@ -1038,7 +1038,16 @@ section.intro {
     padding: 0;
     border: 0;
     border-top: 1px dashed #fff;
-    width: 50%; }
+    width: 50%;
+    position: relative; }
+    section.intro hr:first-child {
+      -webkit-animation: introtop 1s cubic-bezier(0.87, -0.41, 0.19, 1.44);
+      -moz-animation: introtop 1s cubic-bezier(0.87, -0.41, 0.19, 1.44);
+      animation: introtop 1s cubic-bezier(0.87, -0.41, 0.19, 1.44); }
+    section.intro hr:last-child {
+      -webkit-animation: introbottom 1s cubic-bezier(0.87, -0.41, 0.19, 1.44);
+      -moz-animation: introbottom 1s cubic-bezier(0.87, -0.41, 0.19, 1.44);
+      animation: introbottom 1s cubic-bezier(0.87, -0.41, 0.19, 1.44); }
   section.intro h1 {
     font-weight: normal;
     color: #fff;
@@ -1068,6 +1077,42 @@ section.intro {
         section.intro h1:nth-of-type(2) {
           font-size: 1.3em; } }
 
+@-webkit-keyframes introtop {
+  from {
+    left: -100%; }
+
+  to {
+    left: 0; } }
+@-moz-keyframes introtop {
+  from {
+    left: -100%; }
+
+  to {
+    left: 0; } }
+@keyframes introtop {
+  from {
+    left: -100%; }
+
+  to {
+    left: 0; } }
+@-webkit-keyframes introbottom {
+  from {
+    right: -100%; }
+
+  to {
+    right: 0; } }
+@-moz-keyframes introbottom {
+  from {
+    right: -100%; }
+
+  to {
+    right: 0; } }
+@keyframes introbottom {
+  from {
+    right: -100%; }
+
+  to {
+    right: 0; } }
 section.about {
   color: #444444;
   font-family: "libre_baskervilleregular";
@@ -1196,7 +1241,8 @@ section.projects {
     background: white;
     border-radius: 3px;
     color: #444444;
-    position: relative; }
+    position: relative;
+    box-shadow: -2px -2px 3px rgba(0, 0, 0, 0.1); }
     .project-info .project-description:before {
       content: "";
       width: 1rem;
