@@ -1074,15 +1074,19 @@ section.about {
   -webkit-font-smoothing: antialiased;
   margin: 0 0.5rem 10rem 0.5rem;
   background: white;
-  padding: 2rem 0 2rem;
+  padding: 2rem;
   box-shadow: -2px -2px 3px rgba(0, 0, 0, 0.1);
   border-radius: 3px; }
+  @media screen and (min-width: 320px) {
+    section.about {
+      padding: 3rem; } }
   @media screen and (min-width: 768px) {
     section.about {
       max-width: 68em;
       margin-left: auto;
       margin-right: auto;
-      margin-bottom: 10rem; }
+      margin-bottom: 10rem;
+      padding: 4rem; }
       section.about:after {
         content: "";
         display: table;
@@ -1092,37 +1096,41 @@ section.about {
     text-transform: uppercase;
     margin: 0;
     margin-bottom: 1rem; }
-  section.about .about-about, section.about .about-technologies {
-    padding: 2rem; }
-    @media screen and (min-width: 320px) {
-      section.about .about-about, section.about .about-technologies {
-        padding: 2rem 3rem; } }
-    @media screen and (min-width: 480px) {
-      section.about .about-about, section.about .about-technologies {
-        padding: 2rem 5rem; } }
-  section.about .about-about p {
-    margin: 0;
-    font-size: 0.8em;
-    line-height: 1.5em; }
+  section.about .about-about {
+    padding-bottom: 2rem;
+    border-bottom: 1px dotted; }
     @media screen and (min-width: 768px) {
-      section.about .about-about p {
-        font-size: 0.9em; } }
-  @media screen and (min-width: 768px) {
-    section.about .about-technologies {
-      border-left: 1px dotted; } }
-  section.about .about-technologies ul {
-    padding: 0;
-    margin: 0; }
-    section.about .about-technologies ul li {
-      display: inline-block;
-      border: 1px solid;
-      padding: 0.4em;
-      margin: 0.3em 0 0.3rem 0.3rem;
-      line-height: 1em;
-      font-size: 0.8em; }
+      section.about .about-about {
+        border-bottom: 0;
+        padding-bottom: 0;
+        padding-right: 4rem; } }
+    section.about .about-about p {
+      margin: 0;
+      font-size: 0.8em;
+      line-height: 1.5em; }
       @media screen and (min-width: 768px) {
-        section.about .about-technologies ul li {
+        section.about .about-about p {
           font-size: 0.9em; } }
+  section.about .about-technologies {
+    padding-top: 2rem; }
+    @media screen and (min-width: 768px) {
+      section.about .about-technologies {
+        border-left: 1px dotted;
+        padding-top: 0;
+        padding-left: 4rem; } }
+    section.about .about-technologies ul {
+      padding: 0;
+      margin: 0; }
+      section.about .about-technologies ul li {
+        display: inline-block;
+        border: 1px solid;
+        padding: 0.4em;
+        margin: 0.3em 0 0.3rem 0.3rem;
+        line-height: 1em;
+        font-size: 0.8em; }
+        @media screen and (min-width: 768px) {
+          section.about .about-technologies ul li {
+            font-size: 0.9em; } }
 
 section.projects {
   padding-bottom: 100vh; }
