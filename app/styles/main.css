@@ -208,6 +208,12 @@ table {
   font-weight: normal;
   font-style: normal; }
 @font-face {
+  font-family: 'libre_baskervilleregular';
+  src: url("../../styles/fonts/librebaskerville-regular-webfont.eot");
+  src: url("../../styles/fonts/librebaskerville-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../../styles/fonts/librebaskerville-regular-webfont.woff") format("woff"), url("../../styles/fonts/librebaskerville-regular-webfont.ttf") format("truetype"), url("../../styles/fonts/librebaskerville-regular-webfont.svg#libre_baskervilleregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
   font-family: 'libre_baskervilleitalic';
   src: url("../../styles/fonts/librebaskerville-italic-webfont.eot");
   src: url("../../styles/fonts/librebaskerville-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../../styles/fonts/librebaskerville-italic-webfont.woff") format("woff"), url("../../styles/fonts/librebaskerville-italic-webfont.ttf") format("truetype"), url("../../styles/fonts/librebaskerville-italic-webfont.svg#libre_baskervilleitalic") format("svg");
@@ -727,7 +733,7 @@ main.project-page nav {
     margin: 0; }
     main.project-page nav ul li {
       list-style-type: none;
-      font-family: "proxima_nova_ltlight";
+      font-family: "libre_baskervilleregular";
       text-transform: uppercase;
       padding: 1rem;
       font-size: 0.5em; }
@@ -766,7 +772,7 @@ section.project-overview {
     margin: 0; }
     @media screen and (min-width: 0px) {
       section.project-overview h1 {
-        font-size: 1em; } }
+        font-size: 1.5em; } }
     @media screen and (min-width: 320px) {
       section.project-overview h1 {
         font-size: 2em; } }
@@ -783,7 +789,7 @@ section.project-overview {
     max-width: 7rem;
     margin-bottom: 0; }
   section.project-overview p {
-    font-family: "proxima_nova_ltlight";
+    font-family: "libre_baskervilleregular";
     margin: 0;
     padding: 2rem 0 2rem 0; }
     @media screen and (min-width: 480px) {
@@ -798,7 +804,7 @@ section.project-overview {
     border: 1px solid;
     border-radius: 3px; } }
 section.project-stats p, section.project-stats ul {
-  font-family: "proxima_nova_ltlight"; }
+  font-family: "libre_baskervilleregular"; }
 section.project-stats h2 {
   font-family: "proxima_nova_rgbold";
   text-transform: uppercase;
@@ -807,7 +813,7 @@ section.project-stats .ambition, section.project-stats .roles, section.project-s
   padding: 2rem;
   border: 1px solid;
   border-radius: 3px;
-  margin: 1rem; }
+  margin: 0.5rem; }
   @media screen and (min-width: 768px) {
     section.project-stats .ambition, section.project-stats .roles, section.project-stats .technologies {
       border: 0;
@@ -844,7 +850,7 @@ section.project-buttons {
     padding: 2rem;
     width: 12rem;
     text-transform: uppercase;
-    font-family: "proxima_nova_ltlight";
+    font-family: "libre_baskervilleregular";
     font-size: 1.2em;
     color: white;
     background: green;
@@ -884,8 +890,8 @@ section.project-images {
 
 .project-img {
   margin-bottom: 2rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
   text-align: center; }
   @media screen and (min-width: 768px) {
     .project-img {
@@ -901,7 +907,7 @@ section.project-images {
       border: 1px solid lightgrey; }
 
 .project-descrip {
-  font-family: "proxima_nova_ltlight";
+  font-family: "libre_baskervilleregular";
   margin-bottom: 2rem; }
   @media screen and (min-width: 768px) {
     .project-descrip {
@@ -1060,7 +1066,8 @@ section.intro {
 
 section.about {
   color: #000;
-  font-family: "proxima_nova_ltlight";
+  font-family: "libre_baskervilleregular";
+  -webkit-font-smoothing: antialiased;
   margin: 0 0.5rem 10rem 0.5rem;
   background: white;
   padding: 2rem 0 2rem;
@@ -1090,7 +1097,8 @@ section.about {
       section.about .about-about, section.about .about-technologies {
         padding: 2rem 5rem; } }
   section.about .about-about p {
-    margin: 0; }
+    margin: 0;
+    font-size: 1.1em; }
   @media screen and (min-width: 768px) {
     section.about .about-technologies {
       border-left: 1px dotted; } }
@@ -1141,7 +1149,7 @@ section.projects {
   padding: 1.5rem;
   color: white; }
   .project-info h3 {
-    font-family: "proxima_nova_ltlight";
+    font-family: "libre_baskervilleregular";
     font-weight: normal;
     text-transform: uppercase;
     font-size: 2em;
@@ -1159,7 +1167,7 @@ section.projects {
     -webkit-font-smoothing: antialiased; }
   .project-info .project-description {
     text-align: left;
-    font-family: "proxima_nova_ltlight";
+    font-family: "libre_baskervilleregular";
     margin-top: 2.5rem;
     margin-bottom: 2.5rem;
     padding: 0 1rem; }
@@ -1170,7 +1178,7 @@ section.projects {
     border: 1px solid white;
     border-left: 0;
     border-right: 0;
-    font-family: "proxima_nova_ltlight";
+    font-family: "libre_baskervilleregular";
     text-transform: uppercase;
     color: white;
     font-size: 1.2em;

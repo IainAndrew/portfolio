@@ -1,3 +1,8 @@
 @mixin bradius {
   border-radius:3px;
 }
+
+@mixin bodyfont {
+	font-family:$body-font;
+	-webkit-font-smoothing: antialiased;
+}

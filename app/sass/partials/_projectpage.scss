@@ -60,7 +60,7 @@ section.project-overview {
 		text-transform:uppercase;
 		margin:0;
 		@include media($zero) {
-			font-size:1em;
+			font-size:1.5em;
 		}
 		@include media($mobile) {
 			font-size:2em;
@@ -110,7 +110,7 @@ section.project-stats {
 		padding:2rem;
 		border:1px solid;
 		@include bradius;
-		margin:1rem;
+		margin:0.5rem;
 		@include media($desktop) {
 			border:0;
 			border-radius:0;
@@ -198,8 +198,8 @@ section.project-images {
 }
 .project-img {
 	margin-bottom:2rem;
-	padding-left:1rem;
-	padding-right:1rem;
+	padding-left:0.5rem;
+	padding-right:0.5rem;
 	text-align:center;
 	@include media($desktop) {
 		padding-left:0;

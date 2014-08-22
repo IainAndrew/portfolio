@@ -15,6 +15,18 @@
 }
 
 @font-face {
+    font-family: 'libre_baskervilleregular';
+    src: url('../../styles/fonts/librebaskerville-regular-webfont.eot');
+    src: url('../../styles/fonts/librebaskerville-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../styles/fonts/librebaskerville-regular-webfont.woff') format('woff'),
+         url('../../styles/fonts/librebaskerville-regular-webfont.ttf') format('truetype'),
+         url('../../styles/fonts/librebaskerville-regular-webfont.svg#libre_baskervilleregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
     font-family: 'libre_baskervilleitalic';
     src: url('../../styles/fonts/librebaskerville-italic-webfont.eot');
     src: url('../../styles/fonts/librebaskerville-italic-webfont.eot?#iefix') format('embedded-opentype'),

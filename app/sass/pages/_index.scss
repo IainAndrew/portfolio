@@ -73,7 +73,7 @@ section.intro {
 
 section.about {
 	color:#000;
-	font-family:$body-font;
+	@include bodyfont;
 	margin:0 0.5rem 10rem 0.5rem;
 	background:white;
 	padding:2rem 0 2rem;
@@ -102,6 +102,7 @@ section.about {
 	.about-about {
 		p {
 			margin:0;
+			font-size:1.1em;
 		}
 	}
 	.about-technologies {
