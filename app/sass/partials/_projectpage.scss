@@ -83,11 +83,13 @@ section.project-overview {
 		@include bodyfont;
 		margin:0;
 		padding:2rem 0 2rem 0;
+		font-size:0.8em;
 		@include media($tablet) {
 			padding:2rem 1rem 2rem 1rem;
 		}
 		@include media($desktop) {
 			padding:4rem 10rem 4rem 10rem;
+			font-size:0.9em;
 		}
 	}
 }
@@ -100,6 +102,10 @@ section.project-stats {
 	}
 	p, ul {
 		@include bodyfont;
+		font-size:0.8em;
+		@include media($desktop) {
+			font-size:0.9em;
+		}
 	}
 	h2 {
 		font-family:$heading-font;
@@ -230,10 +236,10 @@ section.project-images {
 	}
 	p {
 		margin:0;
-		font-size:1em;
+		font-size:0.8em;
 		text-align:justify;
-		@include media($tablet) {
-			font-size:1.2em;
+		@include media($desktop) {
+			font-size:1em;
 		}
 	}
 	hr {

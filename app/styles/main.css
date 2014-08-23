@@ -792,13 +792,15 @@ section.project-overview {
     font-family: "libre_baskervilleregular";
     -webkit-font-smoothing: antialiased;
     margin: 0;
-    padding: 2rem 0 2rem 0; }
+    padding: 2rem 0 2rem 0;
+    font-size: 0.8em; }
     @media screen and (min-width: 480px) {
       section.project-overview p {
         padding: 2rem 1rem 2rem 1rem; } }
     @media screen and (min-width: 768px) {
       section.project-overview p {
-        padding: 4rem 10rem 4rem 10rem; } }
+        padding: 4rem 10rem 4rem 10rem;
+        font-size: 0.9em; } }
 
 @media screen and (min-width: 768px) {
   section.project-stats {
@@ -806,7 +808,11 @@ section.project-overview {
     border-radius: 3px; } }
 section.project-stats p, section.project-stats ul {
   font-family: "libre_baskervilleregular";
-  -webkit-font-smoothing: antialiased; }
+  -webkit-font-smoothing: antialiased;
+  font-size: 0.8em; }
+  @media screen and (min-width: 768px) {
+    section.project-stats p, section.project-stats ul {
+      font-size: 0.9em; } }
 section.project-stats h2 {
   font-family: "proxima_nova_rgbold";
   text-transform: uppercase;
@@ -919,11 +925,11 @@ section.project-images {
     margin-bottom: 0; }
   .project-descrip p {
     margin: 0;
-    font-size: 1em;
+    font-size: 0.8em;
     text-align: justify; }
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 768px) {
       .project-descrip p {
-        font-size: 1.2em; } }
+        font-size: 1em; } }
   .project-descrip hr {
     width: 50%;
     border: 0;
