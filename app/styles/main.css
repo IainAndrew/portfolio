@@ -1059,14 +1059,14 @@ section.intro {
   section.intro h1 {
     font-weight: normal;
     color: #fff;
-    text-shadow: 0 -2px 2px #6cd7c2;
     margin: 0; }
     section.intro h1:first-of-type {
       font-family: "proxima_nova_rgbold";
       text-transform: uppercase;
       letter-spacing: 0.2em;
       margin-bottom: 1rem;
-      margin-top: 4rem; }
+      margin-top: 4rem;
+      text-shadow: 0 -1px 1px rgba(68, 68, 68, 0.8); }
       @media screen and (min-width: 0px) {
         section.intro h1:first-of-type {
           font-size: 2em; } }
@@ -1077,7 +1077,7 @@ section.intro {
       font-family: "libre_baskervilleitalic";
       -webkit-font-smoothing: antialiased;
       margin-bottom: 4rem;
-      -webkit-font-smoothing: antialiased; }
+      text-shadow: 0 -2px 2px #6cd7c2; }
       @media screen and (min-width: 0px) {
         section.intro h1:nth-of-type(2) {
           font-size: 1em; } }
@@ -1187,7 +1187,11 @@ section.about {
 
 .section-title {
   text-align: center;
-  color: #fff; }
+  color: #fff;
+  font-size: 1em; }
+  @media screen and (min-width: 768px) {
+    .section-title {
+      font-size: 1.1em; } }
   .section-title hr {
     padding: 0;
     border: 0;
@@ -1195,14 +1199,13 @@ section.about {
     width: 50%;
     margin-top: 0;
     margin-bottom: 0; }
-  .section-title h2, .section-title p {
-    text-shadow: 0 -2px 2px #6cd7c2; }
   .section-title h2 {
     margin: 1rem 0 0.2rem 0;
     font-family: "proxima_nova_rgbold";
     font-size: 1.5em;
     text-transform: uppercase;
-    letter-spacing: 0.2em; }
+    letter-spacing: 0.2em;
+    text-shadow: 0 -1px 1px rgba(68, 68, 68, 0.8); }
   .section-title p {
     font-family: "libre_baskervilleitalic";
     -webkit-font-smoothing: antialiased;
@@ -1211,6 +1214,11 @@ section.about {
 
 section.projects {
   padding: 0 0.5rem 100vh 0.5rem; }
+  section.projects .section-title {
+    padding: 2rem 0; }
+    @media screen and (min-width: 768px) {
+      section.projects .section-title {
+        padding: 4rem 0; } }
   section.projects .project {
     padding: 2rem 0;
     border-bottom: 1px dotted #fff; }

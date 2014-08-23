@@ -1,7 +1,6 @@
 @mixin bradius {
   border-radius:3px;
 }
-
 @mixin bodyfont {
 	font-family:$body-font;
 	-webkit-font-smoothing: antialiased;
@@ -9,4 +8,7 @@
 @mixin subheadingfont {
 	font-family:$sub-heading-font;
 	-webkit-font-smoothing: antialiased;
+}
+@mixin heading-shadow {
+	text-shadow:0 -1px 1px rgba($body-color, 0.8);
 }
