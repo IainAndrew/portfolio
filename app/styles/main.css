@@ -1123,7 +1123,7 @@ section.about {
   color: #444444;
   font-family: "libre_baskervilleregular";
   -webkit-font-smoothing: antialiased;
-  margin: 0 0.5rem 10rem 0.5rem;
+  margin: 0 0.5rem 2rem 0.5rem;
   background: #fff;
   padding: 2rem;
   box-shadow: -2px -2px 3px rgba(0, 0, 0, 0.1);
@@ -1186,15 +1186,12 @@ section.about {
 section.projects {
   padding-bottom: 100vh; }
   section.projects .project {
-    padding: 0 0.5rem; }
-    section.projects .project:not(:first-child) {
-      margin-top: 4rem; }
-      @media screen and (min-width: 768px) {
-        section.projects .project:not(:first-child) {
-          margin-top: 12rem; } }
+    padding: 2rem 0.5rem;
+    border-bottom: 1px dotted #fff; }
     @media screen and (min-width: 768px) {
       section.projects .project {
-        padding: 0; } }
+        padding: 4rem 0;
+        border-bottom: 0; } }
 
 .project-thumb {
   background-size: cover;
@@ -1217,7 +1214,7 @@ section.projects {
 
 .project-info {
   text-align: center;
-  padding: 1.5rem;
+  padding: 1.5rem 1.5rem 0 1.5rem;
   color: #fff; }
   .project-info h3 {
     font-family: "proxima_nova_rgbold";
