@@ -28,7 +28,7 @@ section.about {
 	}
 }
 section.projects {
-	@include row();
+	@include outer-container;
 	.project {
 		@include outer-container;
 		.project-thumb {

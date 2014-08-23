@@ -108,7 +108,7 @@ section.about {
 	}
 	@include media($desktop) {
 		@include outer-container;
-		margin-bottom:10rem;
+		margin-bottom:4rem;
 		padding:4rem;
 	}
 	h2 {
@@ -159,18 +159,46 @@ section.about {
 	}
 }
 
-section.projects {
-	padding-bottom:100vh;
-	@include media($desktop) {
-		//margin-top:12rem;
+.section-title {
+	text-align:center;
+	color:#fff;
+	hr {
+		padding:0;
+		border:0;
+		border-top:1px dashed #fff;
+		width:50%;
+		margin-top:0;
+		margin-bottom:0;
 	}
+	h2, p {
+		text-shadow:0 -2px 2px #94ffea - 40;
+	}
+	h2 {
+		margin:1rem 0 0.2rem 0;
+		font-family:$heading-font;
+		font-size:1.5em;
+		text-transform:uppercase;
+		letter-spacing:0.2em;
+	}
+	p {
+		@include subheadingfont;
+		margin:0.2rem 0 1rem 0;
+		font-size:0.9em;
+	}
+}
+
+section.projects {
+	padding:0 0.5rem 100vh 0.5rem;
 	.project {
-		padding:2rem 0.5rem;
+		padding:2rem 0;
 		border-bottom:1px dotted #fff;
 		@include media($desktop) {
 			padding:4rem 0;
 			border-bottom:0;
 		}
+	}
+	@include media($desktop) {
+		padding:0 0 100vh 0;
 	}
 }
 .project-thumb {

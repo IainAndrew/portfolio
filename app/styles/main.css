@@ -350,7 +350,9 @@ section.about {
         margin-right: 0; } }
 
 section.projects {
-  display: block; }
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
   section.projects:after {
     content: "";
     display: table;
@@ -1136,7 +1138,7 @@ section.about {
       max-width: 68em;
       margin-left: auto;
       margin-right: auto;
-      margin-bottom: 10rem;
+      margin-bottom: 4rem;
       padding: 4rem; }
       section.about:after {
         content: "";
@@ -1183,15 +1185,42 @@ section.about {
           section.about .about-technologies ul li {
             font-size: 0.9em; } }
 
+.section-title {
+  text-align: center;
+  color: #fff; }
+  .section-title hr {
+    padding: 0;
+    border: 0;
+    border-top: 1px dashed #fff;
+    width: 50%;
+    margin-top: 0;
+    margin-bottom: 0; }
+  .section-title h2, .section-title p {
+    text-shadow: 0 -2px 2px #6cd7c2; }
+  .section-title h2 {
+    margin: 1rem 0 0.2rem 0;
+    font-family: "proxima_nova_rgbold";
+    font-size: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 0.2em; }
+  .section-title p {
+    font-family: "libre_baskervilleitalic";
+    -webkit-font-smoothing: antialiased;
+    margin: 0.2rem 0 1rem 0;
+    font-size: 0.9em; }
+
 section.projects {
-  padding-bottom: 100vh; }
+  padding: 0 0.5rem 100vh 0.5rem; }
   section.projects .project {
-    padding: 2rem 0.5rem;
+    padding: 2rem 0;
     border-bottom: 1px dotted #fff; }
     @media screen and (min-width: 768px) {
       section.projects .project {
         padding: 4rem 0;
         border-bottom: 0; } }
+  @media screen and (min-width: 768px) {
+    section.projects {
+      padding: 0 0 100vh 0; } }
 
 .project-thumb {
   background-size: cover;
