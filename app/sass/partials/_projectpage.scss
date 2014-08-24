@@ -84,6 +84,7 @@ section.project-overview {
 		margin:0;
 		padding:2rem 0 2rem 0;
 		font-size:0.8em;
+		line-height:$lineheight;
 		@include media($tablet) {
 			padding:2rem 1rem 2rem 1rem;
 		}
@@ -103,6 +104,7 @@ section.project-stats {
 	p, ul {
 		@include bodyfont;
 		font-size:0.8em;
+		line-height:$lineheight;
 		@include media($desktop) {
 			font-size:0.9em;
 		}
@@ -206,6 +208,7 @@ section.project-images {
 		margin:0;
 		font-size:0.8em;
 		text-align:justify;
+		line-height:$lineheight;
 		@include media($desktop) {
 			font-size:1em;
 		}

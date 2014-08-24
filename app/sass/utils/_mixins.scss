@@ -92,7 +92,7 @@
 	p {
 		margin:0;
 		font-size:0.8em;
-		line-height:1.5em;
+		line-height:$lineheight;
 		@include media($desktop) {
 			font-size:0.9em;
 		}

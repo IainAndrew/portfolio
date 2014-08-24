@@ -804,7 +804,8 @@ section.project-overview {
     -webkit-font-smoothing: antialiased;
     margin: 0;
     padding: 2rem 0 2rem 0;
-    font-size: 0.8em; }
+    font-size: 0.8em;
+    line-height: 1.7em; }
     @media screen and (min-width: 480px) {
       section.project-overview p {
         padding: 2rem 1rem 2rem 1rem; } }
@@ -820,7 +821,8 @@ section.project-overview {
 section.project-stats p, section.project-stats ul {
   font-family: "libre_baskervilleregular";
   -webkit-font-smoothing: antialiased;
-  font-size: 0.8em; }
+  font-size: 0.8em;
+  line-height: 1.7em; }
   @media screen and (min-width: 768px) {
     section.project-stats p, section.project-stats ul {
       font-size: 0.9em; } }
@@ -901,7 +903,8 @@ section.project-images {
   .project-descrip p {
     margin: 0;
     font-size: 0.8em;
-    text-align: justify; }
+    text-align: justify;
+    line-height: 1.7em; }
     @media screen and (min-width: 768px) {
       .project-descrip p {
         font-size: 1em; } }
@@ -1126,7 +1129,7 @@ section.about {
   section.about p {
     margin: 0;
     font-size: 0.8em;
-    line-height: 1.5em; }
+    line-height: 1.7em; }
     @media screen and (min-width: 768px) {
       section.about p {
         font-size: 0.9em; } }
@@ -1256,6 +1259,7 @@ section.projects {
     margin-bottom: 2.5rem;
     padding: 2rem;
     background: white;
+    line-height: 1.7em;
     border-radius: 3px;
     color: #444444;
     position: relative;
@@ -1326,42 +1330,44 @@ section.projects {
         right: 1rem;
         background: #0c6a74; }
 
-section.contact .contact-panel {
-  color: #444444;
-  font-family: "libre_baskervilleregular";
-  -webkit-font-smoothing: antialiased;
-  margin: 2rem 0.5rem;
-  background: #fff;
-  padding: 2rem;
-  box-shadow: -2px -2px 3px rgba(0, 0, 0, 0.1);
-  border-radius: 3px; }
-  @media screen and (min-width: 320px) {
-    section.contact .contact-panel {
-      padding: 3rem; } }
-  @media screen and (min-width: 768px) {
-    section.contact .contact-panel {
-      max-width: 68em;
-      margin-left: auto;
-      margin-right: auto;
-      margin-bottom: 4rem;
-      margin-top: 4rem;
-      padding: 4rem; }
-      section.contact .contact-panel:after {
-        content: "";
-        display: table;
-        clear: both; } }
-  section.contact .contact-panel h2 {
-    font-family: "proxima_nova_rgbold";
-    text-transform: uppercase;
-    margin: 0;
-    margin-bottom: 1rem; }
-  section.contact .contact-panel p {
-    margin: 0;
-    font-size: 0.8em;
-    line-height: 1.5em; }
+section.contact {
+  padding-bottom: 200vh; }
+  section.contact .contact-panel {
+    color: #444444;
+    font-family: "libre_baskervilleregular";
+    -webkit-font-smoothing: antialiased;
+    margin: 2rem 0.5rem;
+    background: #fff;
+    padding: 2rem;
+    box-shadow: -2px -2px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 3px; }
+    @media screen and (min-width: 320px) {
+      section.contact .contact-panel {
+        padding: 3rem; } }
     @media screen and (min-width: 768px) {
-      section.contact .contact-panel p {
-        font-size: 0.9em; } }
+      section.contact .contact-panel {
+        max-width: 68em;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 4rem;
+        margin-top: 4rem;
+        padding: 4rem; }
+        section.contact .contact-panel:after {
+          content: "";
+          display: table;
+          clear: both; } }
+    section.contact .contact-panel h2 {
+      font-family: "proxima_nova_rgbold";
+      text-transform: uppercase;
+      margin: 0;
+      margin-bottom: 1rem; }
+    section.contact .contact-panel p {
+      margin: 0;
+      font-size: 0.8em;
+      line-height: 1.7em; }
+      @media screen and (min-width: 768px) {
+        section.contact .contact-panel p {
+          font-size: 0.9em; } }
 
 main.plugmedia-project section.project-overview hr {
   border-color: #E14D3D; }

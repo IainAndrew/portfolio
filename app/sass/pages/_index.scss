@@ -208,6 +208,7 @@ section.projects {
 		margin-bottom:2.5rem;
 		padding:2rem;
 		background:white;
+		line-height:$lineheight;
 		@include bradius;
 		color:$body-color;
 		position:relative;
@@ -235,4 +236,5 @@ section.contact {
 	.contact-panel {
 		@include panel;
 	}
+	padding-bottom:200vh;
 }
