@@ -162,38 +162,6 @@ section.project-buttons {
 			}
 		}
 	}
-	button {
-		position:relative;
-		padding:2rem;
-		width:12rem;
-		text-transform:uppercase;
-		font-family:$heading-font-light;
-		font-size:1.2em;
-		color:white;
-		background:green;
-		border:0;
-		-webkit-font-smoothing: antialiased;
-		box-shadow:0px 5px 10px rgba(black, 0.2);
-		@include bradius;
-		@include transition(all 0.1s ease-in-out);
-		@include media($desktop) {
-			width:15rem;
-			font-size:1.5em;
-		}
-		&:focus {
-			outline:0;
-		}
-		.no-touch & {
-			&:hover {
-				@include transform(scale(1.03));
-				box-shadow:0px 10px 15px rgba(black, 0.1);
-			}
-			&:active {
-				box-shadow:0px 0px 10px rgba(black, 0.2);
-				@include transform(scale(0.97));
-			}
-		}
-	}
 }
 
 section.project-images {

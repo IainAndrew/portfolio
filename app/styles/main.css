@@ -855,42 +855,6 @@ section.project-buttons {
       section.project-buttons a:first-child button {
         margin-right: 2rem;
         margin-bottom: 0; } }
-  section.project-buttons button {
-    position: relative;
-    padding: 2rem;
-    width: 12rem;
-    text-transform: uppercase;
-    font-family: "proxima_nova_ltlight";
-    font-size: 1.2em;
-    color: white;
-    background: green;
-    border: 0;
-    -webkit-font-smoothing: antialiased;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
-    border-radius: 3px;
-    -webkit-transition: all 0.1s ease-in-out;
-    -moz-transition: all 0.1s ease-in-out;
-    transition: all 0.1s ease-in-out; }
-    @media screen and (min-width: 768px) {
-      section.project-buttons button {
-        width: 15rem;
-        font-size: 1.5em; } }
-    section.project-buttons button:focus {
-      outline: 0; }
-    .no-touch section.project-buttons button:hover {
-      -webkit-transform: scale(1.03);
-      -moz-transform: scale(1.03);
-      -ms-transform: scale(1.03);
-      -o-transform: scale(1.03);
-      transform: scale(1.03);
-      box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1); }
-    .no-touch section.project-buttons button:active {
-      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-      -webkit-transform: scale(0.97);
-      -moz-transform: scale(0.97);
-      -ms-transform: scale(0.97);
-      -o-transform: scale(0.97);
-      transform: scale(0.97); }
 
 section.project-images {
   padding: 2rem 0 2rem 0; }
@@ -1302,12 +1266,12 @@ section.projects {
     width: 15rem;
     height: 4rem;
     background: none;
-    border: 1px solid;
+    border: 1px solid white;
     border-left: 0;
     border-right: 0;
     font-family: "proxima_nova_ltlight";
     text-transform: uppercase;
-    color: white;
+    color: #000;
     font-size: 1.2em;
     position: relative;
     -webkit-transition: all 0.4s;
@@ -1360,14 +1324,108 @@ main.plugmedia-project section.project-buttons p {
     main.plugmedia-project section.project-buttons p {
       margin: 4rem 0 0 0; } }
 main.plugmedia-project button {
-  background: #E14D3D; }
+  width: 15rem;
+  height: 4rem;
+  background: none;
+  border: 1px solid #e14d3d;
+  border-left: 0;
+  border-right: 0;
+  font-family: "proxima_nova_ltlight";
+  text-transform: uppercase;
+  color: #000;
+  font-size: 1.2em;
+  position: relative;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s; }
+  main.plugmedia-project button:before {
+    content: "";
+    width: 1px;
+    height: 100%;
+    background: #e14d3d;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transition: all 0.4s cubic-bezier(0.87, -0.41, 0.19, 1.44);
+    -moz-transition: all 0.4s cubic-bezier(0.87, -0.41, 0.19, 1.44);
+    transition: all 0.4s cubic-bezier(0.87, -0.41, 0.19, 1.44); }
+  main.plugmedia-project button:after {
+    content: "";
+    width: 1px;
+    height: 100%;
+    background: #e14d3d;
+    position: absolute;
+    top: 0;
+    right: 0;
+    -webkit-transition: all 0.4s cubic-bezier(0.87, -0.41, 0.19, 1.44);
+    -moz-transition: all 0.4s cubic-bezier(0.87, -0.41, 0.19, 1.44);
+    transition: all 0.4s cubic-bezier(0.87, -0.41, 0.19, 1.44); }
+  main.plugmedia-project button:active {
+    font-size: 1.1em; }
+  main.plugmedia-project button:focus {
+    outline: 0; }
+  .no-touch main.plugmedia-project button:hover {
+    border-color: black; }
+    .no-touch main.plugmedia-project button:hover:before {
+      left: 1rem;
+      background: black; }
+    .no-touch main.plugmedia-project button:hover:after {
+      right: 1rem;
+      background: black; }
 
 main.peterashmore-project section.project-overview hr {
   border-color: #56a9d8; }
 main.peterashmore-project section.project-stats, main.peterashmore-project .ambition, main.peterashmore-project .roles, main.peterashmore-project .technologies {
   border-color: #56a9d8; }
 main.peterashmore-project button {
-  background: #56a9d8; }
+  width: 15rem;
+  height: 4rem;
+  background: none;
+  border: 1px solid #56a9d8;
+  border-left: 0;
+  border-right: 0;
+  font-family: "proxima_nova_ltlight";
+  text-transform: uppercase;
+  color: #000;
+  font-size: 1.2em;
+  position: relative;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s; }
+  main.peterashmore-project button:before {
+    content: "";
+    width: 1px;
+    height: 100%;
+    background: #56a9d8;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transition: all 0.4s cubic-bezier(0.87, -0.41, 0.19, 1.44);
+    -moz-transition: all 0.4s cubic-bezier(0.87, -0.41, 0.19, 1.44);
+    transition: all 0.4s cubic-bezier(0.87, -0.41, 0.19, 1.44); }
+  main.peterashmore-project button:after {
+    content: "";
+    width: 1px;
+    height: 100%;
+    background: #56a9d8;
+    position: absolute;
+    top: 0;
+    right: 0;
+    -webkit-transition: all 0.4s cubic-bezier(0.87, -0.41, 0.19, 1.44);
+    -moz-transition: all 0.4s cubic-bezier(0.87, -0.41, 0.19, 1.44);
+    transition: all 0.4s cubic-bezier(0.87, -0.41, 0.19, 1.44); }
+  main.peterashmore-project button:active {
+    font-size: 1.1em; }
+  main.peterashmore-project button:focus {
+    outline: 0; }
+  .no-touch main.peterashmore-project button:hover {
+    border-color: black; }
+    .no-touch main.peterashmore-project button:hover:before {
+      left: 1rem;
+      background: black; }
+    .no-touch main.peterashmore-project button:hover:after {
+      right: 1rem;
+      background: black; }
 @media screen and (min-width: 768px) {
   main.peterashmore-project .project-img.peterashmore-mobile-header {
     width: 50%;
@@ -1378,21 +1436,113 @@ main.footerreveal-project section.project-overview hr {
 main.footerreveal-project section.project-stats, main.footerreveal-project .ambition, main.footerreveal-project .roles, main.footerreveal-project .technologies {
   border-color: #f1c40f; }
 main.footerreveal-project button {
-  background: #f1c40f; }
+  width: 15rem;
+  height: 4rem;
+  background: none;
+  border: 1px solid #f1c40f;
+  border-left: 0;
+  border-right: 0;
+  font-family: "proxima_nova_ltlight";
+  text-transform: uppercase;
+  color: #000;
+  font-size: 1.2em;
+  position: relative;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s; }
+  main.footerreveal-project button:before {
+    content: "";
+    width: 1px;
+    height: 100%;
+    background: #f1c40f;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transition: all 0.4s cubic-bezier(0.87, -0.41, 0.19, 1.44);
+    -moz-transition: all 0.4s cubic-bezier(0.87, -0.41, 0.19, 1.44);
+    transition: all 0.4s cubic-bezier(0.87, -0.41, 0.19, 1.44); }
+  main.footerreveal-project button:after {
+    content: "";
+    width: 1px;
+    height: 100%;
+    background: #f1c40f;
+    position: absolute;
+    top: 0;
+    right: 0;
+    -webkit-transition: all 0.4s cubic-bezier(0.87, -0.41, 0.19, 1.44);
+    -moz-transition: all 0.4s cubic-bezier(0.87, -0.41, 0.19, 1.44);
+    transition: all 0.4s cubic-bezier(0.87, -0.41, 0.19, 1.44); }
+  main.footerreveal-project button:active {
+    font-size: 1.1em; }
+  main.footerreveal-project button:focus {
+    outline: 0; }
+  .no-touch main.footerreveal-project button:hover {
+    border-color: black; }
+    .no-touch main.footerreveal-project button:hover:before {
+      left: 1rem;
+      background: black; }
+    .no-touch main.footerreveal-project button:hover:after {
+      right: 1rem;
+      background: black; }
 
 main.simplespin-project section.project-overview hr {
   border-color: #1abc9c; }
 main.simplespin-project section.project-stats, main.simplespin-project .ambition, main.simplespin-project .roles, main.simplespin-project .technologies {
   border-color: #1abc9c; }
 main.simplespin-project button {
-  background: #1abc9c; }
+  width: 15rem;
+  height: 4rem;
+  background: none;
+  border: 1px solid #1abc9c;
+  border-left: 0;
+  border-right: 0;
+  font-family: "proxima_nova_ltlight";
+  text-transform: uppercase;
+  color: #000;
+  font-size: 1.2em;
+  position: relative;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s; }
+  main.simplespin-project button:before {
+    content: "";
+    width: 1px;
+    height: 100%;
+    background: #1abc9c;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transition: all 0.4s cubic-bezier(0.87, -0.41, 0.19, 1.44);
+    -moz-transition: all 0.4s cubic-bezier(0.87, -0.41, 0.19, 1.44);
+    transition: all 0.4s cubic-bezier(0.87, -0.41, 0.19, 1.44); }
+  main.simplespin-project button:after {
+    content: "";
+    width: 1px;
+    height: 100%;
+    background: #1abc9c;
+    position: absolute;
+    top: 0;
+    right: 0;
+    -webkit-transition: all 0.4s cubic-bezier(0.87, -0.41, 0.19, 1.44);
+    -moz-transition: all 0.4s cubic-bezier(0.87, -0.41, 0.19, 1.44);
+    transition: all 0.4s cubic-bezier(0.87, -0.41, 0.19, 1.44); }
+  main.simplespin-project button:active {
+    font-size: 1.1em; }
+  main.simplespin-project button:focus {
+    outline: 0; }
+  .no-touch main.simplespin-project button:hover {
+    border-color: black; }
+    .no-touch main.simplespin-project button:hover:before {
+      left: 1rem;
+      background: black; }
+    .no-touch main.simplespin-project button:hover:after {
+      right: 1rem;
+      background: black; }
 
 main.trunkys-project section.project-overview hr {
   border-color: #F05B5C; }
 main.trunkys-project section.project-stats, main.trunkys-project .ambition, main.trunkys-project .roles, main.trunkys-project .technologies {
   border-color: #F05B5C; }
-main.trunkys-project button {
-  background: #F05B5C; }
 @media screen and (min-width: 768px) {
   main.trunkys-project .project-img.trunkys-ui {
     width: 50%;

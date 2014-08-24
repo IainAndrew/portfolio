@@ -10,9 +10,6 @@ main.trunkys-project {
 		border-color:#F05B5C;
 	}
 
-	button {
-		background:#F05B5C;
-	}
 	.project-img.trunkys-ui {
 		@include media($desktop) {
 			width:50%;
