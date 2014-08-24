@@ -282,61 +282,6 @@ section.projects {
 		}
 	}
 	button {
-		width:15rem;
-		height:4rem;
-		background:none;
-		border:1px solid #fff;
-		border-left:0;
-		border-right:0;
-		font-family:$heading-font-light;
-		text-transform:uppercase;
-		color:#fff;
-		font-size:1.2em;
-		position:relative;
-		@include transition(all 0.4s);
-		&:before {
-			content:"";
-			width:1px;
-			height:100%;
-			background:#fff;
-			position:absolute;
-			top:0;
-			left:0;
-			@include transition(all 0.4s cubic-bezier(.87,-.41,.19,1.44));
-		}
-		&:after {
-			content:"";
-			width:1px;
-			height:100%;
-			background:#fff;
-			position:absolute;
-			top:0;
-			right:0;
-			@include transition(all 0.4s cubic-bezier(.87,-.41,.19,1.44));
-		}
-		&:active {
-			font-size:1.1em;
-		}
-		&:focus {
-			outline:0;
-		}
-	}
-}
-
-.no-touch {
-	.project-info {
-		button {
-			&:hover {
-				border-color:#2a8892 - 20;
-				&:before {
-					left:1rem;
-					background:#2a8892 - 20;
-				}
-				&:after {
-					right:1rem;
-					background:#2a8892 - 20;
-				}
-			}
-		}
+		@include button(#fff, #2a8892 - 20, #2a8892 - 20);
 	}
 }

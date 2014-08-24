@@ -1302,12 +1302,12 @@ section.projects {
     width: 15rem;
     height: 4rem;
     background: none;
-    border: 1px solid #fff;
+    border: 1px solid;
     border-left: 0;
     border-right: 0;
     font-family: "proxima_nova_ltlight";
     text-transform: uppercase;
-    color: #fff;
+    color: white;
     font-size: 1.2em;
     position: relative;
     -webkit-transition: all 0.4s;
@@ -1317,7 +1317,7 @@ section.projects {
       content: "";
       width: 1px;
       height: 100%;
-      background: #fff;
+      background: white;
       position: absolute;
       top: 0;
       left: 0;
@@ -1328,7 +1328,7 @@ section.projects {
       content: "";
       width: 1px;
       height: 100%;
-      background: #fff;
+      background: white;
       position: absolute;
       top: 0;
       right: 0;
@@ -1339,15 +1339,14 @@ section.projects {
       font-size: 1.1em; }
     .project-info button:focus {
       outline: 0; }
-
-.no-touch .project-info button:hover {
-  border-color: #16747e; }
-  .no-touch .project-info button:hover:before {
-    left: 1rem;
-    background: #16747e; }
-  .no-touch .project-info button:hover:after {
-    right: 1rem;
-    background: #16747e; }
+    .no-touch .project-info button:hover {
+      border-color: #16747e; }
+      .no-touch .project-info button:hover:before {
+        left: 1rem;
+        background: #16747e; }
+      .no-touch .project-info button:hover:after {
+        right: 1rem;
+        background: #16747e; }
 
 main.plugmedia-project section.project-overview hr {
   border-color: #E14D3D; }
