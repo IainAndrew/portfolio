@@ -25,7 +25,7 @@
 	color:#000;
 	font-size:1.2em;
 	position:relative;
-	@include transition(all 0.4s);
+	@include transition(all 0.4s, font-size 0.1s);
 	&:before {
 		content:"";
 		width:1px;
@@ -47,7 +47,7 @@
 		@include transition(all 0.4s cubic-bezier(.87,-.41,.19,1.44));
 	}
 	&:active {
-		font-size:1.1em;
+		font-size:1em;
 	}
 	&:focus {
 		outline:0;
@@ -64,5 +64,72 @@
 				background:$background;
 			}
 		}
+	}
+}
+@mixin panel {
+	color:$body-color;
+	@include bodyfont;
+	margin:2rem 0.5rem;
+	background:#fff;
+	padding:2rem;
+	box-shadow:-2px -2px 3px rgba(#000, 0.1);
+	@include bradius;
+	@include media($mobile) {
+		padding:3rem;
+	}
+	@include media($desktop) {
+		@include outer-container;
+		margin-bottom:4rem;
+		margin-top:4rem;
+		padding:4rem;
+	}
+	h2 {
+		font-family:$heading-font;
+		text-transform:uppercase;
+		margin:0;
+		margin-bottom:1rem;
+	}
+	p {
+		margin:0;
+		font-size:0.8em;
+		line-height:1.5em;
+		@include media($desktop) {
+			font-size:0.9em;
+		}
+	}
+}
+
+@mixin sectiontitle {
+	text-align:center;
+	color:#fff;
+	font-size:1em;
+	padding:2rem 0;
+	@include media($desktop) {
+		padding:4rem 0;
+	}
+	@include media($desktop) {
+		font-size:1.1em;
+	}
+	hr {
+		padding:0;
+		border:0;
+		border-top:1px dashed #fff;
+		width:50%;
+		max-width:22rem;
+		margin-top:0;
+		margin-bottom:0;
+	}
+	h2 {
+		margin:1rem 0 0.2rem 0;
+		font-family:$heading-font;
+		font-size:1.7em;
+		text-transform:uppercase;
+		letter-spacing:0.2em;
+		@include heading-shadow;
+	}
+	p {
+		@include subheadingfont;
+		margin:0.2rem 0 1rem 0;
+		font-size:0.9em;
 	}
 }

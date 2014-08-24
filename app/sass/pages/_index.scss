@@ -96,27 +96,7 @@ section.intro {
 }
 
 section.about {
-	color:$body-color;
-	@include bodyfont;
-	margin:0 0.5rem 2rem 0.5rem;
-	background:#fff;
-	padding:2rem;
-	box-shadow:-2px -2px 3px rgba(#000, 0.1);
-	@include bradius;
-	@include media($mobile) {
-		padding:3rem;
-	}
-	@include media($desktop) {
-		@include outer-container;
-		margin-bottom:4rem;
-		padding:4rem;
-	}
-	h2 {
-		font-family:$heading-font;
-		text-transform:uppercase;
-		margin:0;
-		margin-bottom:1rem;
-	}
+	@include panel;
 	.about-about {
 		padding-bottom:2rem;
 		border-bottom:1px dotted;
@@ -124,14 +104,6 @@ section.about {
 			border-bottom:0;
 			padding-bottom:0;
 			padding-right:4rem;
-		}
-		p {
-			margin:0;
-			font-size:0.8em;
-			line-height:1.5em;
-			@include media($desktop) {
-				font-size:0.9em;
-			}
 		}
 	}
 	.about-technologies {
@@ -160,42 +132,13 @@ section.about {
 }
 
 .section-title {
-	text-align:center;
-	color:#fff;
-	font-size:1em;
-	@include media($desktop) {
-		font-size:1.1em;
-	}
-	hr {
-		padding:0;
-		border:0;
-		border-top:1px dashed #fff;
-		width:50%;
-		margin-top:0;
-		margin-bottom:0;
-	}
-	h2 {
-		margin:1rem 0 0.2rem 0;
-		font-family:$heading-font;
-		font-size:1.5em;
-		text-transform:uppercase;
-		letter-spacing:0.2em;
-		@include heading-shadow;
-	}
-	p {
-		@include subheadingfont;
-		margin:0.2rem 0 1rem 0;
-		font-size:0.9em;
-	}
+	@include sectiontitle;
 }
 
 section.projects {
-	padding:0 0.5rem 100vh 0.5rem;
-	.section-title {
-		padding:2rem 0;
-		@include media($desktop) {
-			padding:4rem 0;
-		}
+	padding:0 0.5rem 2rem 0.5rem;
+	@include media($desktop) {
+		padding-bottom:4rem;
 	}
 	.project {
 		padding:2rem 0;
@@ -204,9 +147,10 @@ section.projects {
 			padding:4rem 0;
 			border-bottom:0;
 		}
-	}
-	@include media($desktop) {
-		padding:0 0 100vh 0;
+		&:last-child {
+			border-bottom:0;
+			padding-bottom:0;
+		}
 	}
 }
 .project-thumb {
@@ -238,10 +182,10 @@ section.projects {
 	padding:1.5rem 1.5rem 0 1.5rem;;
 	color:#fff;
 	h3 {
-		font-family:$heading-font;
+		font-family:$heading-font-light;
 		font-weight:normal;
 		text-transform:uppercase;
-		font-size:2em;
+		font-size:1.7em;
 		margin:0;
 		letter-spacing:0.2em;
 	}
@@ -282,6 +226,13 @@ section.projects {
 		}
 	}
 	button {
-		@include button(#fff, #2a8892 - 20, #2a8892 - 20);
+		@include button(#fff, #2a8892 - 30, #2a8892 - 30);
+		color:#fff;
+	}
+}
+
+section.contact {
+	.contact-panel {
+		@include panel;
 	}
 }

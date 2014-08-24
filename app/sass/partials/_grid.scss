@@ -49,6 +49,11 @@ section.projects {
 		}
 	}
 }
+section.contact {
+	@include outer-container;
+}
+
+// Project pages
 section.project-overview {
 	@include outer-container;
 }

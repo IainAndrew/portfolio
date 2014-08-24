@@ -398,6 +398,15 @@ section.projects {
         section.projects .project .project-info:last-child {
           margin-right: 0; } }
 
+section.contact {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  section.contact:after {
+    content: "";
+    display: table;
+    clear: both; }
+
 section.project-overview {
   max-width: 68em;
   margin-left: auto;
@@ -1089,7 +1098,7 @@ section.about {
   color: #444444;
   font-family: "libre_baskervilleregular";
   -webkit-font-smoothing: antialiased;
-  margin: 0 0.5rem 2rem 0.5rem;
+  margin: 2rem 0.5rem;
   background: #fff;
   padding: 2rem;
   box-shadow: -2px -2px 3px rgba(0, 0, 0, 0.1);
@@ -1103,6 +1112,7 @@ section.about {
       margin-left: auto;
       margin-right: auto;
       margin-bottom: 4rem;
+      margin-top: 4rem;
       padding: 4rem; }
       section.about:after {
         content: "";
@@ -1113,6 +1123,13 @@ section.about {
     text-transform: uppercase;
     margin: 0;
     margin-bottom: 1rem; }
+  section.about p {
+    margin: 0;
+    font-size: 0.8em;
+    line-height: 1.5em; }
+    @media screen and (min-width: 768px) {
+      section.about p {
+        font-size: 0.9em; } }
   section.about .about-about {
     padding-bottom: 2rem;
     border-bottom: 1px dotted; }
@@ -1121,13 +1138,6 @@ section.about {
         border-bottom: 0;
         padding-bottom: 0;
         padding-right: 4rem; } }
-    section.about .about-about p {
-      margin: 0;
-      font-size: 0.8em;
-      line-height: 1.5em; }
-      @media screen and (min-width: 768px) {
-        section.about .about-about p {
-          font-size: 0.9em; } }
   section.about .about-technologies {
     padding-top: 2rem; }
     @media screen and (min-width: 768px) {
@@ -1152,7 +1162,11 @@ section.about {
 .section-title {
   text-align: center;
   color: #fff;
-  font-size: 1em; }
+  font-size: 1em;
+  padding: 2rem 0; }
+  @media screen and (min-width: 768px) {
+    .section-title {
+      padding: 4rem 0; } }
   @media screen and (min-width: 768px) {
     .section-title {
       font-size: 1.1em; } }
@@ -1161,12 +1175,13 @@ section.about {
     border: 0;
     border-top: 1px dashed #fff;
     width: 50%;
+    max-width: 22rem;
     margin-top: 0;
     margin-bottom: 0; }
   .section-title h2 {
     margin: 1rem 0 0.2rem 0;
     font-family: "proxima_nova_rgbold";
-    font-size: 1.5em;
+    font-size: 1.7em;
     text-transform: uppercase;
     letter-spacing: 0.2em;
     text-shadow: 0 -1px 1px rgba(68, 68, 68, 0.8); }
@@ -1177,12 +1192,10 @@ section.about {
     font-size: 0.9em; }
 
 section.projects {
-  padding: 0 0.5rem 100vh 0.5rem; }
-  section.projects .section-title {
-    padding: 2rem 0; }
-    @media screen and (min-width: 768px) {
-      section.projects .section-title {
-        padding: 4rem 0; } }
+  padding: 0 0.5rem 2rem 0.5rem; }
+  @media screen and (min-width: 768px) {
+    section.projects {
+      padding-bottom: 4rem; } }
   section.projects .project {
     padding: 2rem 0;
     border-bottom: 1px dotted #fff; }
@@ -1190,9 +1203,9 @@ section.projects {
       section.projects .project {
         padding: 4rem 0;
         border-bottom: 0; } }
-  @media screen and (min-width: 768px) {
-    section.projects {
-      padding: 0 0 100vh 0; } }
+    section.projects .project:last-child {
+      border-bottom: 0;
+      padding-bottom: 0; }
 
 .project-thumb {
   background-size: cover;
@@ -1218,10 +1231,10 @@ section.projects {
   padding: 1.5rem 1.5rem 0 1.5rem;
   color: #fff; }
   .project-info h3 {
-    font-family: "proxima_nova_rgbold";
+    font-family: "proxima_nova_ltlight";
     font-weight: normal;
     text-transform: uppercase;
-    font-size: 2em;
+    font-size: 1.7em;
     margin: 0;
     letter-spacing: 0.2em; }
   .project-info hr {
@@ -1274,9 +1287,10 @@ section.projects {
     color: #000;
     font-size: 1.2em;
     position: relative;
-    -webkit-transition: all 0.4s;
-    -moz-transition: all 0.4s;
-    transition: all 0.4s; }
+    -webkit-transition: all 0.4s, font-size 0.1s;
+    -moz-transition: all 0.4s, font-size 0.1s;
+    transition: all 0.4s, font-size 0.1s;
+    color: #fff; }
     .project-info button:before {
       content: "";
       width: 1px;
@@ -1300,17 +1314,54 @@ section.projects {
       -moz-transition: all 0.4s cubic-bezier(0.87, -0.41, 0.19, 1.44);
       transition: all 0.4s cubic-bezier(0.87, -0.41, 0.19, 1.44); }
     .project-info button:active {
-      font-size: 1.1em; }
+      font-size: 1em; }
     .project-info button:focus {
       outline: 0; }
     .no-touch .project-info button:hover {
-      border-color: #16747e; }
+      border-color: #0c6a74; }
       .no-touch .project-info button:hover:before {
         left: 1rem;
-        background: #16747e; }
+        background: #0c6a74; }
       .no-touch .project-info button:hover:after {
         right: 1rem;
-        background: #16747e; }
+        background: #0c6a74; }
+
+section.contact .contact-panel {
+  color: #444444;
+  font-family: "libre_baskervilleregular";
+  -webkit-font-smoothing: antialiased;
+  margin: 2rem 0.5rem;
+  background: #fff;
+  padding: 2rem;
+  box-shadow: -2px -2px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 3px; }
+  @media screen and (min-width: 320px) {
+    section.contact .contact-panel {
+      padding: 3rem; } }
+  @media screen and (min-width: 768px) {
+    section.contact .contact-panel {
+      max-width: 68em;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 4rem;
+      margin-top: 4rem;
+      padding: 4rem; }
+      section.contact .contact-panel:after {
+        content: "";
+        display: table;
+        clear: both; } }
+  section.contact .contact-panel h2 {
+    font-family: "proxima_nova_rgbold";
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 1rem; }
+  section.contact .contact-panel p {
+    margin: 0;
+    font-size: 0.8em;
+    line-height: 1.5em; }
+    @media screen and (min-width: 768px) {
+      section.contact .contact-panel p {
+        font-size: 0.9em; } }
 
 main.plugmedia-project section.project-overview hr {
   border-color: #E14D3D; }
@@ -1335,9 +1386,9 @@ main.plugmedia-project button {
   color: #000;
   font-size: 1.2em;
   position: relative;
-  -webkit-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  transition: all 0.4s; }
+  -webkit-transition: all 0.4s, font-size 0.1s;
+  -moz-transition: all 0.4s, font-size 0.1s;
+  transition: all 0.4s, font-size 0.1s; }
   main.plugmedia-project button:before {
     content: "";
     width: 1px;
@@ -1361,7 +1412,7 @@ main.plugmedia-project button {
     -moz-transition: all 0.4s cubic-bezier(0.87, -0.41, 0.19, 1.44);
     transition: all 0.4s cubic-bezier(0.87, -0.41, 0.19, 1.44); }
   main.plugmedia-project button:active {
-    font-size: 1.1em; }
+    font-size: 1em; }
   main.plugmedia-project button:focus {
     outline: 0; }
   .no-touch main.plugmedia-project button:hover {
@@ -1389,9 +1440,9 @@ main.peterashmore-project button {
   color: #000;
   font-size: 1.2em;
   position: relative;
-  -webkit-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  transition: all 0.4s; }
+  -webkit-transition: all 0.4s, font-size 0.1s;
+  -moz-transition: all 0.4s, font-size 0.1s;
+  transition: all 0.4s, font-size 0.1s; }
   main.peterashmore-project button:before {
     content: "";
     width: 1px;
@@ -1415,7 +1466,7 @@ main.peterashmore-project button {
     -moz-transition: all 0.4s cubic-bezier(0.87, -0.41, 0.19, 1.44);
     transition: all 0.4s cubic-bezier(0.87, -0.41, 0.19, 1.44); }
   main.peterashmore-project button:active {
-    font-size: 1.1em; }
+    font-size: 1em; }
   main.peterashmore-project button:focus {
     outline: 0; }
   .no-touch main.peterashmore-project button:hover {
@@ -1447,9 +1498,9 @@ main.footerreveal-project button {
   color: #000;
   font-size: 1.2em;
   position: relative;
-  -webkit-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  transition: all 0.4s; }
+  -webkit-transition: all 0.4s, font-size 0.1s;
+  -moz-transition: all 0.4s, font-size 0.1s;
+  transition: all 0.4s, font-size 0.1s; }
   main.footerreveal-project button:before {
     content: "";
     width: 1px;
@@ -1473,7 +1524,7 @@ main.footerreveal-project button {
     -moz-transition: all 0.4s cubic-bezier(0.87, -0.41, 0.19, 1.44);
     transition: all 0.4s cubic-bezier(0.87, -0.41, 0.19, 1.44); }
   main.footerreveal-project button:active {
-    font-size: 1.1em; }
+    font-size: 1em; }
   main.footerreveal-project button:focus {
     outline: 0; }
   .no-touch main.footerreveal-project button:hover {
@@ -1501,9 +1552,9 @@ main.simplespin-project button {
   color: #000;
   font-size: 1.2em;
   position: relative;
-  -webkit-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  transition: all 0.4s; }
+  -webkit-transition: all 0.4s, font-size 0.1s;
+  -moz-transition: all 0.4s, font-size 0.1s;
+  transition: all 0.4s, font-size 0.1s; }
   main.simplespin-project button:before {
     content: "";
     width: 1px;
@@ -1527,7 +1578,7 @@ main.simplespin-project button {
     -moz-transition: all 0.4s cubic-bezier(0.87, -0.41, 0.19, 1.44);
     transition: all 0.4s cubic-bezier(0.87, -0.41, 0.19, 1.44); }
   main.simplespin-project button:active {
-    font-size: 1.1em; }
+    font-size: 1em; }
   main.simplespin-project button:focus {
     outline: 0; }
   .no-touch main.simplespin-project button:hover {
