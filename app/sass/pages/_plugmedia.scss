@@ -22,7 +22,7 @@ main.plugmedia-project {
 	}
 
 	button {
-		@include button(#E14D3D, #000, #000);
+		@include button(#E14D3D, $body-color, $body-color);
 	}
 
 }

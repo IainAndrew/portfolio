@@ -11,6 +11,6 @@ main.footerreveal-project {
 	}
 
 	button {
-		@include button(#f1c40f, #000, #000);
+		@include button(#f1c40f, $body-color, $body-color);
 	}
 }

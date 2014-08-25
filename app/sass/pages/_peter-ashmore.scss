@@ -11,7 +11,7 @@ main.peterashmore-project {
 	}
 
 	button {
-		@include button(#56a9d8, #000, #000);
+		@include button(#56a9d8, $body-color, $body-color);
 	}
 	.project-img.peterashmore-mobile-header {
 		@include media($desktop) {

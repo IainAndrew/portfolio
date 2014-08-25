@@ -22,7 +22,7 @@
 	border-right:0;
 	font-family:$heading-font-light;
 	text-transform:uppercase;
-	color:#000;
+	color:$body-color;
 	font-size:1.2em;
 	position:relative;
 	@include transition(all 0.4s, font-size 0.1s);

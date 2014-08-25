@@ -11,6 +11,6 @@ main.simplespin-project {
 	}
 
 	button {
-		@include button(#1abc9c, #000, #000);
+		@include button(#1abc9c, $body-color, $body-color);
 	}
 }
