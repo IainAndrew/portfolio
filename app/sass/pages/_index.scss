@@ -213,7 +213,7 @@ section.projects {
 		color:$body-color;
 		position:relative;
 		box-shadow:-2px -2px 3px rgba(#000, 0.1);
-		&:before {
+		/*&:before {
 			content:"";
 			width:1rem;
 			height:1rem;
@@ -224,7 +224,7 @@ section.projects {
 			background:white;
 			@include transform(rotate(45deg));
 			border-radius:1px;
-		}
+		}*/
 	}
 	button {
 		@include button(#fff, #2a8892 - 30, #2a8892 - 30);
