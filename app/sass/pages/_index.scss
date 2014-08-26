@@ -234,8 +234,15 @@ section.projects {
 }
 
 section.contact {
+	padding-bottom:200vh;
 	.contact-panel {
 		@include panel;
 	}
-	padding-bottom:200vh;
+	p {
+		width:100% * 0.3;
+	}
+	a {
+		text-decoration:underline;
+		color:#2a8892;
+	}
 }

@@ -1390,6 +1390,11 @@ section.contact {
       @media screen and (min-width: 768px) {
         section.contact .contact-panel p {
           font-size: 0.9em; } }
+  section.contact p {
+    width: 30%; }
+  section.contact a {
+    text-decoration: underline;
+    color: #2a8892; }
 
 main.plugmedia-project section.project-overview hr {
   border-color: #e74c3c; }
@@ -1662,3 +1667,7 @@ main.trunkys-project .project-palette .color-circle:nth-child(3) {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
