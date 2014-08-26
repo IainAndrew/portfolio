@@ -246,3 +246,70 @@ section.contact {
 		color:#2a8892;
 	}
 }
+.bubble {
+	position:absolute;
+	z-index:-1;
+	border:1px solid white;
+	opacity:0.4;
+	border-radius:50%;
+	width:5rem;
+	height:5rem;
+	&:first-child {
+		bottom:100%;
+		left:10%;
+	}
+	&:nth-child(2) {
+		width:4rem;
+		height:4rem;
+		bottom:90%;
+		left:10%;
+	}
+	&:nth-child(3) {
+		width:4rem;
+		height:4rem;
+		bottom:80%;
+		left:10%;
+	}
+	&:nth-child(4) {
+		width:4rem;
+		height:4rem;
+		bottom:70%;
+		left:10%;
+	}
+	&:nth-child(5) {
+		width:4rem;
+		height:4rem;
+		bottom:60%;
+		left:10%;
+	}
+	&:nth-child(6) {
+		width:4rem;
+		height:4rem;
+		bottom:50%;
+		left:10%;
+	}
+	&:nth-child(7) {
+		width:4rem;
+		height:4rem;
+		bottom:40%;
+		left:10%;
+	}
+	&:nth-child(8) {
+		width:4rem;
+		height:4rem;
+		bottom:30%;
+		left:10%;
+	}
+	&:nth-child(9) {
+		width:4rem;
+		height:4rem;
+		bottom:20%;
+		left:10%;
+	}
+	&:nth-child(10) {
+		width:4rem;
+		height:4rem;
+		bottom:10%;
+		left:10%;
+	}
+}
