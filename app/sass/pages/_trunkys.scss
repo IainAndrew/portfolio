@@ -16,4 +16,19 @@ main.trunkys-project {
 			text-align:left;
 		}
 	}
+
+	.project-palette {
+		.color-circle {
+			&:first-child {
+				background:#F05B5C;
+			}
+			&:nth-child(2) {
+				background:#204055;
+			}
+			&:nth-child(3) {
+				background:#fff;
+				border:1px solid #204055;
+			}
+		}
+	}
 }

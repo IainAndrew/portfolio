@@ -138,7 +138,8 @@ section.about {
 section.projects {
 	padding:0 0.5rem 2rem 0.5rem;
 	@include media($desktop) {
-		padding-bottom:4rem;
+		padding:0 0 4rem 0;
+
 	}
 	.project {
 		padding:2rem 0;

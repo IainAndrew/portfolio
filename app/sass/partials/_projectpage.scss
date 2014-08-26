@@ -173,6 +173,30 @@ section.project-images {
 		padding:4rem 0 4rem 0;
 	}
 }
+.project-palette {
+	text-align:center;
+	padding-bottom:2rem;
+	@include media($desktop) {
+		padding-bottom:4rem;
+	}
+	.color-circle {
+		display:inline-block;
+		width:2.5rem;
+		height:2.5rem;
+		border-radius:50%;
+		margin:0 0.2rem;
+		@include media($mobile) {
+			width:3rem;
+			height:3rem;
+			margin:0 0.5rem;
+		}
+		@include media($tablet) {
+			width:4.5rem;
+			height:4.5rem;
+			margin:0 1rem;
+		}
+	}
+}
 .project-img {
 	margin-bottom:2rem;
 	padding-left:0.5rem;

@@ -2,12 +2,12 @@ main.plugmedia-project {
 
 	section.project-overview {
 		hr {
-			border-color:#E14D3D;
+			border-color:#e74c3c;
 		}
 	}
 
 	section.project-stats, .ambition, .roles, .technologies {
-		border-color:#E14D3D;
+		border-color:#e74c3c;
 	}
 
 	section.project-buttons {
@@ -21,8 +21,23 @@ main.plugmedia-project {
 		}
 	}
 
+	.project-palette {
+		.color-circle {
+			&:first-child {
+				background:#E74C3C;
+			}
+			&:nth-child(2) {
+				background:#3498DB;
+			}
+			&:nth-child(3) {
+				background:#fff;
+				border:1px solid #e74c3c;
+			}
+		}
+	}
+
 	button {
-		@include button(#E14D3D, $body-color, $body-color);
+		@include button(#e74c3c, $body-color, $body-color);
 	}
 
 }

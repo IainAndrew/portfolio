@@ -13,6 +13,22 @@ main.peterashmore-project {
 	button {
 		@include button(#56a9d8, $body-color, $body-color);
 	}
+	.project-palette {
+		.color-circle {
+			&:first-child {
+				background:#56A9D8;
+			}
+			&:nth-child(2) {
+				background:#FF775C;
+			}
+			&:nth-child(3) {
+				background:#405180;
+			}
+			&:nth-child(4) {
+				background:#000;
+			}
+		}
+	}
 	.project-img.peterashmore-mobile-header {
 		@include media($desktop) {
 			width:50%;

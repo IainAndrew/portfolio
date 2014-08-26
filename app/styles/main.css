@@ -875,6 +875,29 @@ section.project-images {
     section.project-images {
       padding: 4rem 0 4rem 0; } }
 
+.project-palette {
+  text-align: center;
+  padding-bottom: 2rem; }
+  @media screen and (min-width: 768px) {
+    .project-palette {
+      padding-bottom: 4rem; } }
+  .project-palette .color-circle {
+    display: inline-block;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    margin: 0 0.2rem; }
+    @media screen and (min-width: 320px) {
+      .project-palette .color-circle {
+        width: 3rem;
+        height: 3rem;
+        margin: 0 0.5rem; } }
+    @media screen and (min-width: 480px) {
+      .project-palette .color-circle {
+        width: 4.5rem;
+        height: 4.5rem;
+        margin: 0 1rem; } }
+
 .project-img {
   margin-bottom: 2rem;
   padding-left: 0.5rem;
@@ -1200,7 +1223,7 @@ section.projects {
   padding: 0 0.5rem 2rem 0.5rem; }
   @media screen and (min-width: 768px) {
     section.projects {
-      padding-bottom: 4rem; } }
+      padding: 0 0 4rem 0; } }
   section.projects .project {
     padding: 2rem 0;
     border-bottom: 1px dotted #fff; }
@@ -1369,9 +1392,9 @@ section.contact {
           font-size: 0.9em; } }
 
 main.plugmedia-project section.project-overview hr {
-  border-color: #E14D3D; }
+  border-color: #e74c3c; }
 main.plugmedia-project section.project-stats, main.plugmedia-project .ambition, main.plugmedia-project .roles, main.plugmedia-project .technologies {
-  border-color: #E14D3D; }
+  border-color: #e74c3c; }
 main.plugmedia-project section.project-buttons p {
   font-family: "proxima_nova_rgbold";
   font-style: italic;
@@ -1379,11 +1402,18 @@ main.plugmedia-project section.project-buttons p {
   @media screen and (min-width: 768px) {
     main.plugmedia-project section.project-buttons p {
       margin: 4rem 0 0 0; } }
+main.plugmedia-project .project-palette .color-circle:first-child {
+  background: #E74C3C; }
+main.plugmedia-project .project-palette .color-circle:nth-child(2) {
+  background: #3498DB; }
+main.plugmedia-project .project-palette .color-circle:nth-child(3) {
+  background: #fff;
+  border: 1px solid #e74c3c; }
 main.plugmedia-project button {
   width: 15rem;
   height: 4rem;
   background: none;
-  border: 1px solid #e14d3d;
+  border: 1px solid #e74c3c;
   border-left: 0;
   border-right: 0;
   font-family: "proxima_nova_ltlight";
@@ -1398,7 +1428,7 @@ main.plugmedia-project button {
     content: "";
     width: 1px;
     height: 100%;
-    background: #e14d3d;
+    background: #e74c3c;
     position: absolute;
     top: 0;
     left: 0;
@@ -1409,7 +1439,7 @@ main.plugmedia-project button {
     content: "";
     width: 1px;
     height: 100%;
-    background: #e14d3d;
+    background: #e74c3c;
     position: absolute;
     top: 0;
     right: 0;
@@ -1482,6 +1512,14 @@ main.peterashmore-project button {
     .no-touch main.peterashmore-project button:hover:after {
       right: 1rem;
       background: #444444; }
+main.peterashmore-project .project-palette .color-circle:first-child {
+  background: #56A9D8; }
+main.peterashmore-project .project-palette .color-circle:nth-child(2) {
+  background: #FF775C; }
+main.peterashmore-project .project-palette .color-circle:nth-child(3) {
+  background: #405180; }
+main.peterashmore-project .project-palette .color-circle:nth-child(4) {
+  background: #000; }
 @media screen and (min-width: 768px) {
   main.peterashmore-project .project-img.peterashmore-mobile-header {
     width: 50%;
@@ -1603,6 +1641,13 @@ main.trunkys-project section.project-stats, main.trunkys-project .ambition, main
   main.trunkys-project .project-img.trunkys-ui {
     width: 50%;
     text-align: left; } }
+main.trunkys-project .project-palette .color-circle:first-child {
+  background: #F05B5C; }
+main.trunkys-project .project-palette .color-circle:nth-child(2) {
+  background: #204055; }
+main.trunkys-project .project-palette .color-circle:nth-child(3) {
+  background: #fff;
+  border: 1px solid #204055; }
 
 .browsehappy {
   margin: 0.2em 0;
