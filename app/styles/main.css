@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url(http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic);
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -205,18 +206,6 @@ table {
   font-family: 'proxima_nova_rgbold';
   src: url("../../styles/fonts/mark_simonson_-_proxima_nova_bold-webfont.eot");
   src: url("../../styles/fonts/mark_simonson_-_proxima_nova_bold-webfont.eot?#iefix") format("embedded-opentype"), url("../../styles/fonts/mark_simonson_-_proxima_nova_bold-webfont.woff") format("woff"), url("../../styles/fonts/mark_simonson_-_proxima_nova_bold-webfont.ttf") format("truetype"), url("../../styles/fonts/mark_simonson_-_proxima_nova_bold-webfont.svg#proxima_nova_rgbold") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'libre_baskervilleregular';
-  src: url("../../styles/fonts/librebaskerville-regular-webfont.eot");
-  src: url("../../styles/fonts/librebaskerville-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../../styles/fonts/librebaskerville-regular-webfont.woff") format("woff"), url("../../styles/fonts/librebaskerville-regular-webfont.ttf") format("truetype"), url("../../styles/fonts/librebaskerville-regular-webfont.svg#libre_baskervilleregular") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'libre_baskervilleitalic';
-  src: url("../../styles/fonts/librebaskerville-italic-webfont.eot");
-  src: url("../../styles/fonts/librebaskerville-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../../styles/fonts/librebaskerville-italic-webfont.woff") format("woff"), url("../../styles/fonts/librebaskerville-italic-webfont.ttf") format("truetype"), url("../../styles/fonts/librebaskerville-italic-webfont.svg#libre_baskervilleitalic") format("svg");
   font-weight: normal;
   font-style: normal; }
 @font-face {
@@ -497,6 +486,9 @@ nav.index-nav {
       font-size: 1em;
       padding: 0.5rem 2rem;
       color: #6c6c6c; }
+      nav.index-nav ul li a {
+        width: 100%;
+        height: 100%; }
 
 html, body {
   height: 100%; }
@@ -825,7 +817,7 @@ section.project-overview {
     max-width: 7rem;
     margin-bottom: 0; }
   section.project-overview p {
-    font-family: "libre_baskervilleregular";
+    font-family: Libre Baskerville;
     -webkit-font-smoothing: antialiased;
     margin: 0;
     padding: 2rem 0 2rem 0;
@@ -844,7 +836,7 @@ section.project-overview {
     border: 1px solid;
     border-radius: 3px; } }
 section.project-stats p, section.project-stats ul {
-  font-family: "libre_baskervilleregular";
+  font-family: Libre Baskerville;
   -webkit-font-smoothing: antialiased;
   font-size: 0.8em;
   line-height: 1.7em; }
@@ -940,7 +932,7 @@ section.project-images {
       border: 1px solid lightgrey; }
 
 .project-descrip {
-  font-family: "libre_baskervilleregular";
+  font-family: Libre Baskerville;
   -webkit-font-smoothing: antialiased;
   margin-bottom: 2rem; }
   @media screen and (min-width: 768px) {
@@ -1098,7 +1090,8 @@ section.intro {
         section.intro h1:first-of-type {
           font-size: 2.5em; } }
     section.intro h1:nth-of-type(2) {
-      font-family: "libre_baskervilleitalic";
+      font-family: Libre Baskerville;
+      font-style: italic;
       -webkit-font-smoothing: antialiased;
       margin-bottom: 4rem;
       text-shadow: 0 -2px 2px #6cd7c2; }
@@ -1147,7 +1140,7 @@ section.intro {
     right: 0; } }
 section.about {
   color: #444444;
-  font-family: "libre_baskervilleregular";
+  font-family: Libre Baskerville;
   -webkit-font-smoothing: antialiased;
   margin: 2rem 0.5rem;
   background: #fff;
@@ -1237,7 +1230,8 @@ section.about {
     letter-spacing: 0.2em;
     text-shadow: 0 -1px 1px rgba(68, 68, 68, 0.8); }
   .section-title p {
-    font-family: "libre_baskervilleitalic";
+    font-family: Libre Baskerville;
+    font-style: italic;
     -webkit-font-smoothing: antialiased;
     margin: 0.2rem 0 1rem 0;
     font-size: 0.9em; }
@@ -1295,12 +1289,13 @@ section.projects {
     margin-top: 0.5rem;
     margin-bottom: 0.5rem; }
   .project-info .project-roles {
-    font-family: "libre_baskervilleitalic";
+    font-family: Libre Baskerville;
+    font-style: italic;
     -webkit-font-smoothing: antialiased;
     font-size: 1em;
     -webkit-font-smoothing: antialiased; }
   .project-info .project-description {
-    font-family: "libre_baskervilleregular";
+    font-family: Libre Baskerville;
     -webkit-font-smoothing: antialiased;
     font-size: 0.8em;
     margin-top: 2.5rem;
@@ -1379,7 +1374,7 @@ section.contact {
   padding-bottom: 200vh; }
   section.contact .contact-panel {
     color: #444444;
-    font-family: "libre_baskervilleregular";
+    font-family: Libre Baskerville;
     -webkit-font-smoothing: antialiased;
     margin: 2rem 0.5rem;
     background: #fff;

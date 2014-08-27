@@ -5,8 +5,14 @@
 	font-family:$body-font;
 	-webkit-font-smoothing: antialiased;
 }
+@mixin bodyfont-bold {
+	font-family:$body-font;
+	font-weight:bold;
+	-webkit-font-smoothing: antialiased;
+}
 @mixin subheadingfont {
 	font-family:$sub-heading-font;
+	font-style:italic;
 	-webkit-font-smoothing: antialiased;
 }
 @mixin heading-shadow {
