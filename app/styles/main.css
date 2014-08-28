@@ -947,6 +947,9 @@ section.project-images {
       margin-bottom: 4rem; } }
   .project-descrip:last-child {
     margin-bottom: 0; }
+  .project-descrip a {
+    text-decoration: underline;
+    color: #2a8892; }
   .project-descrip p {
     margin: 0;
     font-size: 0.8em;

@@ -230,6 +230,10 @@ section.project-images {
 	&:last-child {
 		margin-bottom:0;
 	}
+	a {
+		text-decoration:underline;
+		color:#2a8892;
+	}
 	p {
 		margin:0;
 		font-size:0.8em;
