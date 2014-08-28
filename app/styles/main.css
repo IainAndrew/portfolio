@@ -1059,11 +1059,12 @@ main.index {
 
 section.intro {
   text-align: center;
-  padding-top: 10rem;
-  padding-bottom: 10rem; }
+  padding-bottom: 2rem;
+  padding-top: 4rem; }
   @media screen and (min-width: 768px) {
     section.intro {
-      padding-top: 15rem; } }
+      padding-bottom: 4rem;
+      padding-top: 8rem; } }
   section.intro hr {
     padding: 0;
     border: 0;
@@ -1087,7 +1088,7 @@ section.intro {
       text-transform: uppercase;
       letter-spacing: 0.2em;
       margin-bottom: 1rem;
-      margin-top: 4rem;
+      margin-top: 3rem;
       text-shadow: 0 -1px 1px rgba(68, 68, 68, 0.8); }
       @media screen and (min-width: 0px) {
         section.intro h1:first-of-type {
@@ -1099,7 +1100,7 @@ section.intro {
       font-family: Libre Baskerville;
       font-style: italic;
       -webkit-font-smoothing: antialiased;
-      margin-bottom: 4rem;
+      margin-bottom: 3rem;
       text-shadow: 0 -2px 2px #6cd7c2; }
       @media screen and (min-width: 0px) {
         section.intro h1:nth-of-type(2) {
