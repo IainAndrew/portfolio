@@ -473,7 +473,7 @@ nav.index-nav {
   left: 0;
   background: rgba(255, 255, 255, 0.2);
   z-index: 3;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); }
   nav.index-nav ul {
     margin: 0;
     padding: 0;
@@ -483,10 +483,17 @@ nav.index-nav {
       display: inline-block;
       font-family: "proxima_nova_rgbold";
       text-transform: uppercase;
-      font-size: 1em;
-      padding: 0.5rem 2rem;
       color: #fff;
-      text-shadow: -1px 1px 1px #767676; }
+      text-shadow: -1px 1px 1px #767676;
+      font-size: 0.9em;
+      padding: 0.5rem 0.5rem; }
+      @media screen and (min-width: 320px) {
+        nav.index-nav ul li {
+          font-size: 1em;
+          padding: 0.5rem 1rem; } }
+      @media screen and (min-width: 480px) {
+        nav.index-nav ul li {
+          padding: 0.5rem 2rem; } }
       nav.index-nav ul li a {
         width: 100%;
         height: 100%; }

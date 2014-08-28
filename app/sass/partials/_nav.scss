@@ -7,7 +7,7 @@ nav.index-nav {
 	background:rgba(#fff, 0.2);
 	z-index:3;
 	//border-bottom:1px solid white;
-	box-shadow:0 2px 4px rgba(#000, 0.2);
+	box-shadow:0 2px 4px rgba(#000, 0.1);
 	ul {
 		margin:0;
 		padding:0;
@@ -17,10 +17,17 @@ nav.index-nav {
 			display:inline-block;
 			font-family:$heading-font;
 			text-transform:uppercase;
-			font-size:1em;
-			padding:0.5rem 2rem;
 			color:#fff;
 			text-shadow:-1px 1px 1px $body-color + 50;
+			font-size:0.9em;
+			padding:0.5rem 0.5rem;
+			@include media($mobile) {
+				font-size:1em;
+				padding:0.5rem 1rem;
+			}
+			@include media($tablet) {
+				padding:0.5rem 2rem;
+			}
 			a {
 				width:100%;
 				height:100%;
