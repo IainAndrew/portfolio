@@ -4,9 +4,10 @@ nav.index-nav {
 	position:fixed;
 	top:0;
 	left:0;
-	background:rgba(#fff, 0.98);
+	background:rgba(#fff, 0.2);
 	z-index:3;
-	box-shadow:0 2px 2px rgba(#000, 0.2);
+	//border-bottom:1px solid white;
+	box-shadow:0 2px 4px rgba(#000, 0.2);
 	ul {
 		margin:0;
 		padding:0;
@@ -18,7 +19,8 @@ nav.index-nav {
 			text-transform:uppercase;
 			font-size:1em;
 			padding:0.5rem 2rem;
-			color:$body-color + 40;
+			color:#fff;
+			text-shadow:-1px 1px 1px $body-color + 50;
 			a {
 				width:100%;
 				height:100%;
