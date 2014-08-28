@@ -840,7 +840,8 @@ section.project-overview {
 @media screen and (min-width: 768px) {
   section.project-stats {
     border: 1px solid;
-    border-radius: 3px; } }
+    border-radius: 3px;
+    display: flex; } }
 section.project-stats p, section.project-stats ul {
   font-family: Libre Baskerville;
   -webkit-font-smoothing: antialiased;
