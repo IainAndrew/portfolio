@@ -502,7 +502,7 @@ html, body {
   height: 100%; }
 
 header {
-  background: #00ccfe;
+  background: #79CCEA;
   height: 100%;
   width: 100%;
   text-align: center;
@@ -562,7 +562,7 @@ header {
   position: absolute;
   bottom: 0;
   left: 0;
-  background: url("../images/back.png");
+  background: url("../images/back-blue.png");
   background-size: cover;
   background-position: 50% 100%;
   -webkit-transform: translate3d(0, 0, 0);
@@ -582,7 +582,7 @@ header {
   position: absolute;
   bottom: 0;
   left: 0;
-  background: url("../images/middle.png");
+  background: url("../images/middle-blue.png");
   background-size: cover;
   background-position: 50% 100%;
   -webkit-transform: translate3d(0, 0, 0);
@@ -602,7 +602,7 @@ header {
   position: absolute;
   bottom: 0;
   left: 0;
-  background: url("../images/front-new.png");
+  background: url("../images/front-blue.png");
   background-size: cover;
   background-position: 50% 100%; }
 
@@ -612,7 +612,7 @@ header {
   position: absolute;
   top: 100%;
   left: 0;
-  background: url("../images/bottom-new.png");
+  background: url("../images/bottom-blue.png");
   background-size: cover;
   background-position: 50% 0%;
   z-index: 2; }
@@ -957,7 +957,7 @@ section.project-images {
     line-height: 1.7em; }
     @media screen and (min-width: 768px) {
       .project-descrip p {
-        font-size: 1em; } }
+        font-size: 0.9em; } }
   .project-descrip hr {
     width: 50%;
     border: 0;
