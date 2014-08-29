@@ -1,6 +1,6 @@
 nav.index-nav {
 	width:100%;
-	height:auto;
+	height:2rem;
 	position:fixed;
 	top:0;
 	left:0;
@@ -12,7 +12,10 @@ nav.index-nav {
 		margin:0;
 		padding:0;
 		text-align:center;
+		height:100%;
 		li {
+			height:100%;
+			width:100% * 0.3;
 			list-style-type:none;
 			display:inline-block;
 			font-family:$heading-font;
@@ -20,17 +23,22 @@ nav.index-nav {
 			color:#fff;
 			text-shadow:-1px 1px 1px $body-color + 50;
 			font-size:0.9em;
-			padding:0.5rem 0.5rem;
-			@include media($mobile) {
-				font-size:1em;
-				padding:0.5rem 1rem;
-			}
+			line-height:2rem;
 			@include media($tablet) {
-				padding:0.5rem 2rem;
+				width:10rem;
+			}
+			@include media($desktop) {
+				font-size:1em;
+			}
+			@include transition(all 0.2s ease-in);
+			.no-touch & {
+				&:hover {
+					background:rgba(#fff, 0.2);
+				}
 			}
 			a {
-				width:100%;
 				height:100%;
+				display:block
 			}
 		}
 	}

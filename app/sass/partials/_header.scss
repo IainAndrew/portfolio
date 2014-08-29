@@ -113,7 +113,7 @@ header {
 	@include perspective(1000);
 	//left:50%;
 	//@include transform(translateX(-50%) translateZ(0));
-	//@include animation(float 3s ease infinite);
+	@include animation(float 3s ease infinite);
 	.no-js &, .touch & {
 		position:fixed;
 	}

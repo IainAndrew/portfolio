@@ -467,7 +467,7 @@ section.project-images {
 
 nav.index-nav {
   width: 100%;
-  height: auto;
+  height: 2rem;
   position: fixed;
   top: 0;
   left: 0;
@@ -477,8 +477,11 @@ nav.index-nav {
   nav.index-nav ul {
     margin: 0;
     padding: 0;
-    text-align: center; }
+    text-align: center;
+    height: 100%; }
     nav.index-nav ul li {
+      height: 100%;
+      width: 30%;
       list-style-type: none;
       display: inline-block;
       font-family: "proxima_nova_rgbold";
@@ -486,17 +489,21 @@ nav.index-nav {
       color: #fff;
       text-shadow: -1px 1px 1px #767676;
       font-size: 0.9em;
-      padding: 0.5rem 0.5rem; }
-      @media screen and (min-width: 320px) {
-        nav.index-nav ul li {
-          font-size: 1em;
-          padding: 0.5rem 1rem; } }
+      line-height: 2rem;
+      -webkit-transition: all 0.2s ease-in;
+      -moz-transition: all 0.2s ease-in;
+      transition: all 0.2s ease-in; }
       @media screen and (min-width: 480px) {
         nav.index-nav ul li {
-          padding: 0.5rem 2rem; } }
+          width: 10rem; } }
+      @media screen and (min-width: 768px) {
+        nav.index-nav ul li {
+          font-size: 1em; } }
+      .no-touch nav.index-nav ul li:hover {
+        background: rgba(255, 255, 255, 0.2); }
       nav.index-nav ul li a {
-        width: 100%;
-        height: 100%; }
+        height: 100%;
+        display: block; }
 
 html, body {
   height: 100%; }
@@ -632,7 +639,10 @@ header {
   backface-visibility: hidden;
   -webkit-perspective: 1000;
   -moz-perspective: 1000;
-  perspective: 1000; }
+  perspective: 1000;
+  -webkit-animation: float 3s ease infinite;
+  -moz-animation: float 3s ease infinite;
+  animation: float 3s ease infinite; }
   .no-js .island-wrap, .touch .island-wrap {
     position: fixed; }
 
