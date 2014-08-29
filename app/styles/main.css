@@ -553,16 +553,6 @@ header {
         font-size: 5em;
         top: 25%; } }
 
-.scroll-down {
-  width: 4rem;
-  height: 4rem;
-  background: rgba(255, 255, 255, 0.8);
-  border-radius: 50%;
-  position: absolute;
-  bottom: 1rem;
-  right: 1rem;
-  border: 5px solid black; }
-
 .landscape-back {
   width: 100%;
   height: 100%;
@@ -705,35 +695,6 @@ header {
   border-radius: 50%;
   opacity: 0.12; }
 
-.landscape-mist {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: url("../images/mist.png");
-  background-size: 1920px 100%;
-  background-position: 0 0;
-  background-repeat: repeat-x; }
-
-@-webkit-keyframes mist {
-  from {
-    background-position: 0 0; }
-
-  to {
-    background-position: 1920px 0; } }
-@-moz-keyframes mist {
-  from {
-    background-position: 0 0; }
-
-  to {
-    background-position: 1920px 0; } }
-@keyframes mist {
-  from {
-    background-position: 0 0; }
-
-  to {
-    background-position: 1920px 0; } }
 @-webkit-keyframes float {
   0% {
     margin-top: 0; }
