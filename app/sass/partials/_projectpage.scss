@@ -101,7 +101,7 @@ section.project-stats {
 	@include media($desktop) {
 		border:1px solid;
 		@include bradius;
-		display:flex;
+		@include display(flex);
 	}
 	p, ul {
 		@include bodyfont;

@@ -1,5 +1,15 @@
 'use strict';
 
+$(window).load(function() {
+	$('body').removeClass('loading'); // Hide loading animation on page load
+
+	$(function() {
+
+		
+
+	});
+});
+
 window.viewportUnitsBuggyfill.init();
 
 (function() {
@@ -37,10 +47,10 @@ var all = function() {
 			dir         : 1,
 			animation   : {
 				speed   : 300,
-				easing  : 'cubic-bezier(.87,-.41,.19,1.44)'
+				easing  : 'cubic-bezier(.46,-0.53,.48,1.97)'
 			}
 		});
-		$title.animate({marginTop:'-10%'}, 300);
+		$title.animate({marginTop:'-15%'}, 300);
 		$shadow.animate({width:'5rem', opacity:0.07}, 300);
 
 	};
@@ -61,14 +71,14 @@ var all = function() {
 
 	};
 	
-	var titleArc = setInterval(function() {
+	/*var titleArc = setInterval(function() {
 
 		titleArcUp();
 		setTimeout(function() {
 			titleArcDown();
 		}, 300);
 
-	}, 2000);
+	}, 2000);*/
 };
 
 all();

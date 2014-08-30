@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url(http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab);
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -521,8 +522,8 @@ header {
     position: relative;
     top: 25%;
     text-transform: uppercase;
-    font-family: "proxima_nova_rgbold";
-    font-weight: normal;
+    font-family: Roboto Slab;
+    font-weight: bold;
     color: #fff;
     z-index: 1;
     text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2);
@@ -629,51 +630,58 @@ header {
   backface-visibility: hidden;
   -webkit-perspective: 1000;
   -moz-perspective: 1000;
-  perspective: 1000;
-  -webkit-animation: float 3s ease infinite;
-  -moz-animation: float 3s ease infinite;
-  animation: float 3s ease infinite; }
+  perspective: 1000; }
   .no-js .island-wrap, .touch .island-wrap {
     position: fixed; }
 
 @-webkit-keyframes island-onload {
   from {
-    -webkit-transform: translateZ(500px); }
+    -webkit-transform: scale(8);
+    margin-top: 60rem;
+    margin-left: -65rem; }
 
   to {
-    -webkit-transform: translateZ(0); } }
+    -webkit-transform: scale(1);
+    margin-top: 0;
+    margin-left: 0; } }
 @-moz-keyframes island-onload {
   from {
-    -moz-transform: translateZ(500px); }
+    -moz-transform: scale(8);
+    margin-top: 60rem;
+    margin-left: -65rem; }
 
   to {
-    -moz-transform: translateZ(0); } }
+    -moz-transform: scale(1);
+    margin-top: 0;
+    margin-left: 0; } }
 @keyframes island-onload {
   from {
-    -webkit-transform: translateZ(500px);
-    -moz-transform: translateZ(500px);
-    -ms-transform: translateZ(500px);
-    -o-transform: translateZ(500px);
-    transform: translateZ(500px); }
+    -webkit-transform: scale(8);
+    -moz-transform: scale(8);
+    -ms-transform: scale(8);
+    -o-transform: scale(8);
+    transform: scale(8);
+    margin-top: 60rem;
+    margin-left: -65rem; }
 
   to {
-    -webkit-transform: translateZ(0);
-    -moz-transform: translateZ(0);
-    -ms-transform: translateZ(0);
-    -o-transform: translateZ(0);
-    transform: translateZ(0); } }
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    margin-top: 0;
+    margin-left: 0; } }
 .island {
   width: 100%;
-  -webkit-animation: island-onload 0.5s cubic-bezier(0.87, -0.41, 0.19, 1.44);
-  -moz-animation: island-onload 0.5s cubic-bezier(0.87, -0.41, 0.19, 1.44);
-  animation: island-onload 0.5s cubic-bezier(0.87, -0.41, 0.19, 1.44);
+  -webkit-animation: island-onload 1.2s cubic-bezier(0.87, -0.41, 0.19, 1.44);
+  -moz-animation: island-onload 1.2s cubic-bezier(0.87, -0.41, 0.19, 1.44);
+  animation: island-onload 1.2s cubic-bezier(0.87, -0.41, 0.19, 1.44);
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
   -ms-transform: translate3d(0, 0, 0);
   -o-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
   -webkit-perspective: 1000;
   -moz-perspective: 1000;
   perspective: 1000; }
@@ -812,6 +820,12 @@ section.project-overview {
   section.project-stats {
     border: 1px solid;
     border-radius: 3px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
     display: flex; } }
 section.project-stats p, section.project-stats ul {
   font-family: Libre Baskerville;
@@ -1671,3 +1685,19 @@ h1, h2, h3, h4, h5, h6 {
 a {
   text-decoration: none;
   color: inherit; }
+
+body.loading {
+  overflow: hidden; }
+  body.loading .loading-animation {
+    display: block; }
+
+.loading-animation {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: white;
+  text-align: center; }
