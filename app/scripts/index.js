@@ -5,7 +5,7 @@ $(window).load(function() {
 
 	$(function() {
 
-		
+		$('.island').addClass('island-on-load');
 
 	});
 });
@@ -15,7 +15,7 @@ window.viewportUnitsBuggyfill.init();
 (function() {
 
 	if ( Modernizr.touch ) {
-		alert("I'm a mobile device!");
+		//alert("I'm a mobile device!");
 	} else {
 		$.stellar({
 			horizontalScrolling: false,
