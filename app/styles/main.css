@@ -521,7 +521,7 @@ header {
     position: relative;
     top: 25%;
     text-transform: uppercase;
-    font-family: "bubblegumregular";
+    font-family: "proxima_nova_rgbold";
     font-weight: normal;
     color: #fff;
     z-index: 1;
@@ -1054,35 +1054,35 @@ section.intro {
       -webkit-animation: introbottom 1s cubic-bezier(0.87, -0.41, 0.19, 1.44);
       -moz-animation: introbottom 1s cubic-bezier(0.87, -0.41, 0.19, 1.44);
       animation: introbottom 1s cubic-bezier(0.87, -0.41, 0.19, 1.44); }
-  section.intro h1 {
+  section.intro p, section.intro h2 {
     font-weight: normal;
     color: #fff;
     margin: 0; }
-    section.intro h1:first-of-type {
-      font-family: "proxima_nova_rgbold";
-      text-transform: uppercase;
-      letter-spacing: 0.2em;
-      margin-bottom: 1rem;
-      margin-top: 3rem;
-      text-shadow: 0 -1px 1px rgba(68, 68, 68, 0.8); }
-      @media screen and (min-width: 0px) {
-        section.intro h1:first-of-type {
-          font-size: 2em; } }
-      @media screen and (min-width: 320px) {
-        section.intro h1:first-of-type {
-          font-size: 2.5em; } }
-    section.intro h1:nth-of-type(2) {
-      font-family: Libre Baskerville;
-      font-style: italic;
-      -webkit-font-smoothing: antialiased;
-      margin-bottom: 3rem;
-      text-shadow: 0 -2px 2px #6cd7c2; }
-      @media screen and (min-width: 0px) {
-        section.intro h1:nth-of-type(2) {
-          font-size: 1em; } }
-      @media screen and (min-width: 320px) {
-        section.intro h1:nth-of-type(2) {
-          font-size: 1.3em; } }
+  section.intro p {
+    font-family: "proxima_nova_rgbold";
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    margin-bottom: 1rem;
+    margin-top: 3rem;
+    text-shadow: 0 -1px 1px rgba(68, 68, 68, 0.8); }
+    @media screen and (min-width: 0px) {
+      section.intro p {
+        font-size: 2em; } }
+    @media screen and (min-width: 320px) {
+      section.intro p {
+        font-size: 2.5em; } }
+  section.intro h2 {
+    font-family: Libre Baskerville;
+    font-style: italic;
+    -webkit-font-smoothing: antialiased;
+    margin-bottom: 3rem;
+    text-shadow: 0 -2px 2px #6cd7c2; }
+    @media screen and (min-width: 0px) {
+      section.intro h2 {
+        font-size: 1em; } }
+    @media screen and (min-width: 320px) {
+      section.intro h2 {
+        font-size: 1.3em; } }
 
 @-webkit-keyframes introtop {
   from {
