@@ -18,8 +18,6 @@
 	width:100%;
 	@include transform(translate3d(0, 0, 0));
 	@include perspective(1000);
-	padding:0 2rem;
-
 	&.island-on-load {
 		@include animation(island-onload 1.5s cubic-bezier(1,0,.19,1.44));
 	}
@@ -28,6 +26,16 @@
 		//width:2480px;
 		//height:2280px;
 		max-width:100%;
+		width:10rem;
+		@include media($mobile) {
+			width:13rem;
+		}
+		@include media($tablet) {
+			width:15rem;
+		}
+		@include media($container) {
+			width:310px;
+		}
 	}
 }
 @include keyframes(island-onload) {
@@ -48,11 +56,14 @@
 	@include transform(translateX(-50%));
 	width:10em;
 	height:1em;
-	font-size:0.6em;
+	font-size:0.4em;
 	background:black;
 	border-radius:50%;
 	//opacity:0.09;
 	opacity:0;
+	@include media($mobile) {
+		font-size:0.6em;
+	}
 	@include media($tablet) {
 		font-size:0.8em;
 	}

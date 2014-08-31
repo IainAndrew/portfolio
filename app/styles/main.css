@@ -543,9 +543,13 @@ header {
         top: 30%; } }
     @media screen and (min-width: 320px) {
       header h1.header-title {
-        font-size: 2.8em;
+        font-size: 2.5em;
         top: 25%; } }
     @media screen and (min-width: 480px) {
+      header h1.header-title {
+        font-size: 3em;
+        top: 25%; } }
+    @media screen and (min-width: 768px) {
       header h1.header-title {
         font-size: 3.5em;
         top: 25%; } }
@@ -566,7 +570,7 @@ header {
     -webkit-transform: translateX(-100%); }
 
   50% {
-    -webkit-transform: scale(0.5, 0.8); }
+    -webkit-transform: scale(0.7, 0.8); }
 
   75% {
     -webkit-transform: scale(1, 1); }
@@ -578,7 +582,7 @@ header {
     -moz-transform: translateX(-100%); }
 
   50% {
-    -moz-transform: scale(0.5, 0.8); }
+    -moz-transform: scale(0.7, 0.8); }
 
   75% {
     -moz-transform: scale(1, 1); }
@@ -594,11 +598,11 @@ header {
     transform: translateX(-100%); }
 
   50% {
-    -webkit-transform: scale(0.5, 0.8);
-    -moz-transform: scale(0.5, 0.8);
-    -ms-transform: scale(0.5, 0.8);
-    -o-transform: scale(0.5, 0.8);
-    transform: scale(0.5, 0.8); }
+    -webkit-transform: scale(0.7, 0.8);
+    -moz-transform: scale(0.7, 0.8);
+    -ms-transform: scale(0.7, 0.8);
+    -o-transform: scale(0.7, 0.8);
+    transform: scale(0.7, 0.8); }
 
   75% {
     -webkit-transform: scale(1, 1);
@@ -998,14 +1002,23 @@ footer {
   transform: translate3d(0, 0, 0);
   -webkit-perspective: 1000;
   -moz-perspective: 1000;
-  perspective: 1000;
-  padding: 0 2rem; }
+  perspective: 1000; }
   .island.island-on-load {
     -webkit-animation: island-onload 1.5s cubic-bezier(1, 0, 0.19, 1.44);
     -moz-animation: island-onload 1.5s cubic-bezier(1, 0, 0.19, 1.44);
     animation: island-onload 1.5s cubic-bezier(1, 0, 0.19, 1.44); }
   .island img {
-    max-width: 100%; }
+    max-width: 100%;
+    width: 10rem; }
+    @media screen and (min-width: 320px) {
+      .island img {
+        width: 13rem; } }
+    @media screen and (min-width: 480px) {
+      .island img {
+        width: 15rem; } }
+    @media screen and (min-width: 1088px) {
+      .island img {
+        width: 310px; } }
 
 @-webkit-keyframes island-onload {
   0% {
@@ -1050,10 +1063,13 @@ footer {
   transform: translateX(-50%);
   width: 10em;
   height: 1em;
-  font-size: 0.6em;
+  font-size: 0.4em;
   background: black;
   border-radius: 50%;
   opacity: 0; }
+  @media screen and (min-width: 320px) {
+    .island-shadow {
+      font-size: 0.6em; } }
   @media screen and (min-width: 480px) {
     .island-shadow {
       font-size: 0.8em; } }
