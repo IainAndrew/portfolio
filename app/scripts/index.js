@@ -10,10 +10,9 @@ $(window).load(function() {
 			$('.header-title').addClass('header-on-load');
 		}, 1000);
 
-
+		titleArcFull();
 		setTimeout(function() {
-			titleArcFull();
-			$('.island-shadow').animate({opacity:0.12}, 1000);
+			$('.island-shadow').animate({opacity:0.09}, 1000);
 		}, 2500);
 
 	});
@@ -52,15 +51,15 @@ var titleArcFull = function() {
 	var titleArcUp = function() {
 
 		$title.arctext('set', {
-			radius      : 230, 
+			radius      : 210, 
 			dir         : 1,
 			animation   : {
 				speed   : 300,
 				easing  : 'cubic-bezier(.46,-0.53,.48,1.97)'
 			}
 		});
-		$title.animate({marginTop:'-15%'}, 300);
-		$shadow.animate({width:'5rem', opacity:0.07}, 300);
+		$title.animate({marginTop:'-10%'}, 300);
+		$shadow.animate({width:'5em', opacity:0.07}, 300);
 
 	};
 
@@ -76,7 +75,7 @@ var titleArcFull = function() {
 			}
 		});
 		$title.animate({marginTop:0}, 600);
-		$shadow.animate({width:'10rem', opacity:0.12}, 600);
+		$shadow.animate({width:'10em', opacity:0.09}, 600);
 
 	};
 	
@@ -87,7 +86,7 @@ var titleArcFull = function() {
 			titleArcDown();
 		}, 300);
 
-	}, 2000);
+	}, 6000);
 };
 
 

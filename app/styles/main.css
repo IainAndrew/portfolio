@@ -547,7 +547,7 @@ header {
         top: 25%; } }
     @media screen and (min-width: 480px) {
       header h1.header-title {
-        font-size: 4em;
+        font-size: 3.5em;
         top: 25%; } }
     @media screen and (min-width: 1281px) {
       header h1.header-title {
@@ -998,11 +998,14 @@ footer {
   transform: translate3d(0, 0, 0);
   -webkit-perspective: 1000;
   -moz-perspective: 1000;
-  perspective: 1000; }
+  perspective: 1000;
+  padding: 0 2rem; }
   .island.island-on-load {
     -webkit-animation: island-onload 1.5s cubic-bezier(1, 0, 0.19, 1.44);
     -moz-animation: island-onload 1.5s cubic-bezier(1, 0, 0.19, 1.44);
     animation: island-onload 1.5s cubic-bezier(1, 0, 0.19, 1.44); }
+  .island img {
+    max-width: 100%; }
 
 @-webkit-keyframes island-onload {
   0% {
@@ -1045,11 +1048,18 @@ footer {
   -ms-transform: translateX(-50%);
   -o-transform: translateX(-50%);
   transform: translateX(-50%);
-  width: 10rem;
-  height: 1rem;
+  width: 10em;
+  height: 1em;
+  font-size: 0.6em;
   background: black;
   border-radius: 50%;
   opacity: 0; }
+  @media screen and (min-width: 480px) {
+    .island-shadow {
+      font-size: 0.8em; } }
+  @media screen and (min-width: 768px) {
+    .island-shadow {
+      font-size: 1em; } }
 
 @-webkit-keyframes float {
   0% {

@@ -17,15 +17,17 @@
 .island {
 	width:100%;
 	@include transform(translate3d(0, 0, 0));
-	//@include backface-visibility(hidden);
 	@include perspective(1000);
+	padding:0 2rem;
+
 	&.island-on-load {
 		@include animation(island-onload 1.5s cubic-bezier(1,0,.19,1.44));
 	}
+
 	img {
 		//width:2480px;
 		//height:2280px;
-		//max-width:100%;
+		max-width:100%;
 	}
 }
 @include keyframes(island-onload) {
@@ -44,12 +46,19 @@
 	top:13%;
 	left:50%;
 	@include transform(translateX(-50%));
-	width:10rem;
-	height:1rem;
+	width:10em;
+	height:1em;
+	font-size:0.6em;
 	background:black;
 	border-radius:50%;
-	//opacity:0.12;
+	//opacity:0.09;
 	opacity:0;
+	@include media($tablet) {
+		font-size:0.8em;
+	}
+	@include media($desktop) {
+		font-size:1em;
+	}
 }
 
 // Island float
