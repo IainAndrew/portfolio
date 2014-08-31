@@ -14,6 +14,20 @@
 		position:fixed;
 	}
 }
+.island {
+	width:100%;
+	@include transform(translate3d(0, 0, 0));
+	//@include backface-visibility(hidden);
+	@include perspective(1000);
+	&.island-on-load {
+		@include animation(island-onload 1.5s cubic-bezier(1,0,.19,1.44));
+	}
+	img {
+		//width:2480px;
+		//height:2280px;
+		//max-width:100%;
+	}
+}
 @include keyframes(island-onload) {
 	0% {
 		@include transform(scale(0));
@@ -25,20 +39,6 @@
 		margin-top:0;
 	}
 }
-.island {
-	width:100%;
-	@include transform(translate3d(0, 0, 0));
-	//@include backface-visibility(hidden);
-	@include perspective(1000);
-	&.island-on-load {
-		@include animation(island-onload 3.5s cubic-bezier(1,0,.19,1.44));
-	}
-	img {
-		//width:2480px;
-		//height:2280px;
-		//max-width:100%;
-	}
-}
 .island-shadow {
 	position:absolute;
 	top:13%;
@@ -48,7 +48,8 @@
 	height:1rem;
 	background:black;
 	border-radius:50%;
-	opacity:0.12;
+	//opacity:0.12;
+	opacity:0;
 }
 
 // Island float

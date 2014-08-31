@@ -6,6 +6,15 @@ $(window).load(function() {
 	$(function() {
 
 		$('.island').addClass('island-on-load');
+		setTimeout(function() {
+			$('.header-title').addClass('header-on-load');
+		}, 1000);
+
+
+		setTimeout(function() {
+			titleArcFull();
+			$('.island-shadow').animate({opacity:0.12}, 1000);
+		}, 2500);
 
 	});
 });
@@ -29,7 +38,7 @@ window.viewportUnitsBuggyfill.init();
 
 })();
 
-var all = function() {
+var titleArcFull = function() {
 
 	var $title = $('#header-title'),
 		$shadow = $('.island-shadow');
@@ -71,17 +80,17 @@ var all = function() {
 
 	};
 	
-	/*var titleArc = setInterval(function() {
+	var titleArc = setInterval(function() {
 
 		titleArcUp();
 		setTimeout(function() {
 			titleArcDown();
 		}, 300);
 
-	}, 2000);*/
+	}, 2000);
 };
 
-all();
+
 
 // Tilt animation when island hits the sea floor
 $(window).scroll(function() {
