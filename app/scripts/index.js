@@ -58,7 +58,7 @@ var titleArcFull = function() {
 				easing  : 'cubic-bezier(.46,-0.53,.48,1.97)'
 			}
 		});
-		$title.animate({marginTop:'-10%'}, 300);
+		$title.animate({marginTop:'-10rem'}, 300);
 		$shadow.animate({width:'5em', opacity:0.07}, 300);
 
 	};

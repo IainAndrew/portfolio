@@ -15,7 +15,7 @@ header {
 	h1.header-title {
 		margin:0;
 		position:relative;
-		top:25%;
+		//top:25%;
 		text-transform:uppercase;
 		font-family:Roboto Slab;
 		font-weight:bold;
@@ -31,7 +31,7 @@ header {
 		}
 	    @include media($mobile) {
 			font-size:2.5em;
-			top:25%;
+			top:27%;
 		}
 	    @include media($tablet) {
 			font-size:3em;
@@ -39,11 +39,9 @@ header {
 		}
 		@include media($desktop) {
 			font-size:3.5em;
-			top:25%;
 		}
 		@include media($widescreen) {
 			font-size:5em;
-			top:25%;
 		}
 		&.header-on-load {
 			@include animation(header-onload 3s cubic-bezier(1,0,.19,1.44));
