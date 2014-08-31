@@ -13,7 +13,7 @@ $(window).load(function() {
 		titleArcFull();
 		setTimeout(function() {
 			$('.island-shadow').animate({opacity:0.09}, 1000);
-		}, 2500);
+		}, 2200);
 
 	});
 });
