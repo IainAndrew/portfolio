@@ -25,6 +25,9 @@ header {
 		@include transform(translateX(-100%));
 		@include backface-visibility(hidden);
 		@include perspective(1000);
+		.no-js &, .touch & {
+			@include transform(translateX(0));
+		}
 	    @include media($zero) {
 			font-size:2em;
 			top:30%;
