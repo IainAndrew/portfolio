@@ -5,7 +5,7 @@ $(window).load(function() {
 
 	$(function() {
 
-		$('.island img').addClass('island-on-load');
+		$('.island').addClass('island-on-load');
 
 	});
 });

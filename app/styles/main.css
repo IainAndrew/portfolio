@@ -923,55 +923,45 @@ footer {
   backface-visibility: hidden;
   -webkit-perspective: 1000;
   -moz-perspective: 1000;
-  perspective: 1000; }
+  perspective: 1000;
+  -webkit-animation: float 3s ease infinite;
+  -moz-animation: float 3s ease infinite;
+  animation: float 3s ease infinite; }
   .no-js .island-wrap, .touch .island-wrap {
     position: fixed; }
 
 @-webkit-keyframes island-onload {
   0% {
-    width: 2480px;
-    height: 2280px;
-    margin-left: -135rem; }
-
-  80% {
-    margin-left: -10rem;
-    margin-top: 5rem; }
+    -webkit-transform: scale(0);
+    margin-top: -40%; }
 
   100% {
-    width: 310px;
-    height: 285px;
-    margin-top: 0;
-    margin-left: 0; } }
+    -webkit-transform: scale(1);
+    margin-top: 0; } }
 @-moz-keyframes island-onload {
   0% {
-    width: 2480px;
-    height: 2280px;
-    margin-left: -135rem; }
-
-  80% {
-    margin-left: -10rem;
-    margin-top: 5rem; }
+    -moz-transform: scale(0);
+    margin-top: -40%; }
 
   100% {
-    width: 310px;
-    height: 285px;
-    margin-top: 0;
-    margin-left: 0; } }
+    -moz-transform: scale(1);
+    margin-top: 0; } }
 @keyframes island-onload {
   0% {
-    width: 2480px;
-    height: 2280px;
-    margin-left: -135rem; }
-
-  80% {
-    margin-left: -10rem;
-    margin-top: 5rem; }
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+    margin-top: -40%; }
 
   100% {
-    width: 310px;
-    height: 285px;
-    margin-top: 0;
-    margin-left: 0; } }
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    margin-top: 0; } }
 .island {
   width: 100%;
   -webkit-transform: translate3d(0, 0, 0);
@@ -982,10 +972,10 @@ footer {
   -webkit-perspective: 1000;
   -moz-perspective: 1000;
   perspective: 1000; }
-  .island img.island-on-load {
-    -webkit-animation: island-onload 1.5s cubic-bezier(0.87, -0.41, 0.19, 1.44);
-    -moz-animation: island-onload 1.5s cubic-bezier(0.87, -0.41, 0.19, 1.44);
-    animation: island-onload 1.5s cubic-bezier(0.87, -0.41, 0.19, 1.44); }
+  .island.island-on-load {
+    -webkit-animation: island-onload 3.5s cubic-bezier(1, 0, 0.19, 1.44);
+    -moz-animation: island-onload 3.5s cubic-bezier(1, 0, 0.19, 1.44);
+    animation: island-onload 3.5s cubic-bezier(1, 0, 0.19, 1.44); }
 
 .island-shadow {
   position: absolute;
@@ -1007,7 +997,7 @@ footer {
     margin-top: 0; }
 
   50% {
-    margin-top: 0.3%; }
+    margin-top: -0.3%; }
 
   100% {
     margin-top: 0; } }
@@ -1016,7 +1006,7 @@ footer {
     margin-top: 0; }
 
   50% {
-    margin-top: 0.3%; }
+    margin-top: -0.3%; }
 
   100% {
     margin-top: 0; } }
@@ -1025,7 +1015,7 @@ footer {
     margin-top: 0; }
 
   50% {
-    margin-top: 0.3%; }
+    margin-top: -0.3%; }
 
   100% {
     margin-top: 0; } }
@@ -1692,9 +1682,9 @@ a {
   text-decoration: none;
   color: inherit; }
 
-body.loading {
+.js body.loading {
   overflow: hidden; }
-  body.loading .loading-animation {
+  .js body.loading .loading-animation {
     display: block; }
 
 .loading-animation {

@@ -9,29 +9,20 @@
 	@include perspective(1000);
 	//left:50%;
 	//@include transform(translateX(-50%) translateZ(0));
-	//@include animation(float 3s ease infinite);
+	@include animation(float 3s ease infinite);
 	.no-js &, .touch & {
 		position:fixed;
 	}
 }
 @include keyframes(island-onload) {
 	0% {
-		//@include transform(scale(8));
-		width:2480px;
-		height:2280px;
+		@include transform(scale(0));
 		//margin-top:60rem;
-		margin-left:-135rem;
-	}
-	80%{
-		margin-left:-10rem;
-		margin-top:5rem;
+		margin-top:-40%;
 	}
 	100% {
-		//@include transform(scale(1));
-		width:310px;
-		height:285px;
+		@include transform(scale(1));
 		margin-top:0;
-		margin-left:0;
 	}
 }
 .island {
@@ -39,13 +30,13 @@
 	@include transform(translate3d(0, 0, 0));
 	//@include backface-visibility(hidden);
 	@include perspective(1000);
+	&.island-on-load {
+		@include animation(island-onload 3.5s cubic-bezier(1,0,.19,1.44));
+	}
 	img {
 		//width:2480px;
 		//height:2280px;
 		//max-width:100%;
-		&.island-on-load {
-			@include animation(island-onload 1.5s cubic-bezier(.87,-.41,.19,1.44));
-		}
 	}
 }
 .island-shadow {
@@ -67,7 +58,7 @@
     margin-top:0;
   }
   50% {
-    margin-top:0.3%;
+    margin-top:-0.3%;
   }
   100% {
 	margin-top:0;

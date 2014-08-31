@@ -53,9 +53,11 @@ a {
 }
 
 body.loading {
-	overflow:hidden;
-    .loading-animation {
-    	display:block;
+    .js & {
+        overflow:hidden;
+        .loading-animation {
+            display:block;
+        }
     }
 }
 
