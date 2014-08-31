@@ -56,7 +56,7 @@
 	@include transform(translateX(-50%));
 	width:10em;
 	height:1em;
-	font-size:0.4em;
+	font-size:0.1em;
 	background:black;
 	border-radius:50%;
 	//opacity:0.09;
@@ -65,9 +65,9 @@
 		font-size:0.6em;
 	}
 	@include media($tablet) {
-		font-size:0.8em;
+		font-size:0.7em;
 	}
-	@include media($desktop) {
+	@include media($container) {
 		font-size:1em;
 	}
 }
