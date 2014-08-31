@@ -5,7 +5,7 @@ $(window).load(function() {
 
 	$(function() {
 
-		$('.island').addClass('island-on-load');
+		$('.island img').addClass('island-on-load');
 
 	});
 });
@@ -43,7 +43,7 @@ var all = function() {
 	var titleArcUp = function() {
 
 		$title.arctext('set', {
-			radius      : 220, 
+			radius      : 230, 
 			dir         : 1,
 			animation   : {
 				speed   : 300,

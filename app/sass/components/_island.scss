@@ -15,13 +15,21 @@
 	}
 }
 @include keyframes(island-onload) {
-	from {
-		@include transform(scale(8));
-		margin-top:60rem;
-		margin-left:-65rem;
+	0% {
+		//@include transform(scale(8));
+		width:2480px;
+		height:2280px;
+		//margin-top:60rem;
+		margin-left:-135rem;
 	}
-	to {
-		@include transform(scale(1));
+	80%{
+		margin-left:-10rem;
+		margin-top:5rem;
+	}
+	100% {
+		//@include transform(scale(1));
+		width:310px;
+		height:285px;
 		margin-top:0;
 		margin-left:0;
 	}
@@ -32,10 +40,12 @@
 	//@include backface-visibility(hidden);
 	@include perspective(1000);
 	img {
-		max-width:100%;
-	}
-	&.island-on-load {
-		@include animation(island-onload 1.2s cubic-bezier(.87,-.41,.19,1.44));
+		//width:2480px;
+		//height:2280px;
+		//max-width:100%;
+		&.island-on-load {
+			@include animation(island-onload 1.5s cubic-bezier(.87,-.41,.19,1.44));
+		}
 	}
 }
 .island-shadow {
