@@ -976,15 +976,15 @@ footer {
 
 .island-wrap {
   position: absolute;
-  width: 100%;
   text-align: center;
   z-index: 0;
   top: 40%;
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  -ms-transform: translate3d(0, 0, 0);
-  -o-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
+  left: 50%;
+  -webkit-transform: translate3d(0, 0, 0) translateX(-50%);
+  -moz-transform: translate3d(0, 0, 0) translateX(-50%);
+  -ms-transform: translate3d(0, 0, 0) translateX(-50%);
+  -o-transform: translate3d(0, 0, 0) translateX(-50%);
+  transform: translate3d(0, 0, 0) translateX(-50%);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000;
@@ -1026,7 +1026,7 @@ footer {
 @-webkit-keyframes island-onload {
   0% {
     -webkit-transform: scale(0);
-    margin-top: -40%; }
+    margin-top: -40rem; }
 
   100% {
     -webkit-transform: scale(1);
@@ -1034,7 +1034,7 @@ footer {
 @-moz-keyframes island-onload {
   0% {
     -moz-transform: scale(0);
-    margin-top: -40%; }
+    margin-top: -40rem; }
 
   100% {
     -moz-transform: scale(1);
@@ -1046,7 +1046,7 @@ footer {
     -ms-transform: scale(0);
     -o-transform: scale(0);
     transform: scale(0);
-    margin-top: -40%; }
+    margin-top: -40rem; }
 
   100% {
     -webkit-transform: scale(1);

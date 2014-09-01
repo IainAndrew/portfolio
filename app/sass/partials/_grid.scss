@@ -63,18 +63,12 @@ section.project-buttons {
 section.project-stats {
 	@include outer-container;
 	.ambition {
-		@include media($zero) {
-			//@include span-columns(12);
-		}
 		@include media($desktop) {
 			@include span-columns(6);
 			@include omega;
 		}
 	}
 	.roles, .technologies {
-		@include media($zero) {
-			//@include span-columns(12);
-		}
 		@include media($desktop) {
 			@include span-columns(3);
 			@include omega;

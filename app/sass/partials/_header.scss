@@ -52,7 +52,6 @@ header {
 		}
 	}
 }
-
 @include keyframes(header-onload) {
 	0% {
 		@include transform(translateX(-100%));
