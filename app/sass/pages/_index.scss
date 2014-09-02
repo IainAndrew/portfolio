@@ -245,9 +245,16 @@ section.contact {
 	}
 	.contact-form {
 		padding-top:2rem;
+		font-size:0.8em;
+		line-height:$lineheight;
 		@include media($desktop) {
 			padding-top:0;
 			padding-left:4rem;
+			font-size:0.9em;
+		}
+		input {
+			height:2rem;
+			color:$body-color;
 		}
 		.name-email {
 			input:first-child {
@@ -259,6 +266,12 @@ section.contact {
 		}
 		textarea {
 			margin:1rem 0;
+			height:10em;
+			color:$body-color;
+			max-width:100%;
+		}
+		input.contact-form-submit {
+			float:right;
 		}
 	}
 }

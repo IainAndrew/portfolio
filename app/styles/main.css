@@ -1577,18 +1577,29 @@ section.contact {
     text-decoration: underline;
     color: #2a8892; }
   section.contact .contact-form {
-    padding-top: 2rem; }
+    padding-top: 2rem;
+    font-size: 0.8em;
+    line-height: 1.7em; }
     @media screen and (min-width: 768px) {
       section.contact .contact-form {
         padding-top: 0;
-        padding-left: 4rem; } }
+        padding-left: 4rem;
+        font-size: 0.9em; } }
+    section.contact .contact-form input {
+      height: 2rem;
+      color: #444444; }
     section.contact .contact-form .name-email input:first-child {
       margin-bottom: 1rem; }
       @media screen and (min-width: 480px) {
         section.contact .contact-form .name-email input:first-child {
           margin-bottom: 0; } }
     section.contact .contact-form textarea {
-      margin: 1rem 0; }
+      margin: 1rem 0;
+      height: 10em;
+      color: #444444;
+      max-width: 100%; }
+    section.contact .contact-form input.contact-form-submit {
+      float: right; }
 
 main.plugmedia-project section.project-overview hr {
   border-color: #e74c3c; }
