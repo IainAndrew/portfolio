@@ -20,6 +20,7 @@
 
 //Components
 @import "components/island";
+@import "components/loader";
 
 // Pages
 @import "pages/index";
@@ -50,25 +51,4 @@ h1,h2,h3,h4,h5,h6 {
 a {
 	text-decoration:none;
 	color:inherit;
-}
-
-body.loading {
-    .js & {
-        overflow:hidden;
-        .loading-animation {
-            display:block;
-        }
-    }
-}
-
-.loading-animation {
-	display:none;
-	position:fixed;
-    z-index:1000;
-    top:0;
-    left:0;
-    height:100%;
-    width:100%;
-    background:white;
-    text-align:center;
 }

@@ -1107,6 +1107,22 @@ footer {
 
   100% {
     margin-top: 0; } }
+.js body.loading {
+  overflow: hidden; }
+  .js body.loading .loading-animation {
+    display: block; }
+
+.loading-animation {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: white;
+  text-align: center; }
+
 main.index {
   position: relative;
   z-index: 1; }
@@ -1769,19 +1785,3 @@ h1, h2, h3, h4, h5, h6 {
 a {
   text-decoration: none;
   color: inherit; }
-
-.js body.loading {
-  overflow: hidden; }
-  .js body.loading .loading-animation {
-    display: block; }
-
-.loading-animation {
-  display: none;
-  position: fixed;
-  z-index: 1000;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: white;
-  text-align: center; }
