@@ -61,7 +61,22 @@ section.contact {
 		@include row();
 		@include media($desktop) {
 			@include span-columns(8);
-		} 
+		}
+		.name-email{
+			@include row();
+			input {
+				@include span-columns(12);
+				@include media($tablet) {
+					@include span-columns(6);
+				}
+			}
+		}
+		textarea {
+			@include span-columns(12);
+		}
+		input.contact-form-submit {
+			@include row();
+		}
 	}
 }
 

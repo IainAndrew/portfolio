@@ -424,6 +424,40 @@ section.contact {
         width: 65.88078%; }
         section.contact .contact-form:last-child {
           margin-right: 0; } }
+    section.contact .contact-form .name-email {
+      display: block; }
+      section.contact .contact-form .name-email:after {
+        content: "";
+        display: table;
+        clear: both; }
+      section.contact .contact-form .name-email input {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%; }
+        section.contact .contact-form .name-email input:last-child {
+          margin-right: 0; }
+        @media screen and (min-width: 480px) {
+          section.contact .contact-form .name-email input {
+            float: left;
+            display: block;
+            margin-right: 2.35765%;
+            width: 48.82117%; }
+            section.contact .contact-form .name-email input:last-child {
+              margin-right: 0; } }
+    section.contact .contact-form textarea {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      section.contact .contact-form textarea:last-child {
+        margin-right: 0; }
+    section.contact .contact-form input.contact-form-submit {
+      display: block; }
+      section.contact .contact-form input.contact-form-submit:after {
+        content: "";
+        display: table;
+        clear: both; }
 
 section.project-overview {
   max-width: 68em;
@@ -1548,6 +1582,13 @@ section.contact {
       section.contact .contact-form {
         padding-top: 0;
         padding-left: 4rem; } }
+    section.contact .contact-form .name-email input:first-child {
+      margin-bottom: 1rem; }
+      @media screen and (min-width: 480px) {
+        section.contact .contact-form .name-email input:first-child {
+          margin-bottom: 0; } }
+    section.contact .contact-form textarea {
+      margin: 1rem 0; }
 
 main.plugmedia-project section.project-overview hr {
   border-color: #e74c3c; }

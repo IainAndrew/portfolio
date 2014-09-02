@@ -249,5 +249,16 @@ section.contact {
 			padding-top:0;
 			padding-left:4rem;
 		}
+		.name-email {
+			input:first-child {
+				margin-bottom:1rem;
+				@include media($tablet) {
+					margin-bottom:0;
+				}
+			}
+		}
+		textarea {
+			margin:1rem 0;
+		}
 	}
 }
