@@ -50,6 +50,11 @@ footer {
 	background:url('../images/sea-front.png');
 	background-size:cover;
 	background-position:50% 100%;
+	.touch &, .no-js & {
+		background:url('../images/sea-full.png');
+		background-size:cover;
+		background-position:50% 100%;
+	}
 }
 
 .island-speedo {

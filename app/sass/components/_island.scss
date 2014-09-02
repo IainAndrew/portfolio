@@ -72,6 +72,9 @@
 	@include media($container) {
 		font-size:1em;
 	}
+	.no-js &, .touch & {
+		opacity:0.09;
+	}
 }
 
 // Island float

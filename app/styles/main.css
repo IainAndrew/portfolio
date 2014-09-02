@@ -522,7 +522,6 @@ header {
     position: relative;
     text-transform: uppercase;
     font-family: Roboto Slab;
-    font-weight: bold;
     color: #fff;
     z-index: 1;
     text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2);
@@ -639,6 +638,8 @@ header {
   -webkit-perspective: 1000;
   -moz-perspective: 1000;
   perspective: 1000; }
+  .touch .landscape-back, .no-js .landscape-back {
+    background: none; }
 
 .landscape-middle {
   width: 100%;
@@ -659,6 +660,8 @@ header {
   -webkit-perspective: 1000;
   -moz-perspective: 1000;
   perspective: 1000; }
+  .touch .landscape-middle, .no-js .landscape-middle {
+    background: none; }
 
 .landscape-front {
   width: 100%;
@@ -669,6 +672,10 @@ header {
   background: url("../images/front-blue.png");
   background-size: cover;
   background-position: 50% 100%; }
+  .touch .landscape-front, .no-js .landscape-front {
+    background: url("../images/landscape-full.png");
+    background-size: cover;
+    background-position: 50% 100%; }
 
 .landscape-bottom {
   width: 100%;
@@ -957,6 +964,10 @@ footer {
   background: url("../images/sea-front.png");
   background-size: cover;
   background-position: 50% 100%; }
+  .touch .sea-front, .no-js .sea-front {
+    background: url("../images/sea-full.png");
+    background-size: cover;
+    background-position: 50% 100%; }
 
 .island-speedo {
   position: fixed;
@@ -1079,6 +1090,8 @@ footer {
   @media screen and (min-width: 1088px) {
     .island-shadow {
       font-size: 1em; } }
+  .no-js .island-shadow, .touch .island-shadow {
+    opacity: 0.09; }
 
 @-webkit-keyframes float {
   0% {
