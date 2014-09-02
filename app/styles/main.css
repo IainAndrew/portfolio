@@ -396,6 +396,34 @@ section.contact {
     content: "";
     display: table;
     clear: both; }
+  section.contact p {
+    display: block; }
+    section.contact p:after {
+      content: "";
+      display: table;
+      clear: both; }
+    @media screen and (min-width: 768px) {
+      section.contact p {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 31.76157%; }
+        section.contact p:last-child {
+          margin-right: 0; } }
+  section.contact .contact-form {
+    display: block; }
+    section.contact .contact-form:after {
+      content: "";
+      display: table;
+      clear: both; }
+    @media screen and (min-width: 768px) {
+      section.contact .contact-form {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 65.88078%; }
+        section.contact .contact-form:last-child {
+          margin-right: 0; } }
 
 section.project-overview {
   max-width: 68em;
@@ -1256,9 +1284,6 @@ section.about {
   padding: 2rem;
   box-shadow: -2px -2px 3px rgba(0, 0, 0, 0.1);
   border-radius: 3px; }
-  @media screen and (min-width: 320px) {
-    section.about {
-      padding: 3rem; } }
   @media screen and (min-width: 768px) {
     section.about {
       max-width: 68em;
@@ -1490,9 +1515,6 @@ section.contact {
     padding: 2rem;
     box-shadow: -2px -2px 3px rgba(0, 0, 0, 0.1);
     border-radius: 3px; }
-    @media screen and (min-width: 320px) {
-      section.contact .contact-panel {
-        padding: 3rem; } }
     @media screen and (min-width: 768px) {
       section.contact .contact-panel {
         max-width: 68em;
@@ -1517,11 +1539,15 @@ section.contact {
       @media screen and (min-width: 768px) {
         section.contact .contact-panel p {
           font-size: 0.9em; } }
-  section.contact p {
-    width: 30%; }
   section.contact a {
     text-decoration: underline;
     color: #2a8892; }
+  section.contact .contact-form {
+    padding-top: 2rem; }
+    @media screen and (min-width: 768px) {
+      section.contact .contact-form {
+        padding-top: 0;
+        padding-left: 4rem; } }
 
 main.plugmedia-project section.project-overview hr {
   border-color: #e74c3c; }

@@ -51,6 +51,18 @@ section.projects {
 }
 section.contact {
 	@include outer-container;
+	p {
+		@include row();
+		@include media($desktop) {
+			@include span-columns(4);
+		} 
+	}
+	.contact-form {
+		@include row();
+		@include media($desktop) {
+			@include span-columns(8);
+		} 
+	}
 }
 
 // Project pages

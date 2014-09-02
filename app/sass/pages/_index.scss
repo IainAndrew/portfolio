@@ -239,11 +239,15 @@ section.contact {
 	.contact-panel {
 		@include panel;
 	}
-	p {
-		width:100% * 0.3;
-	}
 	a {
 		text-decoration:underline;
 		color:#2a8892;
+	}
+	.contact-form {
+		padding-top:2rem;
+		@include media($desktop) {
+			padding-top:0;
+			padding-left:4rem;
+		}
 	}
 }
