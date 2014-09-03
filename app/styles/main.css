@@ -1593,13 +1593,27 @@ section.contact {
       @media screen and (min-width: 480px) {
         section.contact .contact-form .name-email input:first-child {
           margin-bottom: 0; } }
+    section.contact .contact-form input, section.contact .contact-form textarea {
+      border: 1px solid #444444;
+      outline: 0; }
     section.contact .contact-form textarea {
       margin: 1rem 0;
       height: 10em;
       color: #444444;
-      max-width: 100%; }
+      max-width: 100%;
+      line-height: 1.7em; }
     section.contact .contact-form input.contact-form-submit {
-      float: right; }
+      float: right;
+      width: 7rem;
+      height: 3rem;
+      background: none;
+      font-family: "proxima_nova_ltlight";
+      text-transform: uppercase;
+      -webkit-transition: all 0.4s ease;
+      -moz-transition: all 0.4s ease;
+      transition: all 0.4s ease; }
+      .no-touch section.contact .contact-form input.contact-form-submit:hover {
+        border-color: #8a8a8a; }
 
 main.plugmedia-project section.project-overview hr {
   border-color: #e74c3c; }

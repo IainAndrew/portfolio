@@ -264,14 +264,30 @@ section.contact {
 				}
 			}
 		}
+		input, textarea {
+			border:1px solid $body-color;
+			outline:0;
+		}
 		textarea {
 			margin:1rem 0;
 			height:10em;
 			color:$body-color;
 			max-width:100%;
+			line-height:$lineheight;
 		}
 		input.contact-form-submit {
 			float:right;
+			width:7rem;
+			height:3rem;
+			background:none;
+			font-family:$heading-font-light;
+			text-transform:uppercase;
+			@include transition(all 0.4s ease);
+			.no-touch & {
+				&:hover {
+					border-color:$body-color + 70;
+				}
+			}
 		}
 	}
 }
