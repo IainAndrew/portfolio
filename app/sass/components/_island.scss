@@ -93,10 +93,22 @@
 
 .ribbon {
 	position:absolute;
-	top:50%;
+	top:18rem;
 	left:50%;
 	@include transform(translateX(-50%));
-	width:10rem;
+	width:100%;
+	@include media($mobile) {
+		width:21rem;
+		top:19rem;
+	}
+	@include media($tablet) {
+		width:25rem;
+		top:20rem;
+	}
+	@include media($container) {
+		width:459.5px;
+		top:22rem;
+	}
 	img {
 		max-width:100%;
 	}

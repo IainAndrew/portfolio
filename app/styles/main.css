@@ -1183,14 +1183,26 @@ footer {
     margin-top: 0; } }
 .ribbon {
   position: absolute;
-  top: 50%;
+  top: 18rem;
   left: 50%;
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   -o-transform: translateX(-50%);
   transform: translateX(-50%);
-  width: 10rem; }
+  width: 100%; }
+  @media screen and (min-width: 320px) {
+    .ribbon {
+      width: 21rem;
+      top: 19rem; } }
+  @media screen and (min-width: 480px) {
+    .ribbon {
+      width: 25rem;
+      top: 20rem; } }
+  @media screen and (min-width: 1088px) {
+    .ribbon {
+      width: 459.5px;
+      top: 22rem; } }
   .ribbon img {
     max-width: 100%; }
 
