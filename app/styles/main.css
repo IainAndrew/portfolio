@@ -396,19 +396,19 @@ section.contact {
     content: "";
     display: table;
     clear: both; }
-  section.contact p {
+  section.contact .contact-blurb {
     display: block; }
-    section.contact p:after {
+    section.contact .contact-blurb:after {
       content: "";
       display: table;
       clear: both; }
     @media screen and (min-width: 768px) {
-      section.contact p {
+      section.contact .contact-blurb {
         float: left;
         display: block;
         margin-right: 2.35765%;
         width: 31.76157%; }
-        section.contact p:last-child {
+        section.contact .contact-blurb:last-child {
           margin-right: 0; } }
   section.contact .contact-form {
     display: block; }
@@ -1084,7 +1084,6 @@ footer {
     -moz-animation: island-onload 1.5s cubic-bezier(1, 0, 0.19, 1.44);
     animation: island-onload 1.5s cubic-bezier(1, 0, 0.19, 1.44); }
   .island img {
-    max-width: 100%;
     width: 10rem; }
     @media screen and (min-width: 320px) {
       .island img {
@@ -1182,6 +1181,19 @@ footer {
 
   100% {
     margin-top: 0; } }
+.ribbon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 10rem; }
+  .ribbon img {
+    max-width: 100%; }
+
 .js body.loading {
   overflow: hidden; }
   .js body.loading .loading-animation {
@@ -1318,6 +1330,9 @@ section.about {
   padding: 2rem;
   box-shadow: -2px -2px 3px rgba(0, 0, 0, 0.1);
   border-radius: 3px; }
+  @media screen and (min-width: 480px) {
+    section.about {
+      padding: 3rem; } }
   @media screen and (min-width: 768px) {
     section.about {
       max-width: 68em;
@@ -1549,6 +1564,9 @@ section.contact {
     padding: 2rem;
     box-shadow: -2px -2px 3px rgba(0, 0, 0, 0.1);
     border-radius: 3px; }
+    @media screen and (min-width: 480px) {
+      section.contact .contact-panel {
+        padding: 3rem; } }
     @media screen and (min-width: 768px) {
       section.contact .contact-panel {
         max-width: 68em;
@@ -1573,6 +1591,13 @@ section.contact {
       @media screen and (min-width: 768px) {
         section.contact .contact-panel p {
           font-size: 0.9em; } }
+  section.contact p span:after {
+    content: "below"; }
+    @media screen and (min-width: 768px) {
+      section.contact p span:after {
+        content: "opposite"; } }
+  section.contact p:first-child {
+    margin-bottom: 1rem; }
   section.contact a {
     text-decoration: underline;
     color: #2a8892; }
@@ -1586,8 +1611,7 @@ section.contact {
         padding-left: 4rem;
         font-size: 0.9em; } }
     section.contact .contact-form input {
-      height: 2rem;
-      color: #444444; }
+      height: 2rem; }
     section.contact .contact-form .name-email input:first-child {
       margin-bottom: 1rem; }
       @media screen and (min-width: 480px) {
@@ -1595,14 +1619,16 @@ section.contact {
           margin-bottom: 0; } }
     section.contact .contact-form input, section.contact .contact-form textarea {
       border: 1px solid #444444;
-      outline: 0; }
+      outline: 0;
+      color: #444444;
+      padding: 0.5rem; }
     section.contact .contact-form textarea {
       margin: 1rem 0;
       height: 10em;
-      color: #444444;
       max-width: 100%;
       line-height: 1.7em; }
     section.contact .contact-form input.contact-form-submit {
+      padding: 0;
       float: right;
       width: 7rem;
       height: 3rem;

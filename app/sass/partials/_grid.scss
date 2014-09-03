@@ -51,7 +51,7 @@ section.projects {
 }
 section.contact {
 	@include outer-container;
-	p {
+	.contact-blurb {
 		@include row();
 		@include media($desktop) {
 			@include span-columns(4);

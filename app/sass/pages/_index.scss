@@ -239,6 +239,19 @@ section.contact {
 	.contact-panel {
 		@include panel;
 	}
+	p {
+		span {
+			&:after {
+				content:"below";
+				@include media($desktop) {
+					content:"opposite";
+				}
+			}
+		}
+		&:first-child {
+			margin-bottom:1rem;
+		}
+	}
 	a {
 		text-decoration:underline;
 		color:#2a8892;
@@ -254,7 +267,6 @@ section.contact {
 		}
 		input {
 			height:2rem;
-			color:$body-color;
 		}
 		.name-email {
 			input:first-child {
@@ -267,15 +279,17 @@ section.contact {
 		input, textarea {
 			border:1px solid $body-color;
 			outline:0;
+			color:$body-color;
+			padding:0.5rem;
 		}
 		textarea {
 			margin:1rem 0;
 			height:10em;
-			color:$body-color;
 			max-width:100%;
 			line-height:$lineheight;
 		}
 		input.contact-form-submit {
+			padding:0;
 			float:right;
 			width:7rem;
 			height:3rem;

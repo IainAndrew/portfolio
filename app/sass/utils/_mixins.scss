@@ -80,6 +80,9 @@
 	padding:2rem;
 	box-shadow:-2px -2px 3px rgba(#000, 0.1);
 	@include bradius;
+	@include media($tablet) {
+		padding:3rem;
+	}
 	@include media($desktop) {
 		@include outer-container;
 		margin-bottom:4rem;
