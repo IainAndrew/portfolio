@@ -95,6 +95,7 @@
 	position:absolute;
 	top:18rem;
 	left:50%;
+	z-index:-1;
 	@include transform(translateX(-50%));
 	width:100%;
 	@include media($mobile) {
