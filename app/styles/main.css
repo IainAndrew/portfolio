@@ -1186,12 +1186,12 @@ footer {
   top: 18rem;
   left: 50%;
   z-index: -1;
+  width: 100%;
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   -o-transform: translateX(-50%);
-  transform: translateX(-50%);
-  width: 100%; }
+  transform: translateX(-50%); }
   @media screen and (min-width: 320px) {
     .ribbon {
       width: 21rem;
@@ -1206,7 +1206,47 @@ footer {
       top: 22rem; } }
   .ribbon img {
     max-width: 100%; }
+  .ribbon.ribbon-on-load {
+    -webkit-animation: ribbon-onload 1s ease;
+    -moz-animation: ribbon-onload 1s ease;
+    animation: ribbon-onload 1s ease;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards; }
 
+@-webkit-keyframes ribbon-onload {
+  0% {
+    z-index: -1;
+    margin-top: 0; }
+
+  50% {
+    margin-top: 10rem; }
+
+  100% {
+    z-index: 1;
+    margin-top: 0; } }
+@-moz-keyframes ribbon-onload {
+  0% {
+    z-index: -1;
+    margin-top: 0; }
+
+  50% {
+    margin-top: 10rem; }
+
+  100% {
+    z-index: 1;
+    margin-top: 0; } }
+@keyframes ribbon-onload {
+  0% {
+    z-index: -1;
+    margin-top: 0; }
+
+  50% {
+    margin-top: 10rem; }
+
+  100% {
+    z-index: 1;
+    margin-top: 0; } }
 .js body.loading {
   overflow: hidden; }
   .js body.loading .loading-animation {

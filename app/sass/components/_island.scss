@@ -96,8 +96,8 @@
 	top:18rem;
 	left:50%;
 	z-index:-1;
-	@include transform(translateX(-50%));
 	width:100%;
+	@include transform(translateX(-50%));
 	@include media($mobile) {
 		width:21rem;
 		top:19rem;
@@ -112,5 +112,23 @@
 	}
 	img {
 		max-width:100%;
+	}
+	&.ribbon-on-load {
+		@include animation(ribbon-onload 1s ease);
+		@include animation-fill-mode(forwards);
+	}
+}
+
+@include keyframes (ribbon-onload) {
+	0% {
+		z-index:-1;
+		margin-top:0;
+	}
+	50% {
+		margin-top:10rem;
+	}
+	100% {
+		z-index:1;
+		margin-top:0;
 	}
 }

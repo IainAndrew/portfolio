@@ -10,6 +10,10 @@ $(window).load(function() {
 			$('.header-title').addClass('header-on-load');
 		}, 1000);
 
+		setTimeout(function() {
+			$('.ribbon').addClass('ribbon-on-load');
+		}, 3000);
+
 		titleArcFull();
 		setTimeout(function() {
 			$('.island-shadow').animate({opacity:0.09}, 1000);
