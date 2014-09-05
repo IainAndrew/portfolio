@@ -97,7 +97,7 @@
 	left:50%;
 	z-index:-1;
 	width:100%;
-	@include transform(translateX(-50%));
+	@include transform(translateX(-50%) scale(0));
 	@include media($mobile) {
 		width:21rem;
 		top:19rem;
@@ -114,7 +114,7 @@
 		max-width:100%;
 	}
 	&.ribbon-on-load {
-		@include animation(ribbon-onload 1s ease);
+		@include animation(ribbon-onload 1s cubic-bezier(1,0,.19,1.44));
 		@include animation-fill-mode(forwards);
 	}
 }
@@ -123,12 +123,14 @@
 	0% {
 		z-index:-1;
 		margin-top:0;
+		@include transform(translateX(-50%) scale(0));
 	}
 	50% {
-		margin-top:10rem;
+		margin-top:7rem;
 	}
 	100% {
 		z-index:1;
 		margin-top:0;
+		@include transform(translateX(-50%) scale(1));
 	}
 }
