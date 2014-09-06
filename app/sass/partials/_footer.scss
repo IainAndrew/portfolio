@@ -59,11 +59,14 @@ footer {
 
 .island-speedo {
 	position:fixed;
-	bottom:-15rem;
+	bottom:-18rem;
 	width:100%;
 	text-align:center;
 	opacity:0;
 	@include transition(transform 0.7s ease-out);
+	@include media($desktop) {
+		bottom:-18rem;
+	}
 	&.speedo-tilt {
 		@include transform(rotate(3deg));
 	}

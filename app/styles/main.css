@@ -1033,13 +1033,16 @@ footer {
 
 .island-speedo {
   position: fixed;
-  bottom: -15rem;
+  bottom: -18rem;
   width: 100%;
   text-align: center;
   opacity: 0;
   -webkit-transition: -webkit-transform 0.7s ease-out;
   -moz-transition: -moz-transform 0.7s ease-out;
   transition: transform 0.7s ease-out; }
+  @media screen and (min-width: 768px) {
+    .island-speedo {
+      bottom: -18rem; } }
   .island-speedo.speedo-tilt {
     -webkit-transform: rotate(3deg);
     -moz-transform: rotate(3deg);
@@ -1187,11 +1190,11 @@ footer {
   left: 50%;
   z-index: -1;
   width: 100%;
-  -webkit-transform: translateX(-50%) scale(0.3);
-  -moz-transform: translateX(-50%) scale(0.3);
-  -ms-transform: translateX(-50%) scale(0.3);
-  -o-transform: translateX(-50%) scale(0.3);
-  transform: translateX(-50%) scale(0.3); }
+  -webkit-transform: translateX(-50%) scale(0);
+  -moz-transform: translateX(-50%) scale(0);
+  -ms-transform: translateX(-50%) scale(0);
+  -o-transform: translateX(-50%) scale(0);
+  transform: translateX(-50%) scale(0); }
   @media screen and (min-width: 320px) {
     .ribbon {
       width: 21rem;
@@ -1218,7 +1221,7 @@ footer {
   0% {
     z-index: -1;
     margin-top: 0;
-    -webkit-transform: translateX(-50%) scale(0.3); }
+    -webkit-transform: translateX(-50%) scale(0); }
 
   50% {
     margin-top: 7rem; }
@@ -1231,7 +1234,7 @@ footer {
   0% {
     z-index: -1;
     margin-top: 0;
-    -moz-transform: translateX(-50%) scale(0.3); }
+    -moz-transform: translateX(-50%) scale(0); }
 
   50% {
     margin-top: 7rem; }
@@ -1244,11 +1247,11 @@ footer {
   0% {
     z-index: -1;
     margin-top: 0;
-    -webkit-transform: translateX(-50%) scale(0.3);
-    -moz-transform: translateX(-50%) scale(0.3);
-    -ms-transform: translateX(-50%) scale(0.3);
-    -o-transform: translateX(-50%) scale(0.3);
-    transform: translateX(-50%) scale(0.3); }
+    -webkit-transform: translateX(-50%) scale(0);
+    -moz-transform: translateX(-50%) scale(0);
+    -ms-transform: translateX(-50%) scale(0);
+    -o-transform: translateX(-50%) scale(0);
+    transform: translateX(-50%) scale(0); }
 
   50% {
     margin-top: 7rem; }
