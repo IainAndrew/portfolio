@@ -739,6 +739,18 @@ header {
     background-size: cover;
     background-position: 50% 100%; }
 
+.landscape-waves {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: url("../images/waves.png");
+  background-size: cover;
+  background-position: 50% 100%; }
+  .touch .landscape-waves, .no-js .landscape-waves {
+    background: none; }
+
 .landscape-bottom {
   width: 100%;
   height: 100%;
@@ -1282,7 +1294,20 @@ footer {
 
 main.index {
   position: relative;
-  z-index: 1; }
+  z-index: 1;
+  /*&:after {
+  	content:"";
+  	width:15rem;
+  	height:5rem;
+  	background:#94ffea;
+  	position:absolute;
+  	top:-1.5rem;
+  	left:50%;
+  	border-top-left-radius:100%;
+  	border-top-right-radius:100%;
+  	//border:1px solid black;
+  	box-shadow:-10rem 0.5rem 0 #94ffea;
+  }*/ }
   @media screen and (min-width: 768px) {
     main.index {
       padding-left: 0.5rem;
@@ -1291,17 +1316,6 @@ main.index {
     main.index {
       padding-left: 0;
       padding-right: 0; } }
-  main.index:after {
-    content: "";
-    width: 15rem;
-    height: 5rem;
-    background: #94ffea;
-    position: absolute;
-    top: -1.5rem;
-    left: 50%;
-    border-top-left-radius: 100%;
-    border-top-right-radius: 100%;
-    box-shadow: -10rem 0.5rem 0 #94ffea; }
 
 section.intro {
   text-align: center;
