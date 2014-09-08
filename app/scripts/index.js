@@ -10,9 +10,9 @@ $(window).load(function() {
 			$('.header-title').addClass('header-on-load');
 		}, 1000);
 
-		setTimeout(function() {
+		/*setTimeout(function() {
 			$('.ribbon').addClass('ribbon-on-load');
-		}, 3000);
+		}, 3000);*/
 
 		titleArcFull();
 		setTimeout(function() {
