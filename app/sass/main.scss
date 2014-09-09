@@ -52,3 +52,10 @@ a {
 	text-decoration:none;
 	color:inherit;
 }
+
+::selection {
+  background: $body-color + 100; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: $body-color + 100; /* Gecko Browsers */
+}

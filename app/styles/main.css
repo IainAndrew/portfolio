@@ -2000,3 +2000,11 @@ h1, h2, h3, h4, h5, h6 {
 a {
   text-decoration: none;
   color: inherit; }
+
+::selection {
+  background: #a8a8a8;
+  /* WebKit/Blink Browsers */ }
+
+::-moz-selection {
+  background: #a8a8a8;
+  /* Gecko Browsers */ }
